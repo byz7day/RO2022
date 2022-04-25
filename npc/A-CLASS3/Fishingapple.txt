@@ -1,0 +1,140 @@
+-	script	FishingHole	-1,{
+
+//Fishing rod
+set .@Rod,2764;
+//Fishing Lure
+set .@Lure,2775;
+//Auto-Fish
+set .@Auto,1;
+//Auto-Fish on Fail
+set .@AutoFail,1;
+Fish:
+	if (isequipped(.@Rod)) && (isequipped(.@Lure)){
+		specialeffect EF_BUBBLE,"Fishing Hole";
+		soundeffect "fishing_wait.wav",0;
+		dispbottom "[ระบบ] กำลังเริ่มตกปลา";
+		set .@fcast,15;
+			if (isequipped(2550)) { //Fisher's Muffler
+				set .@fcast,.@fcast - 2;
+			}
+			if (isequipped(2443)) { //Fisher's Boots
+				set .@fcast,.@fcast - 2;
+			}
+			if (isequipped(2764)) { //Fishing Pole
+				set .@fcast,.@fcast - 3;
+			}
+			if (isequipped(2775)) { //Fishing Lure
+				set .@fcast,.@fcast - 1;
+			}
+		progressbar "ffffff",.@fcast;
+		if (rand(1,300) == 2){ //โอกาศ 1ใน 400
+		setarray .@Rare[0],61002,61001,30011,30012,30013,30014,30015,30016,30017;
+		set .@RareCatch, .@Rare[rand(getarraysize(.@Rare))];
+		getitem .@RareCatch,1; //Reward
+		specialeffect2 EF_TEMP_OK;
+		specialeffect2 410;
+		//soundeffectall "fishing_m_success.wav",0,strcharinfo(3);
+		soundeffect "fishing_m_success.wav",0;
+		mapannounce strcharinfo(3),"ว้าว...ยินดีด้วย คุณ  [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatch)+" จากการตกปลา",bc_map,"0x66FF99";
+		if(.@Auto==1){
+		goto Fish;}else{
+		end;}
+		}
+			if (rand(1,6) == 1) ||(rand(1,6) == 3) || (rand(1,6) == 6){
+			setarray .@Catch[0],579,908,909,963,956,6049,918,960,910,938,624,35050,35051,35052,35053,35054,35055,35056,991,717,713,962,943,514,512,35057;// List of Junk/Other
+			set .@CatchRand,.@Catch[rand(getarraysize(.@Catch))];
+			getitem .@CatchRand,1;
+			}
+			else {
+			soundeffect "fishing_m_failure.wav",0;
+			dispbottom "[Fishing] ว้าแย่จังเลย...คุณดูเหมือนคุณตกไม่ได้อะไรเลย";
+			if(.@AutoFail == 1){
+			goto Fish;} else{
+			end;}
+			}
+		if (rand(1,700) == 3){ //โอกาศ 1ใน 1000
+		setarray .@Rare[0],35005,35006,35007,35008,35009,35010,61004,61006,61007,61008,61012;
+		set .@RareCatch, .@Rare[rand(getarraysize(.@Rare))];
+		getitem .@RareCatch,1; //Reward
+		specialeffect2 410;
+		soundeffect "fishing_m_success.wav",0;
+		mapannounce strcharinfo(3),"ว้าวว้าวว้าว...ยินดีด้วย คุณ [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatch)+" จากการตกปลา",bc_map,"0x66FF99";
+		}
+		if(.@Auto == 1){
+		goto Fish;} else{
+		end;}
+		}
+	else {
+	dispbottom "[ระบบ] คุณจำเป็นต้องมีเบ็ดตกปลาและเหยื่อตกปลาก่อน...";
+	end;
+	}
+}
+
+
+dewata,229,41,0	duplicate(FishingHole)	จุดตกปลา#01	844
+dewata,232,41,0	duplicate(FishingHole)	จุดตกปลา#02	844
+dewata,235,41,0	duplicate(FishingHole)	จุดตกปลา#03	844
+morocc,168,121,0	duplicate(FishingHole)	จุดตกปลา#04	844
+morocc,151,133,0	duplicate(FishingHole)	จุดตกปลา#05	844
+morocc,151,129,0	duplicate(FishingHole)	จุดตกปลา#06	844
+morocc,151,125,0	duplicate(FishingHole)	จุดตกปลา#07	844
+morocc,151,121,0	duplicate(FishingHole)	จุดตกปลา#08	844
+morocc,172,121,0	duplicate(FishingHole)	จุดตกปลา#09	844
+morocc,176,121,0	duplicate(FishingHole)	จุดตกปลา#010	844
+morocc,180,121,0	duplicate(FishingHole)	จุดตกปลา#011	844
+morocc,184,121,0	duplicate(FishingHole)	จุดตกปลา#012	844
+morocc,188,121,0	duplicate(FishingHole)	จุดตกปลา#013	844
+morocc,192,121,0	duplicate(FishingHole)	จุดตกปลา#014	844
+morocc,196,121,0	duplicate(FishingHole)	จุดตกปลา#015	844
+morocc,200,121,0	duplicate(FishingHole)	จุดตกปลา#016	844
+morocc,204,121,0	duplicate(FishingHole)	จุดตกปลา#017	844
+morocc,208,121,0	duplicate(FishingHole)	จุดตกปลา#018	844
+morocc,212,121,0	duplicate(FishingHole)	จุดตกปลา#019	844
+morocc,148,121,0	duplicate(FishingHole)	จุดตกปลา#020	844
+morocc,144,121,0	duplicate(FishingHole)	จุดตกปลา#021	844
+morocc,140,121,0	duplicate(FishingHole)	จุดตกปลา#022	844
+morocc,136,121,0	duplicate(FishingHole)	จุดตกปลา#023	844
+morocc,132,121,0	duplicate(FishingHole)	จุดตกปลา#024	844
+morocc,128,121,0	duplicate(FishingHole)	จุดตกปลา#025	844
+morocc,124,121,0	duplicate(FishingHole)	จุดตกปลา#026	844
+morocc,120,121,0	duplicate(FishingHole)	จุดตกปลา#027	844
+morocc,116,121,0	duplicate(FishingHole)	จุดตกปลา#028	844
+morocc,112,121,0	duplicate(FishingHole)	จุดตกปลา#029	844
+morocc,108,121,0	duplicate(FishingHole)	จุดตกปลา#030	844
+
+dewata,229,43,4	duplicate(FishingHole)	ตกปลาจ้า#01	10065
+dewata,235,43,5	duplicate(FishingHole)	ตกปลาจ้า#02	10065
+dewata,229,48,4	duplicate(FishingHole)	ตกปลาจ้า#03	10065
+dewata,229,53,4	duplicate(FishingHole)	ตกปลาจ้า#04	10065
+dewata,229,59,4	duplicate(FishingHole)	ตกปลาจ้า#05	10065
+dewata,229,68,4	duplicate(FishingHole)	ตกปลาจ้า#06	10065
+dewata,235,43,5	duplicate(FishingHole)	ตกปลาจ้า#07	10065
+dewata,235,48,5	duplicate(FishingHole)	ตกปลาจ้า#08	10065
+dewata,235,53,5	duplicate(FishingHole)	ตกปลาจ้า#09	10065
+dewata,235,59,5	duplicate(FishingHole)	ตกปลาจ้า#10	10065
+dewata,219,79,4	duplicate(FishingHole)	ตกปลาจ้า#11	10065
+dewata,210,81,4	duplicate(FishingHole)	ตกปลาจ้า#12	10065
+dewata,200,82,4	duplicate(FishingHole)	ตกปลาจ้า#13	10065
+dewata,190,84,4	duplicate(FishingHole)	ตกปลาจ้า#14	10065
+morocc,216,124,5	duplicate(FishingHole)	ตกปลาจ้า#15	10065
+morocc,216,120,5	duplicate(FishingHole)	ตกปลาจ้า#16	10065
+morocc,204,119,0	duplicate(FishingHole)	ตกปลาจ้า#17	10065
+morocc,208,119,0	duplicate(FishingHole)	ตกปลาจ้า#18	10065
+morocc,212,119,0	duplicate(FishingHole)	ตกปลาจ้า#19	10065
+morocc,148,119,0	duplicate(FishingHole)	ตกปลาจ้า#20	10065
+morocc,144,119,0	duplicate(FishingHole)	ตกปลาจ้า#21	10065
+morocc,140,119,0	duplicate(FishingHole)	ตกปลาจ้า#22	10065
+morocc,136,119,0	duplicate(FishingHole)	ตกปลาจ้า#23	10065
+morocc,132,119,0	duplicate(FishingHole)	ตกปลาจ้า#24	10065
+morocc,128,119,0	duplicate(FishingHole)	ตกปลาจ้า#25	10065
+morocc,124,119,0	duplicate(FishingHole)	ตกปลาจ้า#26	10065
+morocc,120,119,0	duplicate(FishingHole)	ตกปลาจ้า#27	10065
+morocc,116,119,0	duplicate(FishingHole)	ตกปลาจ้า#28	10065
+morocc,112,119,0	duplicate(FishingHole)	ตกปลาจ้า#29	10065
+morocc,108,119,0	duplicate(FishingHole)	ตกปลาจ้า#30	10065
+
+
+
+
+
+morocc,154,120,4	shop	ขายของตกปลา	735,2764:10000000,2775:10000000,2550:10000000,2443:10000000

@@ -1,0 +1,22 @@
+morocc,156,78,4	script	item beginner	512,{
+	mes "แจกไอเท็มพวกหน้าโง่ ที่มาใหม่";
+	mes "โดยเฉพาะคนชื่อนีนท์ ที่แบบชอบทำกันร้อย ละบอกโหดนะ";
+	menu
+	"ขอของใหม่หน่อยดิ",itembeginner,
+	"ยกเลิก",ib_cancel;
+	itembeginner:
+	if(itembeginner2 != 1){
+		set itembeginner2,1;
+		getitem 7227,100;
+		announce "ระบบแจกของ : ผู้เล่นใหม่ [ "+ strcharinfo(0) +" ] ได้รับของผู้เล่นใหม่แล้ว ยินดีด้วยไอโง่ !!",0;
+	} else {
+		mes "มึงรับของไปแล้วไอโง่ อย่าเยอะ ไอสมองความจำน้อย";
+		close;
+	}
+	ib_cancel:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ แจกของผู้เล่นใหม่",0;
+	end;
+}
