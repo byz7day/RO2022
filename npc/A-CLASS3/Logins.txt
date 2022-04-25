@@ -1,0 +1,53 @@
+//==============================================
+// - Script By : M-Ro Online
+// - Script City : Thailand 
+// - Script Support Server : Hercules & rAthena
+//==============================================
+-	script	Login	FAKE_NPC,{
+OnPCLoginEvent:
+	if(getgmlevel() >=50) end;
+	if ( vip_status(VIP_STATUS_ACTIVE) )
+	{
+		//soundeffect "welcomemro.wav",0;
+		announce "[ระบบ] : ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้ามาสู่โลกของเราแล้วจ้า",0,0xCC00CC;
+		dispbottom "[ระบบ] : เติมเงินด้วยTrue Money Wallet วันนี้รับ X2 แถม100บาท เมื่อเติม100บาทขึ้นไป";
+		dispbottom "[ระบบ] : คอสเพิ่มความแรงสกิลแต่ละอาชีพสามารถหาได้จาก เควสดราก้อนบอล หรือแคสช็อปข้างแผนที่";
+		dispbottom "[ระบบ] : คำสั่งที่ใช้ได้ @load @autoloot @alootid @at @autoloottype @afk";
+		dispbottom "[ระบบ] :ผู้เล่นท่านไดมองเห็นไอเท่มเป็นรูปแอปเปิ้น ให้ทำการโหลดแผทก่อนนะคับ แพทอยู่ในตัวเกม";
+		end;
+	}
+	else
+	{
+		//soundeffect "welcomemro.wav",0;
+		announce "[ระบบ] : ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้ามาสู่โลกของเราแล้วจ้า",0,0xCC00CC;
+		dispbottom "[ระบบ] : เติมเงินด้วยTrue Money Wallet วันนี้รับ X2 แถม100บาท เมื่อเติม100บาทขึ้นไป";
+		dispbottom "[ระบบ] : คอสเพิ่มความแรงสกิลแต่ละอาชีพสามารถหาได้จาก เควสดราก้อนบอล หรือแคสช็อปข้างแผนที่";
+		dispbottom "[ระบบ] : คำสั่งที่ใช้ได้ @load @autoloot @alootid @at @autoloottype @afk";
+		dispbottom "[ระบบ] :ผู้เล่นท่านไดมองเห็นไอเท่มเป็นรูปแอปเปิ้น ให้ทำการโหลดแผทก่อนนะคับ แพทอยู่ในตัวเกม";
+		
+		end;
+	}
+}
+//==================================================================================
+-	script	GMLogin	FAKE_NPC,{
+OnPCLoginEvent:
+		if(getgmlevel() > 50 ) {
+		//atcommand "@hide";
+		soundeffect "welcomemro.wav",0;
+		atcommand "@speed 75";
+		atcommand "@size 0";
+		dispbottom "[ระบบ] : เติมเงินด้วยTrue Money Wallet วันนี้รับ X2 แถม100บาท เมื่อเติม100บาทขึ้นไป";
+		dispbottom "[ระบบ] : คอสเพิ่มความแรงสกิลแต่ละอาชีพสามารถหาได้จาก เควสดราก้อนบอล หรือแคสช็อปข้างแผนที่";
+		dispbottom "[ระบบ] : คำสั่งที่ใช้ได้ @load @autoloot @alootid @at @autoloottype @afk";
+		dispbottom "[ระบบ] :ผู้เล่นท่านไดมองเห็นไอเท่มเป็นรูปแอปเปิ้น ให้ทำการโหลดแผทก่อนนะคับ แพทอยู่ในตัวเกม";
+		end;
+		}
+end;
+}
+//==================================================================================
+-	script	SystemServer	-1,{
+OnInit:
+	announce "[ System ] : ทำการ Reload Script เรียบร้อยแล้วระบบทั้งหมดทำงานตามปกติ",8;
+	end;
+}
+//==================================================================================

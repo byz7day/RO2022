@@ -1,0 +1,7 @@
+morocc,148,85,4	script	allquest	714,{
+    end;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ ALL QUEST",0;
+	end;
+}

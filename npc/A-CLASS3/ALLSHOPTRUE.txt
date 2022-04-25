@@ -1,0 +1,74 @@
+morocc,170,86,4	script	ALLSHOP	811,{
+    mes "ระบบรวมร้านค้าของดังต่อไปนี้";
+    mes "CASH ของทั่วไป,ของคอสตูม";
+    mes "MVP ของทั่วไป,ของคอสตูม";
+    mes "TCG ของทั่วไป,ของคอสตูม";
+    mes "DC ของทั่วไป,ของคอสตูม";
+    menu
+    "DC SHOP",dcshop,
+    "CASH SHOP",cashshop,
+    "MVP SHOP",mvpshop,
+    "TCG SHOP",tcgshop,
+    "ยกเลิก",cancelshop;
+    close;
+    dcshop:
+        menu
+        "ของทั่วไป",normaldc,
+        "ของคอสตูม",dc_custome;
+        close;
+    normaldc:
+        callshop "dcshop",1;
+        end;
+    dc_custome:
+        callshop "dcshop_custome",1;
+        end;
+    cashshop:
+        menu
+        "ของทั่วไป",normalcash,
+        "ของคอสตูม",cash_custome;
+        close;
+    normalcash:
+        callshop "cashshop",1;
+        end;
+    cash_custome:
+        callshop "cashshop_custome",1;
+        end;
+    mvpshop:
+        menu
+        "ของทั่วไป",normalmvp,
+        "ของคอสตูม",mvp_custome;
+        close;
+    normalmvp:
+        callshop "mvpshop",1;
+        end;
+    mvp_custome:
+        callshop "mvpshop_custome",1;
+        end;
+    tcgshop:
+        menu
+        "ของทั่วไป",normaltcg,
+        "ของคอสตูม",tcg_custome;
+        close;
+    normaltcg:
+        callshop "tcgshop",1;
+        end;
+    tcg_custome:
+        callshop "tcgshop_custome",1;
+        end;
+    cancelshop:
+    close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ ALL SHOP TRUE",0;
+	end;
+}
+
+-	pointshop	cashshop_custome	714,#cash_points,607:100,607:100
+-	pointshop	dcshop_custome	714,#dc_points,607:100,607:100
+-	pointshop	mvpshop_custome	714,#mvp_points,607:100,607:100
+-	pointshop	tcgshop_custome	714,#tcg_points,607:100,607:100
+
+-	pointshop	cashshop	714,#cash_points,607:100,607:100
+-	pointshop	dcshop	714,#dc_points,607:100,607:100
+-	pointshop	mvpshop	714,#mvp_points,607:100,607:100
+-	pointshop	tcgshop	714,#tcg_points,607:100,607:100

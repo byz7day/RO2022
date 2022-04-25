@@ -1,0 +1,17 @@
+morocc,165,112,4	script	allskill	714,{
+    mes "ALL SKILL กดรับซะจะได้ไม่เป็นตัวโง่ในเซิฟ";
+    menu
+    "รับ ALL SKILL",getallskill,
+    "ยกเลิก",cancelallskill;
+    getallskill:
+    mes "โอเคมึงรับแล้วไม่ต้องพูดเดี๋ยวน้องๆตกใจ";
+    atcommand "@allskill";
+    close;
+    cancelallskill:
+    mes "แล้วแต่มึงเลยไอโง่";
+    close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ ALL SKILL",0;
+	end;
+}
