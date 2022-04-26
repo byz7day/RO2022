@@ -116,8 +116,8 @@ dewata,219,79,4	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#11	10065
 dewata,210,81,4	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#12	10065
 dewata,200,82,4	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#13	10065
 dewata,190,84,4	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#14	10065
-morocc,216,125,5	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#15	10065
-morocc,216,121,5	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#16	10065
+morocc,215,125,5	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#15	10065
+morocc,215,121,5	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#16	10065
 morocc,204,120,0	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#17	10065
 morocc,208,120,0	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#18	10065
 morocc,212,120,0	duplicate(FishingHole)	µ¡»ÅÒ¨éÒ#19	10065

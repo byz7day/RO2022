@@ -2554,7 +2554,7 @@ void npc_shop_currency_type(struct map_session_data *sd, struct npc_data *nd, in
 
 				memset(output, '\0', sizeof(output));
 
-				sprintf(output, msg_txt(sd, 715), nd->u.shop.pointshop_str); // Point Shop List: '%s'
+				//sprintf(output, msg_txt(sd, 715), nd->u.shop.pointshop_str); // Point Shop List: '%s'
 				clif_broadcast(&sd->bl, output, strlen(output) + 1, BC_BLUE,SELF);
 			}
 			
