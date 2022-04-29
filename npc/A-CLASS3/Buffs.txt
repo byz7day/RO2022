@@ -90,6 +90,7 @@ morocc,157,163,4	duplicate(BuffsSupports)	BuffsSupports#04	894
 //dewata,196,99,4	duplicate(BuffsSupports)	BuffsSupports#05	834
 dewata,200,149,4	duplicate(BuffsSupports)	Buffs#06	10043
 morocc,158,97,4	duplicate(BuffsSupports)	À≈«ßªŸË‡§Á¡#06	834
+06guild_01,45,53,4	duplicate(BuffsSupports)	À≈«ßªŸË‡§Á¡#war	834
 splendide,202,176,4	duplicate(BuffsSupports)	BuffsSupports#07	894
 
 

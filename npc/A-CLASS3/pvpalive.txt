@@ -4,11 +4,14 @@ OnInit:
 set .time, 10;
 setarray .map$, 
 //กำหนดแผนที่
-"m_pvp02";
+"pvp_n_1-5",
+"pvp_n_1-3",
+"pvp_y_8-2",
+"pvp_y_8-1";
 end;
 	
 OnPCDieEvent:
-getmapxy( .@map$, .@x, .@y, 0 );
+getmapxy( .@map$, .@x, .@y, BL_PC );
 for ( set .@i, 0; .@i < getarraysize(.map$); set .@i, .@i+1 ) {
 if ( .@map$ == .map$[.@i] ) {
 sleep2 1000;
