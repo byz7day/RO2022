@@ -11,11 +11,9 @@ mes "ต้องการเข้าสู่สนามประลอง";
 mes "เพื่อทดสอบฝีมือของคุณไหม";
 menu 
 "ห้องลองดาเมจ[ "+getmapusers("m_pvp02")+"/30 ]",Mm_pvp02a,
-"สนามประลองของนักฆ่า [ "+getmapusers("m_pvp03")+"/30 ]",Mm_pvp03a,
-"สนามประลอง พรอนเทร่า [ "+getmapusers("prt_pvp")+"/30 ]",Mprt_pvpa,
-"Death Match [ "+getmapusers("pvp_n_1-5")+"/100 ]",Mm_pvp01,
 "Izlude [ "+getmapusers("pvp_y_8-2")+"/100 ]",Mm_pvp02,
 "Prontera [ "+getmapusers("pvp_y_8-1")+"/100 ]",Mm_pvp03,
+"Death Match [ "+getmapusers("pvp_n_1-5")+"/100 ]",Mm_pvp01,
 "1 VS 1 [ "+getmapusers("pvp_n_1-3")+"/2 ]",Mm_pvp04,
 "ออก ",Lcancel;
 
@@ -27,22 +25,6 @@ Mm_pvp02a:
 if (getmapusers("m_pvp02")>= 30) goto MaxPlayerRoom;
 warp "m_pvp02",0,0;
 announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่ ห้องลองดาเมจ แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("m_pvp02")+"/30 ] คน",0;
-close;
-
-Mm_pvp03a:
-//sc_end SC_POEMBRAGI;
-//sc_end SC_SERVICE4U;
-if (getmapusers("m_pvp03")>= 30) goto MaxPlayerRoom;
-warp "m_pvp03",0,0;
-announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่ สนามประลองของนักฆ่า แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("m_pvp03")+"/30 ] คน",0;
-close;
-
-Mprt_pvpa:
-//sc_end SC_POEMBRAGI;
-//sc_end SC_SERVICE4U;
-if (getmapusers("prt_pvp")>= 30) goto MaxPlayerRoom;
-warp "prt_pvp",0,0;
-announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่ สนามประลอง พรอนเทร่า แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("prt_pvp")+"/30 ] คน",0;
 close;
 
 Mm_pvp01:
@@ -74,7 +56,7 @@ Mm_pvp04:
 //sc_end SC_SERVICE4U;
 if (getmapusers("pvp_n_1-3")>= 2) goto MaxPlayerRoom;
 warp "pvp_n_1-3",0,0;
-announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่สนามประลอง 1 VS 1 แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("pvp_n_1-3")+"/100 ] คน",0;
+announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่สนามประลอง 1 VS 1 แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("pvp_n_1-3")+"/2 ] คน",0;
 close;
 
 MaxPlayerRoom:
@@ -96,7 +78,7 @@ end;
 //morocc,92,96,4	duplicate(PvP)	PvP Officer#pron_3	900
 //morocc,166,161,4	duplicate(PvP)	PvP Officer#pron_4	900
 //dewata,193,167,5	duplicate(PvP)	PvP Officer#pron_5	900
-morocc,138,85,4	duplicate(PvP)	PvP Officer#pron_6	900
+morocc,152,97,4	duplicate(PvP)	PvP Officer#pron_6	900
 
 
 pvp_y_8-2	mapflag	nocommand	90

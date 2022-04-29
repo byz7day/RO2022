@@ -27,7 +27,7 @@
 //= 2.2 Removed duplicate bartender NPC. (bugreport:4555) [L0ne_W0lf]
 //============================================================
 
-// Morocc
+/*// Morocc
 //============================================================
 morocc,150,120,5	script	Soldier - Morocc#01::MocSoldier	707,3,3,{
 	mes "[Morocc Soldier]";
@@ -44,7 +44,7 @@ OnTouch_:
 	mes "[Morocc Soldier]";
 	mes "This is a restricted area. You can't come any further!";
 	close;
-}
+}*/
 
 morocc,202,244,0	script	Volunteer - Morocc#01	745,{
 	mes "[Morocc Volunteer]";
@@ -68,7 +68,7 @@ morocc,88,133,3	script	Volunteer - Morocc#02	748,{
 	close;
 }
 
-morocc,202,110,0	script	Volunteer - Morocc#03	730,{
+/*morocc,202,110,0	script	Volunteer - Morocc#03	730,{
 	mes "[Morocc Volunteer]";
 	mes "We're still unable to estimate the overall damage.";
 	next;
@@ -78,7 +78,7 @@ morocc,202,110,0	script	Volunteer - Morocc#03	730,{
 	mes "[Morocc Volunteer]";
 	mes "Unless we settle the original cause, the damage will even spread out of Morocc. The only thing left is to get worse.";
 	close;
-}
+}*/
 
 morocc,268,287,3	script	Volunteer - Morocc#04	727,{
 	mes "[Morocc Volunteer]";

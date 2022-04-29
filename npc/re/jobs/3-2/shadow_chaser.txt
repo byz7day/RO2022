@@ -17,64 +17,64 @@
 //= 1.4 Added VIP features. [Euphy]
 //============================================================
 
-morocc,156,70,3	script	Girl#sc00	93,3,3,{
-	mes "[Girl]";
-	if (BaseJob == Job_Rogue) {
-		if (job_sha == 0) {
-			if (BaseLevel < 99 || JobLevel < 50) {
-				mes "You're not ready.";
-				close;
-			}
-			mes "Hey? Stop!";
-			mes "Aren't you interested in hearing a funny story?";
-			next;
-			select("What story?");
-			mes "[Girl]";
-			mes "Have you been to the guild recently?";
-			mes "Some interesting things have happened lately.";
-			mes "Maybe new guests...";
-			next;
-			mes "[Girl]";
-			mes "I heard it has to do with something called a Shadow Chaser.";
-			mes "You should go and check it out.";
-			next;
-			mes "[Girl]";
-			mes "Every time they visit us, they are on new missions.";
-			mes "What missions are they doing I wonder?";
-			set job_sha,1;
-			close;
-		} else if (job_sha == 1) {
-			mes "If you have any interest... just go!";
-			mes "Do you know where the guild is?";
-			next;
-			mes "[Girl]";
-			mes "It is in a fortress under Pharos lighthouse.";
-			mes "Sigh....";
-			mes "You must visit there!";
-			close;
-		} else {
-			mes "Wow, you look busy.";
-			mes "Have you heard that there are visiters?";
-			mes "They're on a treasure hunt!";
-			next;
-			mes "[Girl]";
-			mes "It must be fun.";
-			mes "I wanna try!";
-			close;
-		}
-	}
-	mes "Eh?";
-	mes "I don't have anything for you...";
-	close;
-OnTouch_:
-	if (BaseJob == Job_Rogue && BaseLevel > 98 && JobLevel > 49 && job_sha == 0) {
-		mes "[Girl]";
-		mes "Hey? Stop!";
-		mes "Aren't you interested in hearing a funny story?";
-		close;
-	}
-	end;
-}
+//morocc,156,70,3	script	Girl#sc00	93,3,3,{
+//	mes "[Girl]";
+//	if (BaseJob == Job_Rogue) {
+//		if (job_sha == 0) {
+//			if (BaseLevel < 99 || JobLevel < 50) {
+//				mes "You're not ready.";
+//				close;
+//			}
+//			mes "Hey? Stop!";
+//			mes "Aren't you interested in hearing a funny story?";
+//			next;
+//			select("What story?");
+//			mes "[Girl]";
+//			mes "Have you been to the guild recently?";
+//			mes "Some interesting things have happened lately.";
+//			mes "Maybe new guests...";
+//			next;
+//			mes "[Girl]";
+//			mes "I heard it has to do with something called a Shadow Chaser.";
+//			mes "You should go and check it out.";
+//			next;
+//			mes "[Girl]";
+//			mes "Every time they visit us, they are on new missions.";
+//			mes "What missions are they doing I wonder?";
+//			set job_sha,1;
+//			close;
+//		} else if (job_sha == 1) {
+//			mes "If you have any interest... just go!";
+//			mes "Do you know where the guild is?";
+//			next;
+//			mes "[Girl]";
+//			mes "It is in a fortress under Pharos lighthouse.";
+//			mes "Sigh....";
+//			mes "You must visit there!";
+//			close;
+//		} else {
+//			mes "Wow, you look busy.";
+//			mes "Have you heard that there are visiters?";
+//			mes "They're on a treasure hunt!";
+//			next;
+//			mes "[Girl]";
+//			mes "It must be fun.";
+//			mes "I wanna try!";
+//			close;
+//		}
+//	}
+//	mes "Eh?";
+//	mes "I don't have anything for you...";
+//	close;
+//OnTouch_:
+//	if (BaseJob == Job_Rogue && BaseLevel > 98 && JobLevel > 49 && job_sha == 0) {
+//		mes "[Girl]";
+//		mes "Hey? Stop!";
+//		mes "Aren't you interested in hearing a funny story?";
+//		close;
+//	}
+//	end;
+//}
 
 in_rogue,376,100,5	script	Guild Member#sc01	828,{
 	if (BaseJob == Job_Rogue) {

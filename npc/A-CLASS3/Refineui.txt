@@ -1,0 +1,16 @@
+morocc,131,78,4	script	ช่างตีบวกหัวควย	4_M_ORIENT01,{
+	if( getbattleflag( "feature.refineui" ) ){
+		mes "[ช่างตีบวกหัวควย]";
+		mes "ระวังไว้ด้วยไอควายแตก แหกก็ไปหาทำใหม่ซะไอโง่ เติมเยอะไม่ได้แปลว่าจะเก่ง";
+		close2;
+		refineui();
+		end;
+	}else{
+		callfunc "refinemain","ช่างตีบวกหัวควย",0;
+		end;
+	}
+OnInit:
+	delwaitingroom;
+	waitingroom "~ ช่างตีบวกหัวควย",0;
+	end;
+}

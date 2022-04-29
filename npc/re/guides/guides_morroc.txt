@@ -163,7 +163,7 @@ L_Mark:
 	mes "Would you like to check any other locations?";
 	return;
 }
-morocc,154,38,6	duplicate(GuideMorocc)	Guide#02morocc	707
+//morocc,154,38,6	duplicate(GuideMorocc)	Guide#02morocc	707
 morocc,296,213,4	duplicate(GuideMorocc)	Guide#03morocc	707
 morocc,28,170,5	duplicate(GuideMorocc)	Guide#04morocc	707
 

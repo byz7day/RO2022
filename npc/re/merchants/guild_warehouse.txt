@@ -99,7 +99,7 @@ izlude,133,149,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#izlude	896
 lighthalzen,162,102,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#lighthalzen	896
 louyang,210,111,5	duplicate(GuildWarehouse)	Guild Warehouse Manager#louyang	896
 malaya,238,206,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#malaya	896
-morocc,168,107,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#morocc	896
+//morocc,168,107,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#morocc	896
 moscovia,211,200,5	duplicate(GuildWarehouse)	Guild Warehouse Manager#moscovia	896
 niflheim,200,184,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#niflheim	896
 payon,180,106,3	duplicate(GuildWarehouse)	Guild Warehouse Manager#payon	896

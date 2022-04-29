@@ -1275,7 +1275,7 @@ aldebaran,135,128,3	duplicate(ConMessenger)	Continental Messenger#05	998,3,3
 	}
 }
 
-morocc,159,113,3	script	Chief Balrog	752,{
+/*morocc,159,113,3	script	Chief Balrog	752,{
 	if (rebirth_moc_edq == 0) {
 		mes "[Chief Balrog]";
 		mes "You've come here at a bad time, but it's nice to meet you. I'm Continental Guard Chief Balrog. We've been dispatched to Morocc in order to suppress Satan Morocc... We'll need all the strength and luck we can gather.";
@@ -1849,7 +1849,7 @@ morocc,159,113,3	script	Chief Balrog	752,{
 		mes "Listen, it might be more helpful if you talk to some other people first. I'm sure one of the other Continental Guards or our messengers will be better equipped to help you out.";
 		close;
 	}
-}
+}*/
 
 moc_fild21,38,193,0	script	Morocc Timer#edq	-1,6,6,{
 //OnInit:

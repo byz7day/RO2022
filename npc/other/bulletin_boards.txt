@@ -142,20 +142,20 @@ prontera,148,49,5	script	Bulletin Board#09	837,{
 	close;
 }
 
-morocc,152,110,5	script	Bulletin Board#11	837,{
-	mes "[Morocc: The Frontier Town]";
-	mes "Welcome to Morocc, the City of the Desert. Morocc was built on an oasis, so this town can accomodate its many visitors and travelers.";
-	next;
-	mes "[Morocc: The Frontier Town]";
-	mes "Morocc Castle lies in the center of this city. Please feel free to explore this town, and enjoy its unique atmosphere. However, watch your pockets and beware of Rogues and Thieves.";
-	next;
-	mes "[Morocc: The Frontier Town]";
-	mes "From Morocc, the ^660000Pyramid Dungeon^000000 can be found to the Northwest, and the ^660000Sphinx Dungeon^000000 can be found to the West. To the Southeast, you may find ^660000Ant Hell^000000.";
-	next;
-	mes "[Morocc: The Frontier Town";
-	mes "The Assassin Guild is rumored to be located to the Southeast. When you head East from Morocc, and then North, you will arrive at ^3355FFProntera^000000.";
-	close;
-}
+//morocc,152,110,5	script	Bulletin Board#11	837,{
+//	mes "[Morocc: The Frontier Town]";
+//	mes "Welcome to Morocc, the City of the Desert. Morocc was built on an oasis, so this town can accomodate its many visitors and travelers.";
+//	next;
+//	mes "[Morocc: The Frontier Town]";
+//	mes "Morocc Castle lies in the center of this city. Please feel free to explore this town, and enjoy its unique atmosphere. However, watch your pockets and beware of Rogues and Thieves.";
+//	next;
+//	mes "[Morocc: The Frontier Town]";
+//	mes "From Morocc, the ^660000Pyramid Dungeon^000000 can be found to the Northwest, and the ^660000Sphinx Dungeon^000000 can be found to the West. To the Southeast, you may find ^660000Ant Hell^000000.";
+//	next;
+//	mes "[Morocc: The Frontier Town";
+//	mes "The Assassin Guild is rumored to be located to the Southeast. When you head East from Morocc, and then North, you will arrive at ^3355FFProntera^000000.";
+//	close;
+//}
 
 comodo,210,148,5	script	Bulletin Board#12	837,{
 	mes "[Comodo: The Beach City]";

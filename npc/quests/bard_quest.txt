@@ -1368,7 +1368,7 @@ S_StorySong:
 	}
 }
 
-morocc,134,111,3	script	Bard#3	741,{
+/*morocc,134,111,3	script	Bard#3	741,{
 	set @name$,strcharinfo(0);
 	if (gef_bard_q == 31) {
 		mes "[Kino Kitty]";
@@ -2131,7 +2131,7 @@ morocc,132,111,3	script	Little Girl#Jorti	703,{
 		mes "I'm sorry, but this is a private performance. This song is only intended for my little Jorti.";
 		close;
 	}
-}
+}*/
 
 yuno_in01,172,100,3	script	Old Man#bq1	712,{
 	if (gef_bard_q > 11 && gef_bard_q < 20) {
