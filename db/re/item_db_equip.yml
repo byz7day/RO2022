@@ -171170,3 +171170,241 @@ Body:
     WeaponLevel: 5
     EquipLevelMin: 210
     Refineable: true
+  - Id: 1220008
+    AegisName: CostumeS1
+    Name: Costume S1
+    Type: Armor
+    View: 3357
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220009
+    AegisName: CostumeS2
+    Name: Costume S2
+    Type: Armor
+    View: 3358
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220010
+    AegisName: CostumeS3
+    Name: Costume S3
+    Type: Armor
+    View: 3359
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220011
+    AegisName: CostumeS4
+    Name: Costume S4
+    Type: Armor
+    View: 3360
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220012
+    AegisName: CostumeS5
+    Name: Costume S5
+    Type: Armor
+    View: 3361
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220013
+    AegisName: CostumeS6
+    Name: Costume S6
+    Type: Armor
+    View: 3387
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220014
+    AegisName: CostumeS7
+    Name: Costume S7
+    Type: Armor
+    View: 3406
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220015
+    AegisName: CostumeS8
+    Name: Costume S9
+    Type: Armor
+    View: 3494
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220016
+    AegisName: CostumeS10
+    Name: Costume S10
+    Type: Armor
+    View: 3495
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220017
+    AegisName: CostumeS11
+    Name: Costume S11
+    Type: Armor
+    View: 3496
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220018
+    AegisName: CostumeS12
+    Name: Costume S12
+    Type: Armor
+    View: 3497
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220019
+    AegisName: CostumeS13
+    Name: Costume S13
+    Type: Armor
+    View: 3498
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220020
+    AegisName: CostumeS14
+    Name: Costume S14
+    Type: Armor
+    View: 3499
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220021
+    AegisName: CostumeS15
+    Name: Costume S15
+    Type: Armor
+    View: 3500
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220022
+    AegisName: CostumeS16
+    Name: Costume S16
+    Type: Armor
+    View: 3545
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220023
+    AegisName: CostumeS17
+    Name: Costume S17
+    Type: Armor
+    View: 3559
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220024
+    AegisName: CostumeS18
+    Name: Costume S18
+    Type: Armor
+    View: 3563
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220025
+    AegisName: CostumeS19
+    Name: Costume S19
+    Type: Armor
+    View: 3566
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220026
+    AegisName: CostumeS20
+    Name: Costume S20
+    Type: Armor
+    View: 3590
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220027
+    AegisName: CostumeS21
+    Name: Costume S21
+    Type: Armor
+    View: 3594
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220028
+    AegisName: CostumeS22
+    Name: Costume S22
+    Type: Armor
+    View: 4008
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220029
+    AegisName: CostumeS23
+    Name: Costume S23
+    Type: Armor
+    View: 4015
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220030
+    AegisName: CostumeS24
+    Name: Costume S24
+    Type: Armor
+    View: 4017
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220031
+    AegisName: CostumeS25
+    Name: Costume S25
+    Type: Armor
+    View: 4023
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220032
+    AegisName: CostumeS26
+    Name: Costume S26
+    Type: Armor
+    View: 4024
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220033
+    AegisName: CostumeS27
+    Name: Costume S27
+    Type: Armor
+    View: 4044
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220034
+    AegisName: CostumeS28
+    Name: Costume S29
+    Type: Armor
+    View: 4061
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220035
+    AegisName: CostumeS30
+    Name: Costume S30
+    Type: Armor
+    View: 4074
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220036
+    AegisName: CostumeS31
+    Name: Costume S31
+    Type: Armor
+    View: 4081
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220037
+    AegisName: CostumeS32
+    Name: Costume S32
+    Type: Armor
+    View: 4096
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220038
+    AegisName: CostumeS33
+    Name: Costume S33
+    Type: Armor
+    View: 4120
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220039
+    AegisName: CostumeS34
+    Name: Costume S34
+    Type: Armor
+    View: 4130
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220040
+    AegisName: CostumeS35
+    Name: Costume S35
+    Type: Armor
+    View: 4195
+    Locations:
+      Costume_Head_Top: true
+  - Id: 1220041
+    AegisName: CostumeS36
+    Name: Costume S36
+    Type: Armor
+    View: 4196
+    Locations:
+      Costume_Head_Top: true
