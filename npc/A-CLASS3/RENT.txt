@@ -1,0 +1,50 @@
+//==============================================
+// - Script By : M-Ro Online
+// - Script City : Thailand 
+// - Script Support Server : Hercules & rAthena
+//==============================================
+-	script	RentalA	-1,{
+
+mes "[ Rental ]";
+mes "สวัสดีคุณต้องการเช่าอะไรละ ?";
+mes "คุณสามารถเลือกได้เลย ฟรี !! แน่นอน";
+next;
+switch (select( "^FF0000•^000000 เช่า เป็ด","^FF0000•^000000 เช่า นก","^FF0000•^000000 เช่า รถเข็น","- ยกเลิก"))
+//switch (select( "^FF0000•^000000 เช่า Pecopeco","^FF0000•^000000 เช่า Falcon","^FF0000•^000000 เช่า Cart","- ยกเลิก"))
+{
+case 1:
+if (Class == 7 || Class == 14 || Class == 4008 || Class == 4015 || Class == 4030 || Class == 4037)
+{
+setriding;
+break;
+}
+mes "[ Rental ]";
+mes "คุณไม่สามารถเช่า Pecopeco ได้ เนื่องจากไม่ใช่อาชีพของท่าน";
+break;
+case 2:
+if (Class == 11 || Class == 4012 || Class == 4056)
+{
+setfalcon;
+break;
+}
+mes "[ Rental ]";
+mes "คุณไม่สามารถเช่า Falcon ได้ เนื่องจากไม่ใช่อาชีพของท่าน";
+break;
+case 3:
+if(Class == 5 || Class == 10 || Class == 23 || Class == 18 || Class == 4006 || Class == 4011 || Class == 4019 || Class == 4028 || Class == 4033 || Class == 4041 || Class == 4045)
+{
+setcart;
+break;
+}
+mes "[ Rental ]";
+mes "คุณไม่สามารถเช่า Cart ได้ เนื่องจากไม่ใช่อาชีพของท่าน";
+break;
+default:
+}
+close;
+}
+//==============================================
+//ที่ตั้งNPC
+//==============================================
+morocc,147,85,4	duplicate(RentalA)	เช่า นก เป็ด รถเข็น#01	641
+//==============================================

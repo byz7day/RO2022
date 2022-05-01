@@ -171177,6 +171177,12 @@ Body:
     View: 3357
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220009
     AegisName: CostumeS2
     Name: Costume S2
@@ -171184,6 +171190,12 @@ Body:
     View: 3358
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220010
     AegisName: CostumeS3
     Name: Costume S3
@@ -171191,6 +171203,12 @@ Body:
     View: 3359
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220011
     AegisName: CostumeS4
     Name: Costume S4
@@ -171198,6 +171216,12 @@ Body:
     View: 3360
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220012
     AegisName: CostumeS5
     Name: Costume S5
@@ -171205,6 +171229,12 @@ Body:
     View: 3361
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220013
     AegisName: CostumeS6
     Name: Costume S6
@@ -171212,6 +171242,12 @@ Body:
     View: 3387
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220014
     AegisName: CostumeS7
     Name: Costume S7
@@ -171219,6 +171255,12 @@ Body:
     View: 3406
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220015
     AegisName: CostumeS8
     Name: Costume S9
@@ -171226,6 +171268,12 @@ Body:
     View: 3494
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220016
     AegisName: CostumeS10
     Name: Costume S10
@@ -171233,6 +171281,12 @@ Body:
     View: 3495
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220017
     AegisName: CostumeS11
     Name: Costume S11
@@ -171240,6 +171294,12 @@ Body:
     View: 3496
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220018
     AegisName: CostumeS12
     Name: Costume S12
@@ -171247,6 +171307,12 @@ Body:
     View: 3497
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220019
     AegisName: CostumeS13
     Name: Costume S13
@@ -171254,6 +171320,12 @@ Body:
     View: 3498
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220020
     AegisName: CostumeS14
     Name: Costume S14
@@ -171261,6 +171333,12 @@ Body:
     View: 3499
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220021
     AegisName: CostumeS15
     Name: Costume S15
@@ -171268,6 +171346,12 @@ Body:
     View: 3500
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220022
     AegisName: CostumeS16
     Name: Costume S16
@@ -171275,6 +171359,12 @@ Body:
     View: 3545
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220023
     AegisName: CostumeS17
     Name: Costume S17
@@ -171282,6 +171372,12 @@ Body:
     View: 3559
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220024
     AegisName: CostumeS18
     Name: Costume S18
@@ -171289,6 +171385,12 @@ Body:
     View: 3563
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220025
     AegisName: CostumeS19
     Name: Costume S19
@@ -171296,6 +171398,12 @@ Body:
     View: 3566
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220026
     AegisName: CostumeS20
     Name: Costume S20
@@ -171303,6 +171411,12 @@ Body:
     View: 3590
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220027
     AegisName: CostumeS21
     Name: Costume S21
@@ -171310,6 +171424,12 @@ Body:
     View: 3594
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220028
     AegisName: CostumeS22
     Name: Costume S22
@@ -171317,6 +171437,12 @@ Body:
     View: 4008
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220029
     AegisName: CostumeS23
     Name: Costume S23
@@ -171324,6 +171450,12 @@ Body:
     View: 4015
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220030
     AegisName: CostumeS24
     Name: Costume S24
@@ -171331,6 +171463,12 @@ Body:
     View: 4017
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220031
     AegisName: CostumeS25
     Name: Costume S25
@@ -171338,6 +171476,12 @@ Body:
     View: 4023
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220032
     AegisName: CostumeS26
     Name: Costume S26
@@ -171345,6 +171489,12 @@ Body:
     View: 4024
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220033
     AegisName: CostumeS27
     Name: Costume S27
@@ -171352,6 +171502,12 @@ Body:
     View: 4044
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220034
     AegisName: CostumeS28
     Name: Costume S29
@@ -171359,6 +171515,12 @@ Body:
     View: 4061
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220035
     AegisName: CostumeS30
     Name: Costume S30
@@ -171366,6 +171528,12 @@ Body:
     View: 4074
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220036
     AegisName: CostumeS31
     Name: Costume S31
@@ -171373,6 +171541,12 @@ Body:
     View: 4081
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220037
     AegisName: CostumeS32
     Name: Costume S32
@@ -171380,6 +171554,12 @@ Body:
     View: 4096
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220038
     AegisName: CostumeS33
     Name: Costume S33
@@ -171387,6 +171567,12 @@ Body:
     View: 4120
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220039
     AegisName: CostumeS34
     Name: Costume S34
@@ -171394,6 +171580,12 @@ Body:
     View: 4130
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220040
     AegisName: CostumeS35
     Name: Costume S35
@@ -171401,6 +171593,12 @@ Body:
     View: 4195
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220041
     AegisName: CostumeS36
     Name: Costume S36
@@ -171408,3 +171606,798 @@ Body:
     View: 4196
     Locations:
       Costume_Head_Top: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220042
+    AegisName: CostumeS37
+    Name: Costume S37
+    Type: Armor
+    View: 3291
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220043
+    AegisName: CostumeS38
+    Name: Costume S38
+    Type: Armor
+    View: 3292
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220044
+    AegisName: CostumeS39
+    Name: Costume S39
+    Type: Armor
+    View: 3293
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220045
+    AegisName: CostumeS40
+    Name: Costume S40
+    Type: Armor
+    View: 3294
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220046
+    AegisName: CostumeS41
+    Name: Costume S41
+    Type: Armor
+    View: 3295
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220047
+    AegisName: CostumeS42
+    Name: Costume S42
+    Type: Armor
+    View: 3296
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220048
+    AegisName: CostumeS43
+    Name: Costume S43
+    Type: Armor
+    View: 3297
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220049
+    AegisName: CostumeS44
+    Name: Costume S44
+    Type: Armor
+    View: 3344
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220050
+    AegisName: CostumeS45
+    Name: Costume S45
+    Type: Armor
+    View: 3345
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220051
+    AegisName: CostumeS46
+    Name: Costume S46
+    Type: Armor
+    View: 3346
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220052
+    AegisName: CostumeS47
+    Name: Costume S47
+    Type: Armor
+    View: 3347
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220053
+    AegisName: CostumeS48
+    Name: Costume S48
+    Type: Armor
+    View: 3348
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220054
+    AegisName: CostumeS49
+    Name: Costume S49
+    Type: Armor
+    View: 3349
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220055
+    AegisName: CostumeS50
+    Name: Costume S50
+    Type: Armor
+    View: 3351
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220056
+    AegisName: CostumeS51
+    Name: Costume S51
+    Type: Armor
+    View: 3352
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220057
+    AegisName: CostumeS52
+    Name: Costume S52
+    Type: Armor
+    View: 3353
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220058
+    AegisName: CostumeS53
+    Name: Costume S53
+    Type: Armor
+    View: 3354
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220059
+    AegisName: CostumeS54
+    Name: Costume S54
+    Type: Armor
+    View: 3355
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220060
+    AegisName: CostumeS55
+    Name: Costume S55
+    Type: Armor
+    View: 3356
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220061
+    AegisName: CostumeS56
+    Name: Costume S56
+    Type: Armor
+    View: 3382
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220062
+    AegisName: CostumeS57
+    Name: Costume S57
+    Type: Armor
+    View: 3404
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220063
+    AegisName: CostumeS58
+    Name: Costume S58
+    Type: Armor
+    View: 3405
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220064
+    AegisName: CostumeS59
+    Name: Costume S59
+    Type: Armor
+    View: 3409
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220065
+    AegisName: CostumeS60
+    Name: Costume S60
+    Type: Armor
+    View: 3410
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220066
+    AegisName: CostumeS61
+    Name: Costume S61
+    Type: Armor
+    View: 3412
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220067
+    AegisName: CostumeS62
+    Name: Costume S62
+    Type: Armor
+    View: 3476
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220068
+    AegisName: CostumeS63
+    Name: Costume S63
+    Type: Armor
+    View: 3477
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220069
+    AegisName: CostumeS64
+    Name: Costume S64
+    Type: Armor
+    View: 3478
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220070
+    AegisName: CostumeS65
+    Name: Costume S65
+    Type: Armor
+    View: 3479
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220071
+    AegisName: CostumeS66
+    Name: Costume S66
+    Type: Armor
+    View: 3480
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220072
+    AegisName: CostumeS67
+    Name: Costume S67
+    Type: Armor
+    View: 3481
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220073
+    AegisName: CostumeS68
+    Name: Costume S68
+    Type: Armor
+    View: 3482
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220074
+    AegisName: CostumeS69
+    Name: Costume S69
+    Type: Armor
+    View: 3483
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220075
+    AegisName: CostumeS70
+    Name: Costume S70
+    Type: Armor
+    View: 3484
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220076
+    AegisName: CostumeS71
+    Name: Costume S71
+    Type: Armor
+    View: 3485
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220077
+    AegisName: CostumeS72
+    Name: Costume S72
+    Type: Armor
+    View: 3486
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220078
+    AegisName: CostumeS73
+    Name: Costume S73
+    Type: Armor
+    View: 3487
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220079
+    AegisName: CostumeS74
+    Name: Costume S74
+    Type: Armor
+    View: 3547
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAspdRate,1000;
+  - Id: 1220080
+    AegisName: CostumeS75
+    Name: Costume S75
+    Type: Armor
+    View: 3548
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220081
+    AegisName: CostumeS76
+    Name: Costume S76
+    Type: Armor
+    View: 3561
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220082
+    AegisName: CostumeS77
+    Name: Costume S77
+    Type: Armor
+    View: 3562
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220083
+    AegisName: CostumeS78
+    Name: Costume S78
+    Type: Armor
+    View: 3568
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220084
+    AegisName: CostumeS79
+    Name: Costume S79
+    Type: Armor
+    View: 3569
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220085
+    AegisName: CostumeS80
+    Name: Costume S80
+    Type: Armor
+    View: 3571
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220086
+    AegisName: CostumeS81
+    Name: Costume S81
+    Type: Armor
+    View: 3572
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220087
+    AegisName: CostumeS82
+    Name: Costume S82
+    Type: Armor
+    View: 3579
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220088
+    AegisName: CostumeS83
+    Name: Costume S83
+    Type: Armor
+    View: 3580
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220089
+    AegisName: CostumeS84
+    Name: Costume S84
+    Type: Armor
+    View: 3581
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220090
+    AegisName: CostumeS85
+    Name: Costume S85
+    Type: Armor
+    View: 3585
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220091
+    AegisName: CostumeS86
+    Name: Costume S86
+    Type: Armor
+    View: 3587
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220092
+    AegisName: CostumeS87
+    Name: Costume S87
+    Type: Armor
+    View: 3588
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220093
+    AegisName: CostumeS88
+    Name: Costume S88
+    Type: Armor
+    View: 3607
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220094
+    AegisName: CostumeS89
+    Name: Costume S89
+    Type: Armor
+    View: 3608
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220095
+    AegisName: CostumeS90
+    Name: Costume S90
+    Type: Armor
+    View: 3609
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220096
+    AegisName: CostumeS91
+    Name: Costume S91
+    Type: Armor
+    View: 3610
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220097
+    AegisName: CostumeS92
+    Name: Costume S92
+    Type: Armor
+    View: 3611
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220098
+    AegisName: CostumeS93
+    Name: Costume S93
+    Type: Armor
+    View: 4049
+    Locations:
+      Costume_Head_Mid: true
+    Script: |
+      bonus bAllStats,15;
+      bonus bMaxHPrate,10;
+      bonus bMaxSPrate,10;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
+  - Id: 1220099
+    AegisName: Gold_Shadow_Armor
+    Name: Gold Shadow Armor
+    Type: Shadowgear
+    Locations:
+      Shadow_Armor: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,5;
+      bonus bAtkRange,5;
+      bonus bMatkRate,5;
+      bonus bMaxHPrate,40;
+      bonus bMaxSPrate,40;
+  - Id: 1220100
+    AegisName: Gold_Shadow_Weapon
+    Name: Gold Shadow Weapon
+    Type: Shadowgear
+    Locations:
+      Shadow_Weapon: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,5;
+      bonus bAtkRange,5;
+      bonus bMatkRate,5;
+      bonus bMaxHPrate,40;
+      bonus bMaxSPrate,40;
+  - Id: 1220101
+    AegisName: Gold_Shadow_Shield
+    Name: Gold Shadow Shield
+    Type: Shadowgear
+    Locations:
+      Shadow_Shield: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,5;
+      bonus bAtkRange,5;
+      bonus bMatkRate,5;
+      bonus bMaxHPrate,40;
+      bonus bMaxSPrate,40;
+  - Id: 1220102
+    AegisName: Gold_Shadow_Shoes
+    Name: Gold Shadow Shoes
+    Type: Shadowgear
+    Locations:
+      Shadow_Shoes: true
+    EquipLevelMin: 1
+    Script: |
+      bonus bAllStats,5;
+      bonus bAtkRange,5;
+      bonus bMatkRate,5;
+      bonus bMaxHPrate,40;
+      bonus bMaxSPrate,40;

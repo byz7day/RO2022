@@ -1,0 +1,113 @@
+-	script	DrillFull	-1,{
+
+//Fishing rod
+set .@Rod,2764;
+//Fishing Lure
+set .@Lure,2775;
+//Auto-Fish
+set .@Auto,1;
+//Auto-Fish on Fail
+set .@AutoFail,1;
+Drill:
+	if (isequipped(.@Rod)) && (isequipped(.@Lure)){
+		specialeffect EF_BUBBLE,"Fishing Hole";
+		soundeffect "fishing_wait.wav",0;
+		dispbottom "[ระบบ] กำลังเริ่มตกปลา";
+		set .@dcast,15;
+			if (isequipped(2550)) { //Fisher's Muffler
+				set .@dcast,.@dcast - 2;
+			}
+			if (isequipped(2443)) { //Fisher's Boots
+				set .@dcast,.@dcast - 2;
+			}
+			if (isequipped(2764)) { //Fishing Pole
+				set .@dcast,.@dcast - 3;
+			}
+			if (isequipped(2775)) { //Fishing Lure
+				set .@dcast,.@dcast - 1;
+			}
+		progressbar "ffffff",.@dcast;
+		if (rand(1,300) == 2){ //โอกาศ 1ใน 400
+		setarray .@RareD[0],61002,61001,30011,30012,30013,30014,30015,30016,30017;
+		set .@RareCatchD, .@RareD[rand(getarraysize(.@RareD))];
+		getitem .@RareCatchD,1; //Reward
+		specialeffect2 EF_TEMP_OK;
+		specialeffect2 410;
+		//soundeffectall "fishing_m_success.wav",0,strcharinfo(3);
+		soundeffect "fishing_m_success.wav",0;
+		mapannounce strcharinfo(3),"ว้าว...ยินดีด้วย คุณ  [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatchD)+" จากการตกปลา",bc_map,"0x66FF99";
+		if(.@Auto==1){
+		goto Drill;}else{
+		end;}
+		}
+			if (rand(1,6) == 1) ||(rand(1,6) == 3) || (rand(1,6) == 6){
+			setarray .@CatchD[0],579,908,909,963,956,6049,918,960,910,938,624,35050,35051,35052,35053,35054,35055,35056,991,717,713,962,943,514,512,35057;// List of Junk/Other
+			set .@CatchRandD,.@CatchD[rand(getarraysize(.@CatchD))];
+			getitem .@CatchRandD,1;
+			}
+			else {
+			soundeffect "fishing_m_failure.wav",0;
+			dispbottom "[Fishing] ว้าแย่จังเลย...คุณดูเหมือนคุณตกไม่ได้อะไรเลย";
+			if(.@AutoFail == 1){
+			goto Drill;} else{
+			end;}
+			}
+		if (rand(1,700) == 3){ //โอกาศ 1ใน 1000
+		setarray .@RareD[0],35005,35006,35007,35008,35009,35010,61004,61006,61007,61008,61012;
+		set .@RareCatchD, .@RareD[rand(getarraysize(.@RareD))];
+		getitem .@RareCatchD,1; //Reward
+		specialeffect2 410;
+		soundeffect "fishing_m_success.wav",0;
+		mapannounce strcharinfo(3),"ว้าวว้าวว้าว...ยินดีด้วย คุณ [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatchD)+" จากการตกปลา",bc_map,"0x66FF99";
+		}
+		if(.@Auto == 1){
+		goto Drill;} else{
+		end;}
+		}
+	else {
+	dispbottom "[ระบบ] คุณจำเป็นต้องมีอุปกรณ์ขุดน้ำมัน...........................";
+	end;
+	}
+}
+
+
+morocc,122,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#04	844
+morocc,123,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#05	844
+morocc,124,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#06	844
+morocc,125,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#07	844
+morocc,126,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#08	844
+morocc,127,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#09	844
+morocc,128,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#010	844
+morocc,129,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#011	844
+morocc,130,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#012	844
+morocc,131,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#013	844
+morocc,132,113,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#014	844
+/*morocc,196,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#015	844
+morocc,200,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#016	844
+morocc,204,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#017	844
+morocc,208,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#018	844
+morocc,212,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#019	844
+morocc,148,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#020	844
+morocc,144,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#021	844
+morocc,140,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#022	844
+morocc,136,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#023	844
+morocc,132,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#024	844
+morocc,128,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#025	844
+morocc,124,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#026	844
+morocc,120,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#027	844
+morocc,116,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#028	844
+morocc,112,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#029	844
+morocc,108,121,0	duplicate(DrillFull)	จุดขุดบ่อน้ำมัน#030	844*/
+
+
+
+
+morocc,133,111,4	script	ขายของขุดน้ำมัน	735,{
+callshop "SHOPDRILL",1;
+end;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ ขายของขุดน้ำมัน",0;
+	end;
+}
+-	shop	SHOPDRILL	735,2764:10000000,2775:10000000,2550:10000000,2443:10000000

@@ -51059,41 +51059,23 @@ Body:
     AegisName: Cash_Coin
     Name: Cash Coin
     Type: Usable
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    Script: |
+      dispbottom "คุณได้รับ CASH จำนวน "+(countitem(1220005)+1)+" P";
+      set #cash_points,#cash_points +(countitem(1220005)+1);
+      delitem 1220005,countitem(1220005);
   - Id: 1220006
     AegisName: Donate_Coin
     Name: Donate Coin
     Type: Usable
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    Script: |
+      dispbottom "คุณได้รับ Donate จำนวน "+(countitem(1220006)+1)+" P";
+      set #dc_points,#dc_points +(countitem(1220006)+1);
+      delitem 1220006,countitem(1220006);
   - Id: 1220007
     AegisName: MVP_Coin
     Name: MVP Coin
     Type: Usable
-    Trade:
-      Override: 100
-      NoDrop: true
-      NoTrade: true
-      NoSell: true
-      NoCart: true
-      NoStorage: true
-      NoGuildStorage: true
-      NoMail: true
-      NoAuction: true
+    Script: |
+      dispbottom "คุณได้รับ MVP จำนวน "+(countitem(1220007)+1)+" P";
+      set #mvp_points,#mvp_points +(countitem(1220007)+1);
+      delitem 1220007,countitem(1220007);

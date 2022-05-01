@@ -7,7 +7,7 @@ morocc,156,78,4	script	item beginner	512,{
 	itembeginner:
 	if(itembeginner2 != 1){
 		set itembeginner2,1;
-		getitem 7227,100;
+		getitem 1220079,1;
 		announce "ระบบแจกของ : ผู้เล่นใหม่ [ "+ strcharinfo(0) +" ] ได้รับของผู้เล่นใหม่แล้ว ยินดีด้วยไอโง่ !!",0;
 	} else {
 		mes "มึงรับของไปแล้วไอโง่ อย่าเยอะ ไอสมองความจำน้อย";
