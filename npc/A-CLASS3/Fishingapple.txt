@@ -27,23 +27,34 @@ Fish:
 				set .@fcast,.@fcast - 1;
 			}
 		progressbar "ffffff",.@fcast;
-		if (rand(1,300) == 2){ //โอกาศ 1ใน 400
-		setarray .@Rare[0],61002,61001,30011,30012,30013,30014,30015,30016,30017;
+		if (rand(1,100) <= 5){
+			setarray .@Limited[0],1220112,1220113,1220114; //ของสุ่มแจก
+			set .@Limited_Reward, .@Limited[rand(getarraysize(.@Limited))];
+			getitem .@Limited_Reward,1; //จำนวนแจก
+			specialeffect2 410;
+			soundeffect "fishing_m_success.wav",0;
+			announce "ไอแม่เย็ด.... ยินดีด้วย คุณ [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@Limited_Reward)+" จากการตกปลา",0,"0x66FF00";
+			if(.@AutoFail == 1){
+			goto Fish;} else{
+			end;}
+		}
+		if (rand(1,100) <= 20){ //โอกาศ 20ใน 250
+		setarray .@Rare[0],1220103,1220103,1220103,1220104,1220104,1220104,1220105,1220105,1220105,1220106,1220106,1220106,1220107,1220107,1220107,1220108,1220108,1220108,1220109,1220109,1220109,1220110,1220110,1220110,1220111,1220111,1220111;
 		set .@RareCatch, .@Rare[rand(getarraysize(.@Rare))];
 		getitem .@RareCatch,1; //Reward
-		specialeffect2 EF_TEMP_OK;
-		specialeffect2 410;
-		//soundeffectall "fishing_m_success.wav",0,strcharinfo(3);
 		soundeffect "fishing_m_success.wav",0;
-		mapannounce strcharinfo(3),"ว้าว...ยินดีด้วย คุณ  [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatch)+" จากการตกปลา",bc_map,"0x66FF99";
-		if(.@Auto==1){
-		goto Fish;}else{
+		mapannounce strcharinfo(3),"ว้าวว้าวว้าว...ยินดีด้วย คุณ [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatch)+" จากการตกปลา",bc_map,"0x66FF00";
+		if(.@AutoFail == 1){
+		goto Fish;} else{
 		end;}
 		}
-			if (rand(1,6) == 1) ||(rand(1,6) == 3) || (rand(1,6) == 6){
-			setarray .@Catch[0],579,908,909,963,956,6049,918,960,910,938,624,35050,35051,35052,35053,35054,35055,35056,991,717,713,962,943,514,512,35057;// List of Junk/Other
+			if ((rand(1,100) >= 50 )) {
+			setarray .@Catch[0],2791,579,624,5065,6096,7083,6039,25895,25893;// List of Junk/Other
 			set .@CatchRand,.@Catch[rand(getarraysize(.@Catch))];
 			getitem .@CatchRand,1;
+			if(.@AutoFail == 1){
+			goto Fish;} else{
+			end;}
 			}
 			else {
 			soundeffect "fishing_m_failure.wav",0;
@@ -52,18 +63,7 @@ Fish:
 			goto Fish;} else{
 			end;}
 			}
-		if (rand(1,700) == 3){ //โอกาศ 1ใน 1000
-		setarray .@Rare[0],35005,35006,35007,35008,35009,35010,61004,61006,61007,61008,61012;
-		set .@RareCatch, .@Rare[rand(getarraysize(.@Rare))];
-		getitem .@RareCatch,1; //Reward
-		specialeffect2 410;
-		soundeffect "fishing_m_success.wav",0;
-		mapannounce strcharinfo(3),"ว้าวว้าวว้าว...ยินดีด้วย คุณ [ "+strcharinfo(0)+" ] ได้รับ "+getitemname(.@RareCatch)+" จากการตกปลา",bc_map,"0x66FF99";
-		}
-		if(.@Auto == 1){
-		goto Fish;} else{
-		end;}
-		}
+	}
 	else {
 	dispbottom "[ระบบ] คุณจำเป็นต้องมีเบ็ดตกปลาและเหยื่อตกปลาก่อน...";
 	end;

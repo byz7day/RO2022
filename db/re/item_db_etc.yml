@@ -63524,3 +63524,63 @@ Body:
     EquipLevelMin: 1
     Script: |
       bonus bAtkEle,Ele_Holy;
+  - Id: 1220103
+    AegisName: WOE_CRAFT_1
+    Name: ชิ้นส่วนเท้า WOE [ขั้นต่ำ]
+    Type: Etc
+    Weight: 10
+  - Id: 1220104
+    AegisName: WOE_CRAFT_2
+    Name: ชิ้นส่วนเท้า WOE [ขั้นกลาง]
+    Type: Etc
+    Weight: 10
+  - Id: 1220105
+    AegisName: WOE_CRAFT_3
+    Name: ชิ้นส่วนเท้า WOE [ขั้นสูง]
+    Type: Etc
+    Weight: 10
+  - Id: 1220106
+    AegisName: WOE_CRAFT_4
+    Name: ชิ้นส่วนชุด WOE [ขั้นต่ำ]
+    Type: Etc
+    Weight: 10
+  - Id: 1220107
+    AegisName: WOE_CRAFT_5
+    Name: ชิ้นส่วนชุด WOE [ขั้นกลาง]
+    Type: Etc
+    Weight: 10
+  - Id: 1220108
+    AegisName: WOE_CRAFT_6
+    Name: ชิ้นส่วนชุด WOE [ขั้นสูง]
+    Type: Etc
+    Weight: 10
+  - Id: 1220109
+    AegisName: WOE_CRAFT_7
+    Name: ชิ้นส่วนมัฟ WOE [ขั้นต่ำ]
+    Type: Etc
+    Weight: 10
+  - Id: 1220110
+    AegisName: WOE_CRAFT_8
+    Name: ชิ้นส่วนมัฟ WOE [ขั้นกลาง]
+    Type: Etc
+    Weight: 10
+  - Id: 1220111
+    AegisName: WOE_CRAFT_9
+    Name: ชิ้นส่วนมัฟ WOE [ขั้นสูง]
+    Type: Etc
+    Weight: 10
+  - Id: 1220112
+    AegisName: WOE_CRAFT_Full_Shoes
+    Name: ชิ้นส่วนเท้า WOE [ขั้นยอด]
+    Type: Etc
+    Weight: 10
+  - Id: 1220113
+    AegisName: WOE_CRAFT_Full_Suit
+    Name: ชิ้นส่วนชุด WOE [ขั้นยอด]
+    Type: Etc
+    Weight: 10
+  - Id: 1220114
+    AegisName: WOE_CRAFT_Full_Muff
+    Name: ชิ้นส่วนมัฟ WOE [ขั้นยอด]
+    Type: Etc
+    Weight: 10
