@@ -1,0 +1,205 @@
+morocc,177,88,4	script	รวมลงดัน#1	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอ";
+	menu
+	"Enter",enterold,
+	"cancel",oling;
+	enterold:
+	warp "06guild_02",49,45;
+	end;
+	oling:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ รวมดัน",0;
+	end;
+}
+
+//orc's memory dun
+06guild_02,32,62,4	script	รวมลงดัน#2	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "gef_fild10",243,198;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ orc's memory dun",0;
+	end;
+}
+
+//Nidhoggr's Nest
+06guild_02,35,65,4	script	รวมลงดัน#3	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "nyd_dun02",98,196;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Nidhoggr's Nest",0;
+	end;
+}
+
+//Endless Tower
+06guild_02,38,68,4	script	รวมลงดัน#4	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "alberta",218,77;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Endless Tower",0;
+	end;
+}
+
+//Sealed Shrine
+06guild_02,29,59,4	script	รวมลงดัน#5	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "monk_test",305,145;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Sealed Shrine",0;
+	end;
+}
+
+//Airship Assault
+06guild_02,61,68,4	script	รวมลงดัน#6	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "dali02",137,83;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Airship Assault",0;
+	end;
+}
+
+//Bakonawa Lake
+06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "ma_scene01",174,174;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Bakonawa Lake",0;
+	end;
+}
+
+//Ghost Palace fix
+06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "ma_scene01",174,174;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Ghost Palace",0;
+	end;
+}
+
+//Old Glast Heim fix
+06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "ma_scene01",174,174;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Old Glast Heim",0;
+	end;
+}
+//Old Glast Heim fix
+06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "ma_scene01",174,174;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Old Glast Heim",0;
+	end;
+}
+//Wolfchev's Laboratory fix
+06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "ma_scene01",174,174;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Wolfchev's Laboratory",0;
+	end;
+}
+//Room of Consciousness fix
+06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
+	menu
+	"Enter",enterdun,
+	"cancel",canceldun;
+	enterdun:
+	warp "ma_scene01",174,174;
+	end;
+	canceldun:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ Room of Consciousness",0;
+	end;
+}

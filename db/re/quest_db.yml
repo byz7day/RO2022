@@ -10308,6 +10308,9 @@ Body:
   - Id: 16390
     Title: Standby
     TimeLimit: 4h
+  - Id: 16400
+    Title: Road of Battle
+    TimeLimit: +23h
   - Id: 16405
     Title: Happy Egg Exploration-Standby
     TimeLimit: 4h

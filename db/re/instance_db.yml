@@ -397,3 +397,11 @@ Body:
       Map: 1@herbs
       X: 45
       Y: 208
+  - Id: 52
+    Name: Edda Bio
+    Enter:
+      Map: 1@gol1
+      X: 196
+      Y: 32
+    AdditionalMaps:
+      1@gol2: true
