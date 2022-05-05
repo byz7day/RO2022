@@ -1,0 +1,178 @@
+//--------------------------------------------------------------------sกาชาใบตีบวกs----------------------------------------------------------------------------------//
+morocc,187,93,4	script	ตู้สุ่มกาชาใบตีบวก	843,{
+	set .@delay, 3;	// ดีเลย์การใช้งาน (วินาที)
+	set .@cast, 2;	// ระยะเวลาร่าย (วินาที)
+	set .@countitem, 10; //จำนวนของที่ใช้สุ่ม
+	mes "ใช้  Donate Point 10 ea ในการหมุนกาชา";
+	mes "^0055FF"+"======================="+"^000000";
+	mes "^0055FF"+"จำนวน DC ที่มี : "+#dc_points+" Point"+"^000000";
+	mes "^0055FF"+"======================="+"^000000";
+	mes "ระบบการสุ่มจะถูกตั้งตามเงื่อนไขดังต่อนี้ไป";
+	mes "ใบกันแตก 5 เรท 0.8%";
+	mes "ใบกันแตก 6 เรท 0.7%";
+	mes "ใบกันแตก 7 เรท 0.6%";
+	mes "ใบกันแตก 8 เรท 0.5%";
+	mes "ใบกันแตก 9 เรท 0.4%";
+	mes "ใบกันแตก 10 เรท 0.3%";
+	mes "ใบกันแตก 11 เรท 0.2%";
+	mes "ใบกันแตก 11 เรท 0.1%";
+	mes "=======================";
+	menu
+	"random",random,
+	"cancel",cancelrand;
+	random:
+	if (#dc_points < 10){
+		dispbottom "[Gacha] คุณไม่มี donate coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+	}
+	if ( gettimetick(2)-@delay_random < .@delay ){
+		dispbottom "[Gacha] โปรดรออีก "+(.@delay-(gettimetick(2)-@delay_random))+" วินาทีถึงจะใช้งานได้อีกครั้งนะคะ";
+	}
+	else {
+		set #dc_points,#dc_points - .@countitem;
+		progressbar "0x007000", .@cast;
+		set @delay_random, gettimetick(2);
+		if((rand(1,10000) <= 80)){
+			setarray .@ticket_11[0],6456,6457,6456,6457,6456,6457,6456,6457,6456,6457,6456,6457;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 70)){
+			setarray .@ticket_11[0],6231,6235,6231,6235,6231,6235,6231,6235,6231,6235,6231,6235;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 60)){
+			setarray .@ticket_11[0],6230,6234,6230,6234,6230,6234,6230,6234,6230,6234,6230,6234;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 50)){
+			setarray .@ticket_11[0],6229,6233,6229,6233,6229,6233,6229,6233,6229,6233,6229,6233;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 40)){
+			setarray .@ticket_11[0],6228,6232,6228,6232,6228,6232,6228,6232,6228,6232,6228,6232;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 30)){
+			setarray .@ticket_11[0],6993,6994,6993,6994,6993,6994,6993,6994,6993,6994,6993,6994;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 20)){
+			setarray .@ticket_11[0],6238,6239,6238,6239,6238,6239,6238,6239,6238,6239,6238,6239;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) <= 10)){
+			setarray .@ticket_11[0],6584,6585,6584,6585,6584,6585,6584,6585,6584,6585,6584,6585;
+			set .@refine_ticket_11, .@ticket_11[rand(getarraysize(.@ticket_11))];
+			getitem .@refine_ticket_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@refine_ticket_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) > 80)){
+			dispbottom "[Gacha] ว้าแย่จังเลย...คุณดูเหมือนคุณไม่ได้อะไรเลย";
+		}
+	}
+	cancelrand:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ เรียบร้อย",0;
+	end;
+}
+//--------------------------------------------------------------------sกาชาของOCPs----------------------------------------------------------------------------------//
+morocc,186,81,4	script	ตู้สุ่มกาชาของOCP	843,{
+	set .@delay, 3;	// ดีเลย์การใช้งาน (วินาที)
+	set .@cast, 2;	// ระยะเวลาร่าย (วินาที)
+	set .@countitem, 10; //จำนวนของที่ใช้สุ่ม
+	mes "ใช้  Cash Point 10 ea ในการหมุนกาชา";
+	mes "^0055FF"+"======================="+"^000000";
+	mes "^0055FF"+"จำนวน CC ที่มี : "+#cash_points+" Point"+"^000000";
+	mes "^0055FF"+"======================="+"^000000";
+	mes "ระบบการสุ่มจะถูกตั้งตามเงื่อนไขดังต่อนี้ไป";
+	mes "ของOCP โกงสัสๆ เรท 0.5%";
+	mes "=======================";
+	menu
+	"random",random,
+	"cancel",cancelrand;
+	random:
+	if (#cash_points < 10){
+		dispbottom "[Gacha] คุณไม่มี donate coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+	}
+	if ( gettimetick(2)-@delay_random < .@delay ){
+		dispbottom "[Gacha] โปรดรออีก "+(.@delay-(gettimetick(2)-@delay_random))+" วินาทีถึงจะใช้งานได้อีกครั้งนะคะ";
+	}
+	else {
+		set #cash_points,#cash_points - .@countitem;
+		progressbar "0x007000", .@cast;
+		set @delay_random, gettimetick(2);
+		if((rand(1,10000) <= 50)){
+			setarray .@OCP_11[0],16051,28717,2589,9024,28910,20952,32258,15405,28533,28394,16051,28717,2589,9024,28910,20952,32258,15405,28533,28394,16051,28717,2589,9024,28910,20952,32258,15405,28533,28394;
+			set .@item_OCP_11, .@OCP_11[rand(getarraysize(.@OCP_11))];
+			getitem .@item_OCP_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@item_OCP_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) > 50)){
+			dispbottom "[Gacha] ว้าแย่จังเลย...คุณดูเหมือนคุณไม่ได้อะไรเลย";
+		}
+	}
+	cancelrand:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ เรียบร้อย",0;
+	end;
+}
+//--------------------------------------------------------------------sกาชาของOCPs----------------------------------------------------------------------------------//
+morocc,192,91,4	script	ตู้สุ่มกาชาคอสpremium	843,{
+	set .@delay, 3;	// ดีเลย์การใช้งาน (วินาที)
+	set .@cast, 2;	// ระยะเวลาร่าย (วินาที)
+	set .@countitem, 10; //จำนวนของที่ใช้สุ่ม
+	mes "ใช้  Cash Point 10 ea ในการหมุนกาชา";
+	mes "^0055FF"+"======================="+"^000000";
+	mes "^0055FF"+"จำนวน CC ที่มี : "+#cash_points+" Point"+"^000000";
+	mes "^0055FF"+"======================="+"^000000";
+	mes "ระบบการสุ่มจะถูกตั้งตามเงื่อนไขดังต่อนี้ไป";
+	mes "คอสpremium โกงสัสๆ เรท 0.5%";
+	mes "=======================";
+	menu
+	"random",random,
+	"cancel",cancelrand;
+	random:
+	if (#cash_points < 10){
+		dispbottom "[Gacha] คุณไม่มี donate coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+	}
+	if ( gettimetick(2)-@delay_random < .@delay ){
+		dispbottom "[Gacha] โปรดรออีก "+(.@delay-(gettimetick(2)-@delay_random))+" วินาทีถึงจะใช้งานได้อีกครั้งนะคะ";
+	}
+	else {
+		set #cash_points,#cash_points - .@countitem;
+		progressbar "0x007000", .@cast;
+		set @delay_random, gettimetick(2);
+		if((rand(1,10000) <= 50)){
+			setarray .@premium_11[0],16051,28717,2589,9024,28910,20952,32258,15405,28533,28394;
+			set .@item_premium_11, .@premium_11[rand(getarraysize(.@premium_11))];
+			getitem .@item_premium_11,1; //Reward
+			mapannounce strcharinfo(3),"ไอแม่ย้อย [ "+strcharinfo(0)+" ] สุ่มได้ "+getitemname(.@item_premium_11)+" ดวงแม่งทำด้วยไรว่ะ",bc_map,"0x66FF00";
+		}
+		if((rand(1,10000) > 50)){
+			dispbottom "[Gacha] ว้าแย่จังเลย...คุณดูเหมือนคุณไม่ได้อะไรเลย";
+		}
+	}
+	cancelrand:
+	close;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ ยังไม่ตั้งค่าใด",0;
+	end;
+}

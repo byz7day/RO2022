@@ -92287,20 +92287,289 @@ Body:
 #    AegisName: STING_H
 #  - Id: 20371
 #    AegisName: RAGGED_ZOMBIE_H
-#  - Id: 20372
-#    AegisName: BLAZZER_H
-#  - Id: 20373
-#    AegisName: NIGHTMARE_TERROR_H
-#  - Id: 20374
-#    AegisName: DELETER1_H
-#  - Id: 20375
-#    AegisName: DELETER2_H
-#  - Id: 20376
-#    AegisName: EXPLOSION_H
-#  - Id: 20377
-#    AegisName: KAHO_H
-#  - Id: 20378
-#    AegisName: LAVA_GOLEM_H
+  - Id: 20372
+    AegisName: BLAZZER_H
+    Name: Rigid Blazer
+    Level: 178
+    Hp: 1522580
+    BaseExp: 138416
+    JobExp: 96891
+    Attack: 2001
+    Attack2: 2864
+    Defense: 397
+    MagicDefense: 70
+    Str: 97
+    Agi: 96
+    Vit: 73
+    Int: 131
+    Dex: 131
+    Luk: 67
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demon
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 180
+    AttackDelay: 1732
+    AttackMotion: 1332
+    DamageMotion: 540
+    Ai: 20
+    Modes:
+      Detector: true
+    Drops:
+      - Item: White_Herb
+        Rate: 100
+      - Item: Burning_Heart
+        Rate: 100
+      - Item: Live_Coal
+        Rate: 100
+      - Item: Rigid_Blazer_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20373
+    AegisName: NIGHTMARE_TERROR_H
+    Name: Rigid Nightmare Terror
+    Level: 179
+    Hp: 1523377
+    BaseExp: 138489
+    JobExp: 96942
+    Attack: 1709
+    Attack2: 2434
+    Defense: 242
+    MagicDefense: 75
+    Str: 81
+    Agi: 149
+    Vit: 21
+    Int: 186
+    Dex: 129
+    Luk: 61
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Large
+    Race: Demon
+    Element: Dark
+    ElementLevel: 3
+    WalkSpeed: 165
+    AttackDelay: 1216
+    AttackMotion: 816
+    DamageMotion: 432
+    Ai: 04
+    Modes:
+      Detector: true
+    Drops:
+      - Item: Burning_Horse_Shoe
+        Rate: 100
+      - Item: Siege_Supply_Box
+        Rate: 100
+      - Item: Lava_Leather_Manteau
+        Rate: 100
+      - Item: Rigid_Nightmare_Terror_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20374
+    AegisName: DELETER1_H
+    Name: Rigid Sky Deleter
+    Level: 174
+    Hp: 1486915
+    BaseExp: "135174 "
+    JobExp: 94622
+    Attack: 2308
+    Attack2: 3317
+    Defense: 363
+    MagicDefense: 64
+    Str: 116
+    Agi: 109
+    Vit: 63
+    Int: 76
+    Dex: 119
+    Luk: 47
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Dragon
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 175
+    AttackDelay: 1020
+    AttackMotion: 720
+    DamageMotion: 384
+    Ai: 13
+    Drops:
+      - Item: Lava_Leather_Robe
+        Rate: 100
+      - Item: Dragon's_Skin
+        Rate: 100
+      - Item: Dragon_Canine
+        Rate: 100
+      - Item: Dragon_Train
+        Rate: 100
+      - Item: Rigid_Sky_Deleter_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20375
+    AegisName: DELETER2_H
+    Name: Rigid Earth Deleter
+    Level: 173
+    Hp: 1486915
+    BaseExp: 134397
+    JobExp: 94078
+    Attack: 2294
+    Attack2: 3299
+    Defense: 362
+    MagicDefense: 66
+    Str: 116
+    Agi: 109
+    Vit: 63
+    Int: 76
+    Dex: 119
+    Luk: 47
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Dragon
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 175
+    AttackDelay: 1024
+    AttackMotion: 624
+    DamageMotion: 336
+    Ai: 13
+    Drops:
+      - Item: Dragon's_Skin
+        Rate: 100
+      - Item: Dragon_Canine
+        Rate: 100
+      - Item: Dragon_Train
+        Rate: 100
+      - Item: Rigid_Earth_Deleter_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20376
+    AegisName: EXPLOSION_H
+    Name: Rigid Explosion
+    Level: 171
+    Hp: 1457859
+    BaseExp: 132533
+    JobExp: 92773
+    Attack: 1781
+    Attack2: 2542
+    Defense: 288
+    MagicDefense: 68
+    Str: 89
+    Agi: 117
+    Vit: 39
+    Int: 136
+    Dex: 97
+    Luk: 69
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Small
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 1
+    WalkSpeed: 165
+    AttackDelay: 1260
+    AttackMotion: 960
+    DamageMotion: 336
+    Ai: 04
+    Drops:
+      - Item: Hot_Hair
+        Rate: 100
+      - Item: Burning_Heart
+        Rate: 100
+      - Item: Wing_Of_Red_Bat
+        Rate: 100
+      - Item: Rigid_Explosion_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20377
+    AegisName: KAHO_H
+    Name: Rigid Kaho
+    Level: 173
+    Hp: 1473468
+    BaseExp: 133952
+    JobExp: 93766
+    Attack: 1929
+    Attack2: 2760
+    Defense: 260
+    MagicDefense: 70
+    Str: 96
+    Agi: 130
+    Vit: 29
+    Int: 149
+    Dex: 112
+    Luk: 51
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Formless
+    Element: Dark
+    ElementLevel: 2
+    WalkSpeed: 150
+    AttackDelay: 1700
+    AttackMotion: 1000
+    DamageMotion: 500
+    Ai: 04
+    Modes:
+      Detector: true
+    Drops:
+      - Item: Lava_Leather_Hood
+        Rate: 100
+      - Item: Burning_Heart
+        Rate: 100
+      - Item: Fire_Scroll_1_3
+        Rate: 100
+      - Item: Rigid_Kaho_Card
+        Rate: 1
+        StealProtected: true
+  - Id: 20378
+    AegisName: LAVA_GOLEM_H
+    Name: Rigid Lava Golem
+    Level: 177
+    Hp: 1529661
+    BaseExp: 139060
+    JobExp: 97342
+    Attack: 2439
+    Attack2: 3510
+    Defense: 714
+    MagicDefense: 63
+    Str: 121
+    Agi: 67
+    Vit: 179
+    Int: 76
+    Dex: 97
+    Luk: 45
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 12
+    Size: Large
+    Race: Formless
+    Element: Neutral
+    ElementLevel: 2
+    WalkSpeed: 400
+    AttackDelay: 2190
+    AttackMotion: 2040
+    DamageMotion: 336
+    Ai: 09
+    Drops:
+      - Item: Cold_Magma
+        Rate: 100
+      - Item: Lava_Leather_Boots
+        Rate: 100
+      - Item: Lava_Leather_Muffler
+        Rate: 100
+      - Item: White_Herb
+        Rate: 100
+      - Item: Rigid_Lava_Golem_Card
+        Rate: 1
+        StealProtected: true
 #  - Id: 20379
 #    AegisName: ICE_GHOST_H
 #  - Id: 20380
@@ -92453,8 +92722,48 @@ Body:
 #    AegisName: YOYO_Z
 #  - Id: 20418
 #    AegisName: ARGOS_Z
-#  - Id: 20419
-#    AegisName: MUSPELLSKOLL_H
+  - Id: 20419
+    AegisName: MUSPELLSKOLL_H
+    Name: Rigid Muspellskoll
+    Level: 188
+    Hp: 48530254
+    BaseExp: 9706050
+    JobExp: 6794235
+    MvpExp: 9706050
+    Attack: 4524
+    Attack2: 6583
+    Defense: 791
+    MagicDefense: 331
+    Str: 219
+    Agi: 132
+    Vit: 201
+    Int: 188
+    Dex: 177
+    Luk: 66
+    AttackRange: 1
+    SkillRange: 10
+    ChaseRange: 14
+    Size: Medium
+    Race: Demon
+    Element: Fire
+    ElementLevel: 3
+    WalkSpeed: 500
+    AttackDelay: 608
+    AttackMotion: 408
+    DamageMotion: 336
+    Ai: 21
+    Class: Boss
+    Modes:
+      Mvp: true
+    MvpDrops:
+      - Item: Old_Card_Album
+        Rate: 1000
+      - Item: Flame_Heart
+        Rate: 5000
+    Drops:
+      - Item: Rigid_Muspellskoll_Card
+        Rate: 1
+        StealProtected: true
 #    DamageTaken: 10
 #  - Id: 20420
 #    AegisName: WANDER_MAN_H
