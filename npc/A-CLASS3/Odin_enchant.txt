@@ -1,0 +1,477 @@
+morocc,139,72,4	script	Susan Grey#class3	4_F_HUWOMAN,{
+	disable_items;
+	if (MaxWeight - Weight < 1000) {
+		mes "[ Susan Gray ]";
+		mes "กระเป๋าของคุณหนักเกินไป ลดน้ำหนักและกลับมา.";
+		close;
+	}
+	mes "[ Susan Gray ]";
+	mes "ฉันชื่อซูซาน เกรย์ กำลังศึกษาเกี่ยวกับวัตถุโบราณของโอดิน คุณต้องการความช่วยเหลือจากฉันไหม";
+	next;
+	switch (select("มาทำอะไรที่นี่?:ทำออฟ:รีเซ็ทออฟ")) {
+		case 1:
+			mes "[ Susan Gray ]";
+			mes "ฉันสามารถจัดการกับพวกมันได้ด้วยมือของฉันเอง ดังนั้นตอนนี้ฉันสามารถออฟพวกมันได้";
+			next;
+			if (select("Show me what you can do") == 1) {
+				mes "[ Susan Gray ]";
+				mes "[<ITEM>Str Soutane<INFO>15397</INFO></ITEM>]";
+				mes "[<ITEM>Agi Soutane<INFO>15398</INFO></ITEM>]";
+				mes "[<ITEM>Vit Soutane<INFO>15399</INFO></ITEM>]";
+				mes "[<ITEM>Int Soutane<INFO>15401</INFO></ITEM>]";
+				mes "[<ITEM>Dex Soutane<INFO>15400</INFO></ITEM>]";
+				mes "[<ITEM>Luk Soutane<INFO>15402</INFO></ITEM>]";
+				mes "[<ITEM>Clergy's Boots<INFO>22209</INFO></ITEM>]";
+				mes "[<ITEM>Clergy's Manteau<INFO>20947</INFO></ITEM>]";
+				next;
+				mes "[ Susan Gray ]";
+				mes "นี่คือสิ่งที่ฉันสามารถจัดการได้";
+				next;
+				mes "[ Susan Gray ]";
+				mes "โดยทั่วไปคุณต้องมี";
+				mes "3x [<ITEM>Angel's Dream<INFO>25767</INFO></ITEM>]";
+				mes "และ 500,000 Zeny";
+				mes "มูลค่าของวัสดุ";
+				next;
+				mes "[ Susan Gray ]";
+				mes "อย่างไรก็ตาม หากได้รับการRefindถึง 9 ขึ้นไป";
+				mes "คุณสามารถออฟได้โดยใช้ [<ITEM>Silvervine Fruit<INFO>6909</INFO></ITEM>] และแน่นอนว่าคุณจะต้องตั้งเป้าเพื่อตัวเลือกที่ดีกว่า";
+				next;
+				mes "[ Susan Gray ]";
+				mes "สำหรับ 500,000 Zeny,";
+				mes "หรือ 1x [<ITEM>Silvervine Fruit<INFO>6909</INFO></ITEM>] คุณสามารถรีเซ็ตออฟได้ มีโอกาส 30% ที่จะล้มเหลวเมื่อรีเซ็ตด้วย Zeny ดังนั้นโปรดจำไว้เสมอ";
+				close;
+			}
+		case 2:
+			mes "[ Susan Gray ]";
+			mes "อยากให้ฉันทำงานเกี่ยวกับอุปกรณ์ตัวไหน?";
+			next;
+			switch (select("ยกเลิก:ชุด:มัฟ:รองเท้า")) {
+				case 1:
+					mes "[ Susan Gray ]";
+					mes "กลับมาได้ทุกเมื่อที่ต้องการ";
+					close;
+				case 2:
+					.@part = EQI_ARMOR;
+					break;
+				case 3:
+					.@part = EQI_GARMENT;
+					break;
+				case 4:
+					.@part = EQI_SHOES;
+					break;
+			}
+			for (.@i = 0; .@i < MAX_ITEM_RDM_OPT; .@i++) {
+				if ( getequiprandomoption(.@part, .@i, ROA_ID)) {
+					mes "^ff0000Random option found. The equipment cannot be enchanted.^000000";
+					close;
+				}
+			}
+			.@equip_id = getequipid(.@part);
+			switch (.@equip_id) {
+				case 15397:
+				case 15398:
+				case 15399:
+				case 15400:
+				case 15401:
+				case 15402:
+				case 20947:
+				case 22209:
+					break;
+				case -1:
+					mes "[ Susan Gray ]";
+					mes "คุณไม่มีของสวมใส่?";
+					close;
+				default:
+					mes "[ Susan Gray ]";
+					mes "อุปกรณ์นี้ไม่ใช่รายการที่สาขาสามารถดำเนินการได้.";
+					close;
+			}
+			.@refine = getequiprefinerycnt(.@part);
+			set .@itemused, 25767;
+			set .@cost, 3;
+			set .@zeny_cost, 500000;
+			mes "[ Susan Gray ]";
+			mes "[<ITEM>"+getitemname(.@equip_id)+"<INFO>"+.@equip_id+"</INFO></ITEM>]";
+			mes "[<ITEM>Angel's Dream<INFO>25767</INFO></ITEM>] x3";
+			mes "500,000 Zeny";
+			mes "คุณแน่ใจหรือว่าต้องการออฟอุปกรณ์นี้?";
+			next;
+			if (select("Cancel:Proceed") == 1) {
+				mes "[ Susan Gray ]";
+				mes "โปรดกลับมาอีกครั้งเมื่อคุณพร้อมที่จะออฟอุปกรณ์ของคุณ";
+				close;
+			} else {
+				setarray .@card[0],getequipcardid(.@part,0),getequipcardid(.@part,1),getequipcardid(.@part,2),getequipcardid(.@part,3);
+				copyarray .@tmp_card[0], .@card[0], 4;
+				// Armor enchant system custom check
+				if ((.@card[1] && getiteminfo(.@card[1], ITEMINFO_SUBTYPE) == CARD_NORMAL) || (.@card[2] && getiteminfo(.@card[2], ITEMINFO_SUBTYPE) == CARD_NORMAL) || (.@card[3] && getiteminfo(.@card[3], ITEMINFO_SUBTYPE) == CARD_NORMAL)) {
+					mes "[ Susan Gray ]";
+					mes "มีบางอย่างผิดปกติเกิดขึ้น";
+					close;
+				}
+				if (.@card[1] > 0 && .@card[2] > 0 && .@card[3] > 0) {
+					mes "[ Susan Gray ]";
+					mes "อุปกรณ์นี้มีออฟถึงขีดสุด ไม่มีออฟอีกต่อไป";
+					close;
+				}
+				if (countitem(.@itemused) < .@cost ||  Zeny < .@zeny_cost) {
+					mes "[ Susan Gray ]";
+					mes "อืม หายแล้ว" + (.@cost - countitem(.@itemused)) + " Angel's Dreams หรือคุณไม่มี 500,000 Zeny ไปรับเพิ่มเติมแล้วเราจะพูดคุยเกี่ยวกับมนต์เสน่ห์เพิ่มเติม";
+					specialeffect2 EF_PHARMACY_FAIL;
+					close;
+				} else {
+					if (.@card[3] == 0) {
+						.@card[3] = callfunc("F_Rand",
+						4705,	//STR + 6
+						4706,	//STR + 7
+						4707,	//STR + 8
+						4735,	//AGI + 6
+						4736,	//AGI + 7
+						4737,	//AGI + 8
+						4725,	//DEX + 6
+						4726,	//DEX + 7
+						4727,	//DEX + 8
+						4745,	//VIT + 6
+						4746,	//VIT + 7
+						4747,	//VIT + 8
+						4715,	//INT + 6
+						4716,	//INT + 7
+						4717,	//INT + 8
+						4755,	//LUK + 6
+						4756,	//LUK + 7
+						4757,	//LUK + 8
+						4764,	//CRI + 5
+						4765,	//CRI + 7
+						29241,	//CRI + 10
+						4762,	//FLEE + 6
+						29238,	//FLEE + 10
+						4794,	//DEF + 12
+						4902,	//DEF + 18
+						4786,	//MDEF + 2
+						4787,	//MDEF + 4
+						4867,	//MHP + 3%
+						4900,	//MHP + 5%
+						4801,	//SP + 100
+						4802);	//SP + 150
+					} else
+					if (.@card[2] == 0) {
+						.@card[2] = callfunc("F_Rand",
+						4705,	//STR + 6
+						4706,	//STR + 7
+						4707,	//STR + 8
+						4735,	//AGI + 6
+						4736,	//AGI + 7
+						4737,	//AGI + 8
+						4725,	//DEX + 6
+						4726,	//DEX + 7
+						4727,	//DEX + 8
+						4745,	//VIT + 6
+						4746,	//VIT + 7
+						4747,	//VIT + 8
+						4715,	//INT + 6
+						4716,	//INT + 7
+						4717,	//INT + 8
+						4755,	//LUK + 6
+						4756,	//LUK + 7
+						4757,	//LUK + 8
+						4764,	//CRI + 5
+						4765,	//CRI + 7
+						29241,	//CRI + 10
+						4762,	//FLEE + 6
+						29238,	//FLEE + 10
+						4794,	//DEF + 12
+						4902,	//DEF + 18
+						4786,	//MDEF + 2
+						4787,	//MDEF + 4
+						4867,	//MHP + 3%
+						4900,	//MHP + 5%
+						4801,	//SP + 100
+						4802);	//SP + 150
+					} else
+					if (.@card[1] == 0) {
+						if ( .@refine < 9) {
+							.@card[1] = callfunc("F_Rand",
+							4705,	//STR + 6
+							4706,	//STR + 7
+							4707,	//STR + 8
+							4735,	//AGI + 6
+							4736,	//AGI + 7
+							4737,	//AGI + 8
+							4725,	//DEX + 6
+							4726,	//DEX + 7
+							4727,	//DEX + 8
+							4745,	//VIT + 6
+							4746,	//VIT + 7
+							4747,	//VIT + 8
+							4715,	//INT + 6
+							4716,	//INT + 7
+							4717,	//INT + 8
+							4755,	//LUK + 6
+							4756,	//LUK + 7
+							4757,	//LUK + 8
+							4764,	//CRI + 5
+							4765,	//CRI + 7
+							29241,	//CRI + 10
+							4762,	//FLEE + 6
+							29238,	//FLEE + 10
+							4794,	//DEF + 12
+							4902,	//DEF + 18
+							4786,	//MDEF + 2
+							4787,	//MDEF + 4
+							4867,	//MHP + 3%
+							4900,	//MHP + 5%
+							4801,	//SP + 100
+							4802);	//SP + 150
+						} else {
+							mes "[ Susan Gray ]";
+							mes "โอ้เดี๋ยวก่อน! ดูเหมือนว่าคุณมีอุปกรณ์ที่ทรงพลังอยู่ที่นั่น ฉันสามารถเพิ่มเสน่ห์ให้กับคุณได้ถ้าคุณให้ 3x [<ITEM>"+getitemname(6909)+"<INFO>6909</INFO></ITEM>]";
+							mes "คุณจะว่าอย่างไร?";
+							next;
+							switch (select("ยกเลิก:ออฟด้วย  Angel's Dream:ออฟด้วย "+getitemname(6909))) {
+								case 1:
+									mes "[ Susan Gray ]";
+									mes "โปรดกลับมาอีกครั้งเมื่อคุณพร้อมที่จะออฟอุปกรณ์ของคุณ";
+									close;
+								case 2:
+									.@card[1] = callfunc("F_Rand",
+									4705,	//STR + 6
+									4706,	//STR + 7
+									4707,	//STR + 8
+									4735,	//AGI + 6
+									4736,	//AGI + 7
+									4737,	//AGI + 8
+									4725,	//DEX + 6
+									4726,	//DEX + 7
+									4727,	//DEX + 8
+									4745,	//VIT + 6
+									4746,	//VIT + 7
+									4747,	//VIT + 8
+									4715,	//INT + 6
+									4716,	//INT + 7
+									4717,	//INT + 8
+									4755,	//LUK + 6
+									4756,	//LUK + 7
+									4757,	//LUK + 8
+									4764,	//CRI + 5
+									4765,	//CRI + 7
+									29241,	//CRI + 10
+									4762,	//FLEE + 6
+									29238,	//FLEE + 10
+									4794,	//DEF + 12
+									4902,	//DEF + 18
+									4786,	//MDEF + 2
+									4787,	//MDEF + 4
+									4867,	//MHP + 3%
+									4900,	//MHP + 5%
+									4801,	//SP + 100
+									4802);	//SP + 150
+									break;
+								case 3:
+									set .@itemused, 6909;
+									set .@cost, 3;
+									set .@zeny_cost, 0;
+									if (countitem(.@itemused) < .@cost) {
+										mes "[ Susan Gray ]";
+										mes "Hmm, you are missing " + (.@cost - countitem(.@itemused)) +" "+ getitemname(6909) +"s. Go get more, and then we can talk about more enchants.";
+										specialeffect2 EF_PHARMACY_FAIL;
+										close;
+									} else {
+										if (.@part == EQI_ARMOR) {
+											.@card[1] = callfunc("F_Rand",
+											4706,	//STR + 7
+											4707,	//STR + 8
+											4736,	//AGI + 7
+											4737,	//AGI + 8
+											4726,	//DEX + 7
+											4727,	//DEX + 8
+											4746,	//VIT + 7
+											4747,	//VIT + 8
+											4716,	//INT + 7
+											4717,	//INT + 8
+											4756,	//LUK + 7
+											4757,	//LUK + 8
+											4900,	//MHP + 5%
+											4802,	//SP + 150
+											29241,	//CRI + 10
+											29238,	//FLEE + 10
+											4903,	//DEF + 21
+											4790,	//MDEF + 10
+											4820,	//FS 5
+											4821,	//FS 6
+											4812,	//Spell 4
+											4826,	//Spell 5
+											4835,	//EA 4
+											4836,	//EA 5
+											4843,	//Sharp 4
+											4844,	//Sharp 5
+											4873,	//ASPD 3
+											4881,	//ASPD 4
+											310076,	//STR Blessing
+											310077,	//AGI Blessing
+											310078,	//VIT Blessing
+											310079,	//DEX Blessing
+											310080,	//INT Blessing
+											310081);//LUK Blessing
+										} else {
+											.@card[1] = callfunc("F_Rand",
+											4706,	//STR + 7
+											4707,	//STR + 8
+											4736,	//AGI + 7
+											4737,	//AGI + 8
+											4726,	//DEX + 7
+											4727,	//DEX + 8
+											4746,	//VIT + 7
+											4747,	//VIT + 8
+											4716,	//INT + 7
+											4717,	//INT + 8
+											4756,	//LUK + 7
+											4757,	//LUK + 8
+											4765,	//CRI + 7
+											29241,	//CRI + 10
+											4762,	//FLEE + 6
+											29238,	//FLEE + 10
+											4902,	//DEF + 18
+											29026,	//DEF + 20
+											4788,	//MDEF + 6
+											4789,	//MDEF + 8
+											4867,	//MHP + 3%
+											4900,	//MHP + 5%
+											4801,	//SP + 100
+											4802);	//SP + 150
+										}
+									}
+							}
+						}
+					}
+					specialeffect2 EF_REPAIRWEAPON;
+					delitem .@itemused, .@cost;
+					Zeny = Zeny - .@zeny_cost;
+					if (callfunc("F_IsEquipIDHack", .@part, .@equip_id) || callfunc("F_IsEquipRefineHack", .@part, .@refine) || callfunc("F_IsEquipCardHack", .@part, .@tmp_card[0], .@tmp_card[1], .@tmp_card[2], .@tmp_card[3]))
+						close;
+					delequip .@part;
+					getitem2 .@equip_id,1,1,.@refine,0,.@card[0],.@card[1],.@card[2],.@card[3];
+					mes "[ Susan Gray ]";
+					mes "ออฟของ [<ITEM>"+getitemname(.@equip_id)+"<INFO>"+.@equip_id+"</INFO></ITEM>] เสร็จเรียบร้อยแล้ว";
+					close;
+				}
+			}
+		case 3:
+			mes "[ Susan Gray ]";
+			mes "คุณต้องการให้ฉันทำงานเกี่ยวกับอุปกรณ์ใด";
+			next;
+			switch (select("ยกเลิก:ชุด:มัฟ:รองเท้า")) {
+				case 1:
+					mes "[ Susan Gray ]";
+					mes "กลับมาได้ทุกเมื่อที่ต้องการ";
+					close;
+				case 2:
+					.@part = EQI_ARMOR;
+					break;
+				case 3:
+					.@part = EQI_GARMENT;
+					break;
+				case 4:
+					.@part = EQI_SHOES;
+			}
+			for (.@i = 0; .@i < MAX_ITEM_RDM_OPT; .@i++) {
+				if ( getequiprandomoption(.@part, .@i, ROA_ID)) {
+					mes "^ff0000พบตัวเลือกสุ่ม อุปกรณ์ไม่สามารถออฟได้^000000";
+					close;
+				}
+			}
+			.@equip_id = getequipid(.@part);
+			switch (.@equip_id) {
+				case 15397:
+				case 15398:
+				case 15399:
+				case 15400:
+				case 15401:
+				case 15402:
+				case 20947:
+				case 22209:
+					break;
+				case -1:
+					mes "[ Susan Gray ]";
+					mes "คุณกำลังสวมใส่รายการ?";
+					close;
+				default:
+					mes "[ Susan Gray ]";
+					mes "อุปกรณ์นี้ไม่ใช่รายการที่สาขาของเราสามารถดำเนินการได้";
+					close;
+			}
+			.@refine = getequiprefinerycnt(.@part);
+			setarray .@card[0], getequipcardid(.@part,0), getequipcardid(.@part,1), getequipcardid(.@part,2), getequipcardid(.@part,3);
+			mes "[ Susan Gray ]";
+			mes "[<ITEM>"+getitemname(.@equip_id)+"<INFO>"+.@equip_id+"</INFO></ITEM>]";
+			mes "==============================";
+			mes "[<ITEM>"+getitemname(6909)+"<INFO>6909</INFO></ITEM>] x2";
+			mes "or";
+			next;
+			mes "[ Susan Gray ]";
+			mes "[<ITEM>"+getitemname(.@equip_id)+"<INFO>"+.@equip_id+"</INFO></ITEM>]";
+			mes "==============================";
+			mes "500,000 Zeny";
+			mes "คุณจะใช้การรีเซ็ตประเภทใด?";
+			next;
+			switch (select("ยกเลิก:ใช้ "+getitemname(6909)+":ใช้ Zeny")) {
+				case 1:
+					mes "[ Susan Gray ]";
+					mes "โปรดกลับมาอีกครั้งเมื่อคุณพร้อมที่จะร่ายมนตร์อุปกรณ์ของคุณ";
+					close;
+				case 2:
+					if (.@card[1] >0) {
+						if (countitem(6909) < 1) {
+							mes "[ Susan Gray ]";
+							mes "อืม ฉันคิดว่าคุณลืมอะไรบางอย่าง... ฉันต้องการให้คุณนำฉันมา 1"+ getitemname(6909)+" สำหรับรีเซ็ท.";
+							close;
+						} else {
+							delitem 6909, 1;
+							delequip .@part;
+							specialeffect2 EF_REPAIRWEAPON;
+							getitem2 .@equip_id,1,1,.@refine,0,.@card[0],0,0,0;
+							mes "[ Susan Gray ]";
+							mes "เสร็จแล้ว. นี่คือของที่ถูกรีเซ็ทออก [<ITEM>"+getitemname(.@equip_id)+"<INFO>"+.@equip_id+"</INFO></ITEM>]";
+							close;
+						}
+					} else {
+						mes "[ Susan Gray ]";
+						mes "ในการใช้บริการนี้ คุณจะต้องออฟให้กับอุปกรณ์ของคุณก่อนจะรีเซ็ต";
+						close;
+					}
+				case 3:
+					if (.@card[1] >0) {
+						if (Zeny < 500000) {
+							mes "[ Susan Gray ]";
+							mes "อืม ฉันคิดว่าคุณลืมอะไรบางอย่าง... ฉันต้องการให้คุณนำ 500,000 Zeny มาให้ฉันเพื่อรีเซ็ต.";
+							close;
+						} else {
+							Zeny = Zeny - 500000;
+							if (rand(100) < 30) {
+								specialeffect2 EF_LORD;
+								mes "[ Susan Gray ]";
+								mes "อ๊ะ ล้มเหลว!";
+								mes "ลองใหม่อีกครั้ง";
+								close;
+							}
+							delequip .@part;
+							specialeffect2 EF_REPAIRWEAPON;
+							getitem2 .@equip_id,1,1,.@refine,0,.@card[0],0,0,0;
+							mes "[ Susan Gray ]";
+							mes "เสร็จแล้ว. นี่คือของที่ถูกรีเซ็ทออก [<ITEM>"+getitemname(.@equip_id)+"<INFO>"+.@equip_id+"</INFO></ITEM>]";
+							close;
+						}
+					} else {
+						mes "[ Susan Gray ]";
+						mes "ในการใช้บริการนี้ คุณจะต้องออฟให้กับอุปกรณ์ของคุณก่อนจะรีเซ็ต";
+						close;
+					}
+			}
+	}
+	end;
+
+	OnInit:
+		delwaitingroom;
+		waitingroom "~ ออฟODIN PAST",0;
+		end;
+}

@@ -123,7 +123,7 @@ OnInit:
 }
 
 //Ghost Palace fix
-06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+06guild_02,67,62,4	script	รวมลงดัน#8	843,{
 	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
 	menu
 	"Enter",enterdun,
@@ -140,7 +140,7 @@ OnInit:
 }
 
 //Old Glast Heim fix
-06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+06guild_02,70,59,4	script	รวมลงดัน#9	843,{
 	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
 	menu
 	"Enter",enterdun,
@@ -156,7 +156,7 @@ OnInit:
 	end;
 }
 //Old Glast Heim fix
-06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+06guild_02,64,65,4	script	รวมลงดัน#10	843,{
 	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
 	menu
 	"Enter",enterdun,
@@ -172,7 +172,7 @@ OnInit:
 	end;
 }
 //Wolfchev's Laboratory fix
-06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+06guild_02,64,65,4	script	รวมลงดัน#11	843,{
 	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
 	menu
 	"Enter",enterdun,
@@ -188,7 +188,7 @@ OnInit:
 	end;
 }
 //Room of Consciousness fix
-06guild_02,64,65,4	script	รวมลงดัน#7	843,{
+06guild_02,64,65,4	script	รวมลงดัน#12	843,{
 	mes "หากลงดันละเจอบัคติดต่อ GM ด่วนหากพบเจอนะไอสัส";
 	menu
 	"Enter",enterdun,

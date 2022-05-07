@@ -44,3 +44,399 @@
 Header:
   Type: BARTER_DB
   Version: 1
+Body:
+  - Name: QuestIllusionweapon
+    Items:
+      - Index: 0
+        Item: Long_Mace_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Long_Mace
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Hazy_Dream_Fragment
+            Amount: 20
+          - Index: 2
+            Item: IllusionStone
+            Amount: 10
+      - Index: 1
+        Item: Spectral_Spear_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Brionac
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Hazy_Dream_Fragment
+            Amount: 100
+          - Index: 2
+            Item: IllusionStone
+            Amount: 10
+      - Index: 2
+        Item: Moonlight_Sword_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Moonlight_Sword
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Hazy_Dream_Fragment
+            Amount: 100
+          - Index: 2
+            Item: IllusionStone
+            Amount: 30
+      - Index: 3
+        Item: Huuma_Flutter_Snow_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Huuma_Fluttering_Snow
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Ktullanux_Eye
+            Amount: 5
+          - Index: 2
+            Item: IllusionStone
+            Amount: 100
+      - Index: 4
+        Item: Combo_Battle_Glove_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Combo_Battle_Glove
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Snowball
+            Amount: 100
+          - Index: 2
+            Item: IllusionStone
+            Amount: 100
+      - Index: 5
+        Item: Infiltrator_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Infiltrator_
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Torn_Diary
+            Amount: 10
+          - Index: 2
+            Item: IllusionStone
+            Amount: 80
+      - Index: 6
+        Item: Ghoul_Leg_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Ghoul_Leg
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: NightmareOfLump
+            Amount: 100
+          - Index: 2
+            Item: IllusionStone
+            Amount: 10
+      - Index: 7
+        Item: Wizardy_Staff_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Wizardy_Staff
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: SuspiciousMagicCircle
+            Amount: 100
+          - Index: 2
+            Item: IllusionStone
+            Amount: 40
+      - Index: 8
+        Item: Balistar_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Balistar_
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Shining_Spore
+            Amount: 100
+          - Index: 2
+            Item: IllusionStone
+            Amount: 50
+      - Index: 9
+        Item: Book_Of_The_Apo_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Book_Of_The_Apocalypse
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Dried_Clover
+            Amount: 5
+          - Index: 2
+            Item: IllusionStone
+            Amount: 50
+      - Index: 10
+        Item: Illusion_Immaterial_Sword
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Immaterial_Sword
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: ShipsLog
+            Amount: 6
+          - Index: 2
+            Item: IllusionStone
+            Amount: 100
+      - Index: 11
+        Item: Illusion_War_Axe
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: War_Axe
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Piece_of_Black_Horn
+            Amount: 200
+          - Index: 2
+            Item: IllusionStone
+            Amount: 100
+      - Index: 12
+        Item: Illusion_Pole_Axe
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Pole_Axe
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Piece_of_Black_Horn
+            Amount: 200
+          - Index: 2
+            Item: IllusionStone
+            Amount: 100
+      - Index: 13
+        Item: Illusion_Wing_Shuriken
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Huuma_Bird_Wing
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Old_Shell
+            Amount: 200
+          - Index: 2
+            Item: IllusionStone
+            Amount: 100
+      - Index: 14
+        Item: Illusion_Gate_Keeper_DD
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Gate_KeeperDD
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Gothic_China_Doll
+            Amount: 75
+          - Index: 2
+            Item: IllusionStone
+            Amount: 95
+          - Index: 3
+            Item: NasariansSoulstone
+            Amount: 150
+      - Index: 15
+        Item: Illusion_Survivor's_Staff
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Survival_Rod2_
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Clay_Doll
+            Amount: 4
+          - Index: 2
+            Item: IllusionStone
+            Amount: 125
+          - Index: 3
+            Item: Gothic_China_Doll
+            Amount: 100
+          - Index: 4
+            Item: Chonchon_Doll_HQ
+            Amount: 100
+      - Index: 16
+        Item: Illusion_Hunter_Bow
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Hunter_Bow_
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Shooting_Stone
+            Amount: 50
+          - Index: 2
+            Item: IllusionStone
+            Amount: 80
+          - Index: 3
+            Item: Pot_Stone
+            Amount: 50
+          - Index: 4
+            Item: Hair_Leaf
+            Amount: 50
+      - Index: 17
+        Item: Illusion_Butcher
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Butcher_
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Delicious_Juice
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 18
+        Item: Illusion_Tae_Goo_Lyeon
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Tae_Goo_Lyeon
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Short_Rope
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 19
+        Item: Illusion_Gold_Lux
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Gold_Lux
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Snake_Deadly_Poison
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 20
+        Item: Illusion_Bazerald
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Bazerald
+            Amount: 1
+            Refine: 7
+          - Index: 1
+            Item: Mantis_Flower
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 21
+        Item: Electric_Eel_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Electric_Eel
+            Amount: 1
+            Refine: 9
+          - Index: 1
+            Item: aegis_25895
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 22
+        Item: Electronic_Guitar_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Electronic_Guitar
+            Amount: 1
+            Refine: 9
+          - Index: 1
+            Item: aegis_25895
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 23
+        Item: Brionac_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Brionac
+            Amount: 1
+            Refine: 9
+          - Index: 1
+            Item: aegis_25893
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 24
+        Item: KatarOfCold_Icicle_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Katar_Of_Cold_Icicle
+            Amount: 1
+            Refine: 9
+          - Index: 1
+            Item: aegis_25896
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 25
+        Item: Death_Guidance_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Death_Guidance
+            Amount: 1
+            Refine: 9
+          - Index: 1
+            Item: aegis_25894
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
+      - Index: 26
+        Item: Zephyrus_IL
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: Zephyrus_
+            Amount: 1
+            Refine: 9
+          - Index: 1
+            Item: aegis_25892
+            Amount: 150
+          - Index: 2
+            Item: IllusionStone
+            Amount: 120
