@@ -440,3 +440,75 @@ Body:
           - Index: 2
             Item: IllusionStone
             Amount: 120
+  - Name: QuestIllusionArmor
+    Items:
+      - Index: 0
+        Item: Illusion_Armor_A
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 1
+        Item: Illusion_Armor_B
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 2
+        Item: Illusion_Engine_A
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 3
+        Item: Illusion_Engine_B
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 4
+        Item: Illusion_Leg_A
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 5
+        Item: Illusion_Leg_B
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 6
+        Item: Illusion_B_R
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 7
+        Item: Illusion_B_L
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 8
+        Item: Illusion_BC_R
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
+      - Index: 9
+        Item: Illusion_BC_L
+        Zeny: 3000000
+        RequiredItems:
+          - Index: 0
+            Item: EP17_1_EVT39
+            Amount: 50
