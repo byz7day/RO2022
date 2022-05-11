@@ -34,7 +34,7 @@ OnPCLoginEvent:
 		if(getgmlevel() > 50 ) {
 		//atcommand "@hide";
 		soundeffect "welcomemro.wav",0;
-		atcommand "@speed 75";
+		//atcommand "@speed 75";
 		atcommand "@size 0";
 		dispbottom "[ระบบ] : เติมเงินด้วยTrue Money Wallet วันนี้รับ X2 แถม100บาท เมื่อเติม100บาทขึ้นไป";
 		dispbottom "[ระบบ] : คอสเพิ่มความแรงสกิลแต่ละอาชีพสามารถหาได้จาก เควสดราก้อนบอล หรือแคสช็อปข้างแผนที่";

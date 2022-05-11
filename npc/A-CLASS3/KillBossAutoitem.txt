@@ -151,10 +151,12 @@ setarray .mobid[0],
 //^รหัส มอนสเตอร์ BOSS
 for (set .@c, 0; .@c < getarraysize(.mobid); set .@c, .@c + 1){
 if (killedrid == .mobid[.@c]){
-getitem 1220005,1;  //==== รหัสไอเท็ม <itemid>,<จำนวน> 
-getitem 1220007,1;
-//getitem 607,1;  //==== รหัสไอเท็ม <itemid>,<จำนวน> 
-//getitem 61003,1; //==== รหัสไอเท็ม <itemid>,<จำนวน> 
+	if(rand(1,100) <= 70){
+	getitem 1220005,1;  //==== รหัสไอเท็ม <itemid>,<จำนวน> 
+	}
+	getitem 1220007,1;
+	//getitem 607,1;  //==== รหัสไอเท็ม <itemid>,<จำนวน> 
+	//getitem 61003,1; //==== รหัสไอเท็ม <itemid>,<จำนวน> 
 }
 }
 end;

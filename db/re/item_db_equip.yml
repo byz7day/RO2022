@@ -171178,9 +171178,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220009
@@ -171191,9 +171192,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220010
@@ -171204,9 +171206,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220011
@@ -171217,9 +171220,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220012
@@ -171230,9 +171234,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220013
@@ -171243,9 +171248,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220014
@@ -171256,9 +171262,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220015
@@ -171269,9 +171276,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220016
@@ -171282,9 +171290,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220017
@@ -171295,9 +171304,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220018
@@ -171308,9 +171318,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220019
@@ -171321,9 +171332,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220020
@@ -171334,9 +171346,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220021
@@ -171347,9 +171360,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220022
@@ -171360,9 +171374,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220023
@@ -171373,9 +171388,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220024
@@ -171386,9 +171402,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220025
@@ -171399,9 +171416,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220026
@@ -171412,9 +171430,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220027
@@ -171425,9 +171444,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220028
@@ -171438,9 +171458,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220029
@@ -171451,9 +171472,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220030
@@ -171464,9 +171486,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220031
@@ -171477,9 +171500,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220032
@@ -171490,9 +171514,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220033
@@ -171503,9 +171528,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220034
@@ -171516,9 +171542,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220035
@@ -171529,9 +171556,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220036
@@ -171542,9 +171570,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220037
@@ -171555,9 +171584,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220038
@@ -171568,9 +171598,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220039
@@ -171581,9 +171612,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220040
@@ -171594,9 +171626,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220041
@@ -171607,9 +171640,10 @@ Body:
     Locations:
       Costume_Head_Top: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220042
@@ -171620,9 +171654,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220043
@@ -171633,9 +171668,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220044
@@ -171646,9 +171682,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220045
@@ -171659,9 +171696,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220046
@@ -171672,9 +171710,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220047
@@ -171685,9 +171724,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220048
@@ -171698,9 +171738,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220049
@@ -171711,9 +171752,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220050
@@ -171724,9 +171766,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220051
@@ -171737,9 +171780,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220052
@@ -171750,9 +171794,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220053
@@ -171763,9 +171808,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220054
@@ -171776,9 +171822,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220055
@@ -171789,9 +171836,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220056
@@ -171802,9 +171850,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220057
@@ -171815,9 +171864,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220058
@@ -171828,9 +171878,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220059
@@ -171841,9 +171892,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220060
@@ -171854,9 +171906,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220061
@@ -171867,9 +171920,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220062
@@ -171880,9 +171934,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220063
@@ -171893,9 +171948,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220064
@@ -171906,9 +171962,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220065
@@ -171919,9 +171976,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220066
@@ -171932,9 +171990,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220067
@@ -171945,9 +172004,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220068
@@ -171958,9 +172018,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220069
@@ -171971,9 +172032,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220070
@@ -171984,9 +172046,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220071
@@ -171997,9 +172060,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220072
@@ -172010,9 +172074,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220073
@@ -172023,9 +172088,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220074
@@ -172036,9 +172102,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220075
@@ -172049,9 +172116,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220076
@@ -172062,9 +172130,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220077
@@ -172075,9 +172144,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220078
@@ -172088,9 +172158,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220079
@@ -172101,7 +172172,12 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
-      bonus bAspdRate,1000;
+      bonus bSpeedRate,50;
+      bonus bAllStats,15;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
+      bonus bAtkRate,5;
+      bonus bMatkRate,5;
   - Id: 1220080
     AegisName: CostumeS75
     Name: Costume S75
@@ -172110,9 +172186,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220081
@@ -172123,9 +172200,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220082
@@ -172136,9 +172214,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220083
@@ -172149,9 +172228,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220084
@@ -172162,9 +172242,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220085
@@ -172175,9 +172256,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220086
@@ -172188,9 +172270,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220087
@@ -172201,9 +172284,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220088
@@ -172214,9 +172298,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220089
@@ -172227,9 +172312,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220090
@@ -172240,9 +172326,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220091
@@ -172253,9 +172340,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220092
@@ -172266,9 +172354,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220093
@@ -172279,9 +172368,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220094
@@ -172292,9 +172382,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220095
@@ -172305,9 +172396,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220096
@@ -172318,9 +172410,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220097
@@ -172331,9 +172424,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220098
@@ -172344,9 +172438,10 @@ Body:
     Locations:
       Costume_Head_Mid: true
     Script: |
+      bonus bSpeedRate,50;
       bonus bAllStats,15;
-      bonus bMaxHPrate,10;
-      bonus bMaxSPrate,10;
+      bonus bMaxHPrate,20;
+      bonus bMaxSPrate,20;
       bonus bAtkRate,5;
       bonus bMatkRate,5;
   - Id: 1220099
@@ -172360,8 +172455,9 @@ Body:
       bonus bAllStats,5;
       bonus bAtkRange,5;
       bonus bMatkRate,5;
-      bonus bMaxHPrate,40;
-      bonus bMaxSPrate,40;
+      bonus bSpeedRate,50;
+      bonus bMaxHPrate,80;
+      bonus bMaxSPrate,80;
   - Id: 1220100
     AegisName: Gold_Shadow_Weapon
     Name: Gold Shadow Weapon
@@ -172373,8 +172469,9 @@ Body:
       bonus bAllStats,5;
       bonus bAtkRange,5;
       bonus bMatkRate,5;
-      bonus bMaxHPrate,40;
-      bonus bMaxSPrate,40;
+      bonus bSpeedRate,50;
+      bonus bMaxHPrate,80;
+      bonus bMaxSPrate,80;
   - Id: 1220101
     AegisName: Gold_Shadow_Shield
     Name: Gold Shadow Shield
@@ -172386,8 +172483,9 @@ Body:
       bonus bAllStats,5;
       bonus bAtkRange,5;
       bonus bMatkRate,5;
-      bonus bMaxHPrate,40;
-      bonus bMaxSPrate,40;
+      bonus bSpeedRate,50;
+      bonus bMaxHPrate,80;
+      bonus bMaxSPrate,80;
   - Id: 1220102
     AegisName: Gold_Shadow_Shoes
     Name: Gold Shadow Shoes
@@ -172399,5 +172497,6 @@ Body:
       bonus bAllStats,5;
       bonus bAtkRange,5;
       bonus bMatkRate,5;
-      bonus bMaxHPrate,40;
-      bonus bMaxSPrate,40;
+      bonus bSpeedRate,50;
+      bonus bMaxHPrate,80;
+      bonus bMaxSPrate,80;
