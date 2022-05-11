@@ -2742,10 +2742,10 @@ static bool is_attack_critical(struct Damage* wd, struct block_list *src, struct
 
 		if(wd->type == DMG_MULTI_HIT){	//Multiple Hit Attack Skills.
 			if(pc_checkskill(sd,GS_CHAINACTION) && !skill_get_nk(GS_CHAINACTION,NK_CRITICAL)) //Chain Action
-				return false;
+				return true;
 
 			if(pc_checkskill(sd,TF_DOUBLE) && !skill_get_nk(TF_DOUBLE,NK_CRITICAL)) //Double Attack
-				return false;
+				return true;
 		}
 
 		struct status_data *tstatus = status_get_status_data(target);
