@@ -41,20 +41,20 @@
 		sc_end SC_ORCISH;
 		
 		//บัพค่าอาหาร 30นาที Support rAthena
-		sc_start SC_STRFood, 1800000,5;
-		sc_start SC_AGIFood, 1800000,5;
-		sc_start SC_VITFood, 1800000,5;
-		sc_start SC_INTFood, 1800000,5;
-		sc_start SC_DEXFood, 1800000,5;
-		sc_start SC_LUKFood, 1800000,5;
+		//sc_start SC_STRFood, 1800000,5;
+		//sc_start SC_AGIFood, 1800000,5;
+		//sc_start SC_VITFood, 1800000,5;
+		//sc_start SC_INTFood, 1800000,5;
+		//sc_start SC_DEXFood, 1800000,5;
+		//sc_start SC_LUKFood, 1800000,5;
 		
 		//บัพสกิลต่างๆ
 		sc_start SC_BLESSING,1800000,10;
 		sc_start SC_INCREASEAGI,1800000,10;
 		sc_start 41,1800000,10; //กอเรีย
 		sc_start 40,1800000,10; // MAGNIFICAT เร่ง
-		sc_start4 SC_POEMBRAGI,1000*60*10,10,70,90,10;
-		sc_start4 SC_SERVICE4U,1000*60*5,5,40,40,1;
+		//sc_start4 SC_POEMBRAGI,1000*60*10,10,70,90,10;
+		//sc_start4 SC_SERVICE4U,1000*60*5,5,40,40,1;
 		
 		//เพิ่มHPและSP 100%
 		percentheal 100,100; 
@@ -190,22 +190,22 @@ mora,55,152,4	duplicate(BuffsSupports)	BuffsSupports#mora	894
 //==============================================
 //ที่ตั้งNPC
 //==============================================
-//wonderworld,159,127,4	duplicate(BuffsSupportswar)	BuffsSupports War#01	894
-//wonderworld,158,78,4	duplicate(BuffsSupportswar)	BuffsSupports War#02	894
-//wonderworld,97,51,4	duplicate(BuffsSupportswar)	BuffsSupports War#03	894
-//wonderworld,75,100,4	duplicate(BuffsSupportswar)	BuffsSupports War#04	894
-//wonderworld,24,140,4	duplicate(BuffsSupportswar)	BuffsSupports War#05	894
-morocc,133,57,4	duplicate(BuffsSupportswar)	BuffsSupports#06	894
-splendide,202,176,4	duplicate(BuffsSupportswar)	BuffsSupports War#07	894
+//wonderworld,159,127,4	duplicate(BuffsSupports)	BuffsSupports War#01	894
+//wonderworld,158,78,4	duplicate(BuffsSupports)	BuffsSupports War#02	894
+//wonderworld,97,51,4	duplicate(BuffsSupports)	BuffsSupports War#03	894
+//wonderworld,75,100,4	duplicate(BuffsSupports)	BuffsSupports War#04	894
+//wonderworld,24,140,4	duplicate(BuffsSupports)	BuffsSupports War#05	894
+morocc,133,57,4	duplicate(BuffsSupports)	BuffsSupports#06	894
+splendide,202,176,4	duplicate(BuffsSupports)	BuffsSupports War#07	894
 
 
 // Duplicates (Renewal)
 //============================================================
-brasilis,194,221,6	duplicate(BuffsSupportswar)	BuffsSupports War#bra	894
-//dewata,195,187,4	duplicate(BuffsSupportswar)	BuffsSupports War#dew	894
-dicastes01,201,194,4	duplicate(BuffsSupportswar)	BuffsSupports War#dic	894
-ecl_in01,45,60,4	duplicate(BuffsSupportswar)	BuffsSupports War#ecl	894
-malangdo,132,114,6	duplicate(BuffsSupportswar)	BuffsSupports War#mal	894
-malaya,205,205,6	duplicate(BuffsSupportswar)	BuffsSupports War#ma	894
-mora,55,152,4	duplicate(BuffsSupportswar)	BuffsSupports War#mora	894
+brasilis,194,221,6	duplicate(BuffsSupports)	BuffsSupports War#bra	894
+//dewata,195,187,4	duplicate(BuffsSupports)	BuffsSupports War#dew	894
+dicastes01,201,194,4	duplicate(BuffsSupports)	BuffsSupports War#dic	894
+ecl_in01,45,60,4	duplicate(BuffsSupports)	BuffsSupports War#ecl	894
+malangdo,132,114,6	duplicate(BuffsSupports)	BuffsSupports War#mal	894
+malaya,205,205,6	duplicate(BuffsSupports)	BuffsSupports War#ma	894
+mora,55,152,4	duplicate(BuffsSupports)	BuffsSupports War#mora	894
 //==============================================

@@ -61,11 +61,11 @@ OnInit:
 	waitingroom "~ ‡§« temporal",0;
 	end;
 }
-morocc,177,65,4	script	Quest Shop#6	998,{
-	callfunc "qshop",6;
+morocc,177,61,4	script	Quest Shop#6	998,{
+	callfunc "qshopmvp",1;
 OnInit:
 	delwaitingroom;
-	waitingroom "~ ‡§« °“√Ï¥·≈°cash",0;
+	waitingroom "~ §√“ø¢ÕßMVP",0;
 	end;
 }
 morocc,179,99,4	script	Quest Shop#7	998,{
@@ -228,7 +228,7 @@ OnInit:
 	Add(5,22011,1,25000000,1000,6607,20,22005,1);
 
 // °“√Ï¥·≈°cash
-	Add(6,7227,5,0,3);
+	Add(6,7227,1,0,0);
 	
 // §√“ø¢Õß∑”WOE
 	Add(7,1220112,1,0,200,1220103,30,1220104,20,1220105,10,25893,5);
@@ -413,17 +413,254 @@ function	script	qshop	{
 -	shop	qshop15	-1,909:-1
 
 
-morocc,181,65,4	script	‡§« IllusionWeapon	998,{
+morocc,177,65,4	script	‡§« IllusionWeapon	998,{
 	callshop "QuestIllusionweapon",1;
 OnInit:
 	delwaitingroom;
 	waitingroom "~ ‡§« Õ“«ÿ∏Illusion",0;
 	end;
 }
-morocc,185,65,4	script	‡§« IllusionArmor	998,{
+morocc,181,65,4	script	‡§« IllusionArmor	998,{
 	callshop "QuestIllusionArmor",1;
 OnInit:
 	delwaitingroom;
 	waitingroom "~ ‡§« ™ÿ¥Illusion",0;
 	end;
 }
+
+morocc,185,65,4	script	°“√Ï¥·≈°cash	998,{
+end;
+OnInit:
+	delwaitingroom;
+	waitingroom "~ °“√Ï¥·≈°cash",0;
+	end;
+}
+
+
+// Script Core - DO NOT DUPLICATE THIS NPC !!!!!!!!!!!!!
+//============================================================
+-	script	quest_shopmvp	-1,{
+function Add; function Chk; function Slot;
+OnInit:
+	freeloop(1);
+
+// -----------------------------------------------------------
+//  Basic shop settings.
+// -----------------------------------------------------------
+
+	set .Announce,1;	// Announce quest completion? (1: yes / 0: no)
+	set .ShowSlot,1;	// Show item slots? (2: all equipment / 1: if slots > 0 / 0: never)
+	set .ShowID,0;  	// Show item IDs? (1: yes / 0: no)
+	set .ShowZeny,0;	// Show Zeny cost, if any? (1: yes / 0: no)
+	set .MaxStack,100;	// Max number of quest items purchased at one time.
+
+// -----------------------------------------------------------
+//  Points variable -- optional quest requirement.
+//	setarray .Points$[0],"<variable name>","<display name>";
+// -----------------------------------------------------------
+
+	setarray .Points$[0],
+		"#mvp_points", "Mvp Points";
+
+
+//=====================================================================================
+// ------------------- ADD YOUR SHOPS NAME AND ITEMS SHOPS STARTING HERE --------------
+//=====================================================================================
+
+// -----------------------------------------------------------
+//  Shop IDs -- to add shops, copy dummy data at bottom of file.
+//	setarray .Shops$[1],"<Shop 1>","<Shop 2>"{,...};
+// -----------------------------------------------------------
+
+	setarray .Shops$[1],
+		"‡§« MVP";	// Shop Named 1
+
+// -----------------------------------------------------------
+//  Quest items -- do NOT use a reward item more than once!
+//	Add(<shop ID>,<reward ID>,<reward amount>,
+//	    <Zeny cost>,<point cost>,
+//	    <required item ID>,<required item amount>{,...});
+// -----------------------------------------------------------
+
+//‡§« MVP
+	Add(1,20748,1,5000000,5000);
+	Add(1,20749,1,5000000,5000);
+	Add(1,15093,1,5000000,5000);
+	Add(1,15094,1,5000000,5000);
+	Add(1,15095,1,5000000,5000);
+	Add(1,15096,1,5000000,5000);
+	Add(1,15097,1,5000000,5000);
+	Add(1,15098,1,5000000,5000);
+	Add(1,18130,1,5000000,5000);
+	Add(1,1443,1,5000000,5000);
+	Add(1,28705,1,5000000,5000);
+	Add(1,1680,1,5000000,5000);
+	Add(1,13454,1,5000000,5000);
+	Add(1,21015,1,5000000,5000);
+	Add(1,28106,1,5000000,5000);
+	Add(1,2025,1,5000000,5000);
+	Add(1,28007,1,5000000,5000);
+	Add(1,16040,1,5000000,5000);
+	Add(1,1995,1,5000000,5000);
+	Add(1,28604,1,5000000,5000);
+	Add(1,13327,1,5000000,5000);
+	Add(1,13127,1,5000000,5000);
+	Add(1,1498,1,5000000,5000);
+	Add(1,1939,1,5000000,5000);
+	Add(1,1839,1,5000000,5000);
+	Add(1,16019,1,5000000,5000);
+	Add(1,21000,1,5000000,5000);
+	Add(1,18112,1,5000000,5000);
+	Add(1,1491,1,5000000,5000);
+	Add(1,13071,1,5000000,5000);
+	Add(1,1394,1,5000000,5000);
+	Add(1,1585,1,5000000,5000);
+	Add(1,1292,1,5000000,5000);
+	Add(1,2015,1,5000000,5000);
+	Add(1,13316,1,5000000,5000);
+	Add(1,13315,1,5000000,5000);
+// -----------------------------------------------------------
+
+//=====================================================================================
+// ------------------- YOUR SHOPS AND ITEMS SHOPS HAVE BEEN ADDED ---------------------
+//=====================================================================================
+
+	freeloop(0);
+	set .menu$,"";
+	for(set .@i,1; .@i<=getarraysize(.Shops$); set .@i,.@i+1) {
+		set .menu$, .menu$+.Shops$[.@i]+":";
+		npcshopdelitem "qshopmvp"+.@i,909;
+	}
+	end;
+
+OnMenu:
+	set .@size, getarraysize(@i);
+	if (!.@size) set @shop_index, select(.menu$);
+	else if (.@size == 1) set @shop_index, @i[0];
+	else {
+		for(set .@j,0; .@j<.@size; set .@j,.@j+1)
+			set .@menu$, .@menu$+.Shops$[@i[.@j]]+":";
+		set @shop_index, @i[select(.@menu$)-1];
+	}
+	deletearray @i[0],getarraysize(@i);
+	if (.Shops$[@shop_index] == "") {
+		message strcharinfo(0),"‡°‘¥¢ÈÕº‘¥æ≈“¥.";
+		end;
+	}
+	callshop "qshopmvp"+@shop_index,1;
+	npcshopattach "qshopmvp"+@shop_index;
+	end;
+
+OnBuyItem:
+	// .@q[] : RewardID, BoughtAmt, RewardAmt, BaseAmt, ReqZeny, ReqPts, { ReqItem, ReqAmt, ... }
+	setarray .@q[0],@bought_nameid[0],((@bought_quantity[0] > .MaxStack)?.MaxStack:@bought_quantity[0]);
+	copyarray .@q[3],getd(".q_"+@shop_index+"_"+.@q[0]+"[0]"),getarraysize(getd(".q_"+@shop_index+"_"+.@q[0]));
+	set .@q[2],.@q[1]*.@q[3];
+	if (!.@q[2] || .@q[2] > 30000) {
+		message strcharinfo(0),"À“´◊ÈÕ‰¡Ë‰¥È¡“°¡“¬¢π“¥π—Èπ "+getitemname(.@q[0])+".";
+		end;
+	}
+	mes "[Quest Shop]";
+	mes "¢Õß∑’Ë‰¥È: ^0055FF"+((.@q[2] > 1)?.@q[2]+"x ":"")+Slot(.@q[0])+"^000000";
+	mes " ‘ËßµÈÕß„™È·≈°:";
+	disable_items;
+	if (.@q[4]) mes " > "+Chk(Zeny,.@q[4]*.@q[1])+(.@q[4]*.@q[1])+" Zeny^000000";
+	if (.@q[5]) mes " > "+Chk(getd(.Points$[0]),.@q[5]*.@q[1])+(.@q[5]*.@q[1])+" "+.Points$[1]+" ("+getd(.Points$[0])+"/"+(.@q[5]*.@q[1])+")^000000";
+	if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+		mes " > "+Chk(countitem(.@q[.@i]),.@q[.@i+1]*.@q[1])+((.ShowID)?"{"+.@q[.@i]+"} ":"")+Slot(.@q[.@i])+" ("+countitem(.@q[.@i])+"/"+(.@q[.@i+1]*.@q[1])+")^000000";
+	next;
+	setarray @qe[1], getiteminfo(.@q[0],5), getiteminfo(.@q[0],11);
+	if (@qe[2] > 0 && ((@qe[1] & EQP_HEAD_LOW) || (@qe[1] & EQP_HEAD_TOP) || (@qe[1] & EQP_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_TOP) || (@qe[1] & EQP_COSTUME_HEAD_MID) || (@qe[1] & EQP_COSTUME_HEAD_LOW) || (@qe[1] & EQP_GARMENT) || (@qe[1] & EQP_COSTUME_GARMENT)))
+		set .@preview,1;
+	addtimer 1000, strnpcinfo(0)+"::OnEnd";
+	while(1) {
+		switch(select(" ~ ·≈°‡ª≈’Ë¬π ^0055FF"+getitemname(.@q[0])+"^000000:"+((.@preview && !@qe[7])?" ~ µ—«Õ¬Ë“ß...":"")+": ~ ^777777¬°‡≈‘°^000000")) {
+		case 1:
+			if (@qe[0]) {
+				mes "[Quest Shop]";
+				mes "§ÿ≥‰¡Ë¡’¢Õßµ“¡°”Àπ¥¢Õß¿“√°‘®Õ¬Ë“ßπÈÕ¬Àπ÷Ëß¢ÈÕ";
+				close;
+			}
+			if (!checkweight(.@q[0],.@q[2])) {
+				mes "[Quest Shop]";
+				mes "^FF0000§ÿ≥µÈÕß°“√ "+(((.@q[2]*getiteminfo(.@q[0],6))+Weight-MaxWeight)/10)+" §«“¡®ÿπÈ”Àπ—°‡æ‘Ë¡‡µ‘¡‡æ◊ËÕ„ÀÈ°“√ √È“ß‡ √Á® ¡∫Ÿ√≥Ï^000000";
+				close;
+			}
+			if (.@q[4]) set Zeny, Zeny-(.@q[4]*.@q[1]);
+			if (.@q[5]) setd .Points$[0], getd(.Points$[0])-(.@q[5]*.@q[1]);
+			if (.@q[6]) for(set .@i,6; .@i<getarraysize(.@q); set .@i,.@i+2)
+				delitem .@q[.@i],.@q[.@i+1]*.@q[1];
+			getitem .@q[0],.@q[2];
+			if (.Announce) announce strcharinfo(0)+" ‰¥È √È“ß "+((.@q[2] > 1)?.@q[2]+"x "+getitemname(.@q[0]):callfunc("F_InsertArticle",getitemname(.@q[0])))+"!",0;
+			specialeffect2 EF_FLOWERLEAF;
+			close;
+		case 2:
+			setarray @qe[3], getlook(LOOK_HEAD_BOTTOM), getlook(LOOK_HEAD_TOP), getlook(LOOK_HEAD_MID), getlook(LOOK_ROBE), 1;
+			if ((@qe[1] & 1) || (@qe[1] & 4096)) changelook LOOK_HEAD_BOTTOM, @qe[2];
+			else if ((@qe[1] & 256) || (@qe[1] & 1024)) changelook LOOK_HEAD_TOP, @qe[2];
+			else if ((@qe[1] & 512) || (@qe[1] & 2048)) changelook LOOK_HEAD_MID, @qe[2];
+			else if ((@qe[1] & 4) || (@qe[1] & 8192)) changelook LOOK_ROBE, @qe[2];
+			break;
+		case 3:
+			close;
+		}
+	}
+
+OnEnd:
+	if (@qe[7]) {
+		changelook LOOK_HEAD_BOTTOM, @qe[3];
+		changelook LOOK_HEAD_TOP, @qe[4];
+		changelook LOOK_HEAD_MID, @qe[5];
+		changelook LOOK_ROBE, @qe[6];
+	}
+	deletearray @qe[0],8;
+	end;
+
+function Add {
+	if (getitemname(getarg(1)) == "null") {
+		debugmes "Quest reward #"+getarg(1)+" invalid (skipped).";
+		return;
+	}
+	setarray .@j[0],getarg(2),getarg(3),getarg(4);
+	for(set .@i,5; .@i<getargcount(); set .@i,.@i+2) {
+		if (getitemname(getarg(.@i)) == "null") {
+			debugmes "Quest requirement #"+getarg(.@i)+" invalid (skipped).";
+			return;
+		} else
+			setarray .@j[.@i-2],getarg(.@i),getarg(.@i+1);
+	}
+	copyarray getd(".q_"+getarg(0)+"_"+getarg(1)+"[0]"),.@j[0],getarraysize(.@j);
+	npcshopadditem "qshopmvp"+getarg(0),getarg(1),((.ShowZeny)?getarg(3):0);
+	return;
+}
+
+function Chk {
+	if (getarg(0) < getarg(1)) {
+		set @qe[0],1;
+		return "^FF0000";
+	} else
+		return "^0055FF";
+}
+
+function Slot {
+	set .@s$,getitemname(getarg(0));
+	switch(.ShowSlot) {
+		case 1: if (!getitemslots(getarg(0))) return .@s$;
+		case 2: if (getiteminfo(getarg(0),2) == 4 || getiteminfo(getarg(0),2) == 5) return .@s$+" ["+getitemslots(getarg(0))+"]";
+		default: return .@s$;
+	}
+}
+}
+
+function	script	qshopmvp	{
+	deletearray @i[0],getarraysize(@i);
+	for(set .@i,0; .@i<getargcount(); set .@i,.@i+1)
+		set @i[.@i],getarg(.@i);
+	doevent "quest_shopmvp::OnMenu";
+	end;
+}
+-	shop	qshopmvp1	-1,909:-1
+-	shop	qshopmvp2	-1,909:-1
+-	shop	qshopmvp3	-1,909:-1
+-	shop	qshopmvp4	-1,909:-1
+-	shop	qshopmvp5	-1,909:-1

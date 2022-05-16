@@ -1,5 +1,5 @@
 morocc	mapflag	sakura
-morocc	mapflag	fireworks
+morocc	mapflag	noskill
 
 -	script	daynight Control	-1,{
     OnInit:

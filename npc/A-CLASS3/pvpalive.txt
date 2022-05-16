@@ -4,10 +4,10 @@ OnInit:
 set .time, 10;
 setarray .map$, 
 //กำหนดแผนที่
-"pvp_n_1-5",
-"pvp_n_1-3",
 "pvp_y_8-2",
-"pvp_y_8-1";
+"pvp_y_8-1",
+"pvp_n_1-5",
+"pvp_n_1-3";
 end;
 	
 OnPCDieEvent:
@@ -50,12 +50,12 @@ percentheal 100,100;
 //sc_start 40,1800000,10; // MAGNIFICAT เร่ง
 //==============================================
 //บัพค่าอาหาร 30นาที Support rAthena
-sc_start SC_STRFood, 1800000,5;
-sc_start SC_AGIFood, 1800000,5;
-sc_start SC_VITFood, 1800000,5;
-sc_start SC_INTFood, 1800000,5;
-sc_start SC_DEXFood, 1800000,5;
-sc_start SC_LUKFood, 1800000,5;
+//sc_start SC_STRFood, 1800000,5;
+//sc_start SC_AGIFood, 1800000,5;
+//sc_start SC_VITFood, 1800000,5;
+//sc_start SC_INTFood, 1800000,5;
+//sc_start SC_DEXFood, 1800000,5;
+//sc_start SC_LUKFood, 1800000,5;
 //บัพสกิลต่างๆ
 sc_start SC_BLESSING,1800000,10;
 sc_start SC_INCREASEAGI,1800000,10;

@@ -251,14 +251,20 @@ OnInit:
 }
 
 -	script	AutoRebirth	-1,{
+AUTOREBRITHS:
+	set BaseLevel,100;
+	set rbcount,rbcount +1;
+	announce "Rebirth : ผู้เล่น [ "+ strcharinfo(0) +" ] ได้จุติไปแล้ว "+ rbcount +" ครั้ง !!",0;
 OnPCBaseLvUpEvent:
 	if (autorebirth == 1) {
 		if (BaseLevel == 200) {
-			set BaseLevel,1;
-			set rbcount,rbcount +1;
-			announce "Rebirth : ผู้เล่น [ "+ strcharinfo(0) +" ] ได้จุติไปแล้ว "+ rbcount +" ครั้ง !!",0;
-			end;
+			if (rbcount < 80){
+				goto AUTOREBRITHS;
+			} else{
+				if (countitem(7227) >= 1){
+					goto AUTOREBRITHS;
+				}
+			}
 		}
 	}
-	end;
 }

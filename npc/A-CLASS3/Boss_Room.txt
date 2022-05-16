@@ -137,7 +137,8 @@ bossnia_02,0,0,0,0	monster	Violent Coelacanth 	2190,1,0,0,1
 bossnia_02,0,0,0,0	monster	Naght Sieger	1956,1,0,0,1
 bossnia_02,0,0,0,0	monster	Lockstep	3126,5,0,1
 bossnia_02,0,0,0,0	monster	N-Type	3127,5,0,1
-
+bossnia_02,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
+bossnia_02,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
 
 bossnia_03,0,0,0,0	monster	Baphomet	1039,2,0,0,1
 bossnia_03,0,0,0,0	monster	Osiris	1038,2,0,0,1
@@ -269,7 +270,9 @@ bossnia_03,0,0,0,0	monster	Violent Coelacanth 	2190,3,0,0,1
 bossnia_03,0,0,0,0	monster	Dark Coelacanth 	2187,3,0,0,1
 bossnia_03,0,0,0,0	monster	Weird Coelacanth 	2188,3,0,0,1
 bossnia_03,0,0,0,0	monster	Naght Sieger	1956,3,0,0,1
-
+bossnia_03,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
+bossnia_03,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
+bossnia_03,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
 
 
 
@@ -321,6 +324,9 @@ bossnia_04,0,0,0,0	monster	Despair God Morroc	3097,3,0,0,1
 bossnia_04,0,0,0,0	monster	Brinaranea	3091,3,0,0,1
 bossnia_04,0,0,0,0	monster	Awakened Ferre	3073,3,0,0,1
 bossnia_04,0,0,0,0	monster	Big Eggring	3505,3,0,0,1
+bossnia_04,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
+bossnia_04,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
+bossnia_04,0,0,0,0	monster	Nameless Swordsman	20536,5,0,1
 
 bossnia_01	mapflag	nomemo
 bossnia_01	mapflag	nosave	SavePoint

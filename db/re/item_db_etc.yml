@@ -1275,6 +1275,7 @@ Body:
     Name: Red Blood
     Type: Etc
     Buy: 1000
+    Sell: 10
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1283,6 +1284,7 @@ Body:
     Name: Crystal Blue
     Type: Etc
     Buy: 1000
+    Sell: 10
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1291,6 +1293,7 @@ Body:
     Name: Wind of Verdure
     Type: Etc
     Buy: 1000
+    Sell: 10
     Weight: 50
     Flags:
       BuyingStore: true
@@ -1299,6 +1302,7 @@ Body:
     Name: Green Live
     Type: Etc
     Buy: 1000
+    Sell: 10
     Weight: 50
     Flags:
       BuyingStore: true
