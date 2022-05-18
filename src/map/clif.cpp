@@ -3292,7 +3292,7 @@ void clif_guild_xy_remove(struct map_session_data *sd)
 }
 
 /*==========================================
- * Load castle list for guild UI. [Asheraf] / [Balfear]
+ * Load castle list for guild UI. [Asheraf] / [Balfear] / [null#6385]
  *------------------------------------------*/
 void clif_guild_castle_list(struct map_session_data* sd)
 {
@@ -3306,9 +3306,9 @@ void clif_guild_castle_list(struct map_session_data* sd)
 	int castle_count = guild_checkcastles(g);
 
 	if (castle_count > 0) {
-		int16 len = (int16)( sizeof(struct PACKET_ZC_GUILD_CASTLE_LIST) + castle_count * sizeof(int8) );
-		struct PACKET_ZC_GUILD_CASTLE_LIST* p = (struct PACKET_ZC_GUILD_CASTLE_LIST*)packet_buffer;
-		p->packetType = HEADER_ZC_GUILD_CASTLE_LIST;
+		int16 len = (int16)( sizeof(struct PACKET_ZC_GUILD_AGIT_INFO) + castle_count * sizeof(int8) );
+		struct PACKET_ZC_GUILD_AGIT_INFO* p = (struct PACKET_ZC_GUILD_AGIT_INFO*)packet_buffer;
+		p->packetType = HEADER_ZC_GUILD_AGIT_INFO;
 		p->packetLength = len;
 
 		int i = 0;
@@ -3325,7 +3325,7 @@ void clif_guild_castle_list(struct map_session_data* sd)
 }
 
 /*==========================================
- * Send castle info Economy/Defence. [Asheraf] / [Balfear]
+ * Send castle info Economy/Defence. [Asheraf] / [Balfear] / [null#6385]
  *------------------------------------------*/
 void clif_guild_castleinfo(struct map_session_data* sd, int castle_id, int economy, int defense)
 {
@@ -3333,8 +3333,8 @@ void clif_guild_castleinfo(struct map_session_data* sd, int castle_id, int econo
 
 	nullpo_retv(sd);
 
-	struct PACKET_ZC_CASTLE_INFO p = {};
-	p.packetType = HEADER_ZC_CASTLE_INFO;
+	struct PACKET_ZC_REQ_ACK_AGIT_INVESTMENT p = {};
+	p.packetType = HEADER_ZC_REQ_ACK_AGIT_INVESTMENT;
 	p.castle_id = castle_id;
 	p.economy = economy;
 	p.defense = defense;
@@ -3343,7 +3343,7 @@ void clif_guild_castleinfo(struct map_session_data* sd, int castle_id, int econo
 }
 
 /*==========================================
- * Show teleport request result. [Asheraf] / [Balfear]
+ * Show teleport request result. [Asheraf] / [Balfear] / [null#6385]
  *------------------------------------------*/
 void clif_guild_castle_teleport_res(struct map_session_data* sd, enum e_siege_teleport_result result)
 {
@@ -3351,20 +3351,20 @@ void clif_guild_castle_teleport_res(struct map_session_data* sd, enum e_siege_te
 
 	nullpo_retv(sd);
 
-	struct PACKET_ZC_CASTLE_TELEPORT_RESPONSE p = {};
-	p.packetType = HEADER_ZC_CASTLE_TELEPORT_RESPONSE;
+	struct PACKET_ZC_REQ_ACK_MOVE_GUILD_AGIT p = {};
+	p.packetType = HEADER_ZC_REQ_ACK_MOVE_GUILD_AGIT;
 	p.result = (int16)result;
 	clif_send(&p, sizeof(p), &sd->bl, SELF);
 #endif
 }
 
 /*==========================================
- * Request castle info. [Asheraf] / [Balfear]
+ * Request castle info. [Asheraf] / [Balfear] / [null#6385]
  *------------------------------------------*/
 void clif_parse_guild_castle_info_request(int fd, struct map_session_data* sd)
 {
 #if PACKETVER_MAIN_NUM >= 20190522 || PACKETVER_RE_NUM >= 20190522 || PACKETVER_ZERO_NUM >= 20190515
-	const struct PACKET_CZ_CASTLE_INFO_REQUEST* p = (struct PACKET_CZ_CASTLE_INFO_REQUEST*)RFIFOP(fd, 0);
+	const struct PACKET_CZ_REQ_AGIT_INVESTMENT* p = (struct PACKET_CZ_REQ_AGIT_INVESTMENT*)RFIFOP(fd, 0);
 	struct guild* g = sd->guild;
 
 	if (g == nullptr)
@@ -3380,12 +3380,12 @@ void clif_parse_guild_castle_info_request(int fd, struct map_session_data* sd)
 }
 
 /*==========================================
- * Teleport to castle. [Asheraf] / [Balfear]
+ * Teleport to castle. [Asheraf] / [Balfear] / [null#6385]
  *------------------------------------------*/
 void clif_parse_guild_castle_teleport_request(int fd, struct map_session_data* sd)
 {
 #if PACKETVER_MAIN_NUM >= 20190522 || PACKETVER_RE_NUM >= 20190522 || PACKETVER_ZERO_NUM >= 20190515
-	const struct PACKET_CZ_CASTLE_TELEPORT_REQUEST* p = (struct PACKET_CZ_CASTLE_TELEPORT_REQUEST*)RFIFOP(fd, 0);
+	const struct PACKET_CZ_REQ_MOVE_GUILD_AGIT* p = (struct PACKET_CZ_REQ_MOVE_GUILD_AGIT*)RFIFOP(fd, 0);
 	struct guild* g = sd->guild;
 
 	if (g == nullptr)
