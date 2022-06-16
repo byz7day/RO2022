@@ -1854,6 +1854,8 @@
 	export_constant(SC_GRENADE_FRAGMENT_5);
 	export_constant(SC_GRENADE_FRAGMENT_6);
 	export_constant(SC_AUTO_FIRING_LAUNCHEREFST);
+	export_constant(SC_M_LIFEPOTION);
+	export_constant(SC_S_MANAPOTION);
 
 #ifdef RENEWAL
 	export_constant(SC_EXTREMITYFIST2);
@@ -5741,6 +5743,19 @@
 	export_constant(IG_AUTO_M_I_BOX_A);
 	export_constant(IG_AUTO_M_I_BOX_B);
 	export_constant(IG_ILLUSION_MODULE_MIX);
+	export_constant(IG_RUNE_CRAFT_MATERIALS);
+	export_constant(IG_ELEMENTAL_CONVERTER);
+	export_constant(IG_POISONS);
+	export_constant(IG_BLACKSMITH);
+	export_constant(IG_POTION_CRAFT_MATERIALS);
+	export_constant(IG_KUNAI_BOX);
+	export_constant(IG_BULLET_CASE);
+	export_constant(IG_SOUL_LINKER);
+	export_constant(IG_ELEMENTAL_STONES);
+	export_constant(IG_SHADOW_CUBE_ARMOR);
+	export_constant(IG_SHADOW_CUBE_SHIELD);
+	export_constant(IG_SHADOW_CUBE_SHOES);
+	export_constant(IG_SHADOW_CUBE_WEAPON);
 
 	/* unit stop walking */
 	export_constant(USW_NONE);
@@ -9022,6 +9037,14 @@
 	export_constant(SCF_REMOVEONUNEQUIP);
 	export_constant(SCF_REMOVEONUNEQUIPWEAPON);
 	export_constant(SCF_REMOVEONUNEQUIPARMOR);
+
+	/* enchantgrades */
+	export_constant(ENCHANTGRADE_NONE);
+	export_constant(ENCHANTGRADE_D);
+	export_constant(ENCHANTGRADE_C);
+	export_constant(ENCHANTGRADE_B);
+	export_constant(ENCHANTGRADE_A);
+	export_constant(MAX_ENCHANTGRADE);
 
 	#undef export_constant
 	#undef export_constant2
