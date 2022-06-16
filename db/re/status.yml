@@ -2781,6 +2781,9 @@ Body:
       NoDispell: true
       NoBanishingBuster: true
       NoClearance: true
+    End:
+      L_Lifepotion: true
+      M_Lifepotion: true
     Fail:
       S_Lifepotion: true
   - Status: L_Lifepotion
@@ -2789,6 +2792,9 @@ Body:
       NoDispell: true
       NoBanishingBuster: true
       NoClearance: true
+    End:
+      S_Lifepotion: true
+      M_Lifepotion: true
     Fail:
       L_Lifepotion: true
   - Status: Jexpboost
@@ -3727,6 +3733,7 @@ Body:
       NoDispell: true
       NoBanishingBuster: true
       RequireShield: true
+      NoSave: true
     End:
       Reflectshield: true
   - Status: Forceofvanguard
@@ -8229,3 +8236,22 @@ Body:
   - Status: Rush_Quake2
     Icon: EFST_RUSH_QUAKE2
     DurationLookup: MT_RUSH_QUAKE
+  - Status: M_Lifepotion
+    Icon: EFST_M_LIFEPOTION
+    Flags:
+      NoDispell: true
+      NoBanishingBuster: true
+      NoClearance: true
+    End:
+      S_Lifepotion: true
+      L_Lifepotion: true
+    Fail:
+      M_Lifepotion: true
+  - Status: S_Manapotion
+    Icon: EFST_S_MANAPOTION
+    Flags:
+      NoDispell: true
+      NoBanishingBuster: true
+      NoClearance: true
+    Fail:
+      S_Manapotion: true
