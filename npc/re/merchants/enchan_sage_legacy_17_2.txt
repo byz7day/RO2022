@@ -8,7 +8,7 @@
 //= 1.1 Optimizations and cleanup [Everade]
 //============================================================
 
-ba_in01,87,370,3	script	Lisa#ep172_merchant	20698,{
+morocc,126,78,4	script	Lisa#ep172_merchant	20698,{
 	disable_items;
 	mes "[ Lisa ]";
 	mes "Welcome welcome~";
@@ -280,7 +280,7 @@ ba_in01,87,386,3	script	Child Manager ß#ep172_pet	20696,{
 
 //= Cube Shop
 -	shop	ep172cubeshop00	-1,no,100251:10000000,100252:30000000
-ba_in01,87,376,3	script	Cube Lane#ep172cube	4_EP17_GUARD_B,{
+morocc,123,78,4	script	Cube Lane#ep172cube	4_EP17_GUARD_B,{
 	disable_items;
 	mes "[ Cube Lane ]";
 	mes "We are offering reinforcement cubes that will refine your ^0000CD+4^000000 Illusion and Automatic Equipment to ^FF0000+7^000000 in an instant!";
@@ -291,13 +291,13 @@ ba_in01,87,376,3	script	Cube Lane#ep172cube	4_EP17_GUARD_B,{
 }
 
 //= Module Shop
-ba_in01,87,373,3	script	Spiera#ep172_soapstone	20698,{
+morocc,115,78,4	script	Spiera#ep172_soapstone	20698,{
 	callshop "172epicmodule",1; //TODO BARTERSHOP
 	end;
 }
 
 //= Equipment Shop
-ba_in01,87,383,3	script	Yeoncheong#equipment_exchange	4_EP17_CLEANER_W,{
+morocc,117,78,4	script	Yeoncheong#equipment_exchange	4_EP17_CLEANER_W,{
 	disable_items;
 	cutin "ep172_omega",2;
 	mes "[ Yeoncheong ]";
@@ -340,7 +340,7 @@ ba_in01,87,383,3	script	Yeoncheong#equipment_exchange	4_EP17_CLEANER_W,{
 }
 
 //= Device Module Exchange
-ba_in01,87,380,3	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
+morocc,120,78,4	script	Yecheon#ep172module_trader	4_EP17_CLEANER_W,{
 	disable_items;
 	cutin "ep172_omega",2;
 	mes "[ Yecheon ]";

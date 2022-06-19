@@ -1,0 +1,23 @@
+morocc,166,97,4	script	TCGSYSTEM	84,{
+	mes "ระบบรับซื้อและซื้อTCG";
+	next;
+	menu
+	"ซื้อTCG",BUYTCG,
+	"ขายTCG",SELLTCG,
+	"ยกเลิก",CANCEL_TCG;
+	BUYTCG:
+	callshop "TCGBUYING",1;
+	end;
+	SELLTCG:
+	callshop "TCGSELLING",2;
+	end;
+	CANCEL_TCG:
+	close;
+end;
+OnInit: 
+waitingroom "ขายและซื้อTCG",0; 
+end; 
+}
+
+-	shop	TCGBUYING	-1,909:-1,7227:5000
+-	shop	TCGSELLING	-1,909:-1,7227:5000

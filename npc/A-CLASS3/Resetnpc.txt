@@ -1,0 +1,76 @@
+//==============================================
+// - Script By : แม่มดน้อยจอมป่วน
+// - Script City : Thailand 
+// - Script Support Server : Hercules & rAthena
+//==============================================
+//===== rAthena Script =======================================
+//= Reset NPC
+//===== By: ==================================================
+//= rAthena Dev Team
+//===== Current Version: =====================================
+//= 1.3
+//===== Compatible With: =====================================
+//= rAthena Project
+//===== Description: =========================================
+//= Resets skills, stats, or both.
+//===== Additional Comments: =================================
+//= 1.0 First Version
+//= 1.1 Optimized for the greater good. [Kisuka]
+//= 1.2 Cleaning [Euphy]
+//= 1.3 All statuses removed upon skill reset. [Euphy]
+//============================================================
+
+morocc,152,82,4	script	รีเซ็ตสเตตัสและสกิล	845,{
+
+	.@ResetStat  = 200000;	// Zeny for stat reset
+	.@ResetSkill = 200000;	// Zeny for skill reset
+	.@ResetBoth  = 350000;	// Zeny for resetting both together
+
+	mes "[บริการรีเซ็ตสเตตัสและสกิล]";
+	mes "สวัสดีค่ะ คุณต้องการทำอะไรหรอค่ะ";
+	mes "ค่าบริการ รีเซ็ตค่าสเตตัส: "  + callfunc("F_InsertComma", .@ResetStat)  + "Zeny";
+	mes "ค่าบริการ รีเซ็ตค่าสกิล: " + callfunc("F_InsertComma", .@ResetSkill) + "Zeny";
+	mes "ค่าบริการ รีเซ็ตทั้งหมด: "   + callfunc("F_InsertComma", .@ResetBoth)  + "Zeny";
+	mes "กรุณาเลือกบริการ ที่คุณต้องการค่ะ:";
+	next;
+	switch(select("^FF3355รีเซ็ตค่าสกิล:รีเซ็ตค่าสเตตัส:รีเซ็ตทั้งหมด^000000:ยกเลิก")) {
+	case 1:
+		mes "[บริการรีเซ็ตสเตตัสและสกิล]";
+		if (Zeny < .@ResetSkill) {
+			mes "ขออภัยคุณ ไม่ได้มี Zeny เพียงพอสำหรับการใช้บริการคะ .";
+			close;
+		}
+		Zeny -= .@ResetSkill;
+		sc_end SC_ALL;
+		resetskill;
+		mes "ขอบคุณที่ใช้บริการค่ะ";
+		close;
+	case 2:
+		mes "[บริการรีเซ็ตสเตตัสและสกิล]";
+		if (Zeny < .@ResetStat) {
+			mes "ขออภัยคุณ ไม่ได้มี Zeny เพียงพอสำหรับการใช้บริการคะ.";
+			close;
+		}
+		Zeny -= .@ResetStat;
+		resetstatus;
+		mes "ขอบคุณที่ใช้บริการค่ะ";
+		close;
+	case 3:
+		mes "[บริการรีเซ็ตสเตตัสและสกิล]";
+		if (Zeny < .@ResetBoth) {
+			mes "ขออภัยคุณ ไม่ได้มี Zeny เพียงพอสำหรับการใช้บริการคะ.";
+			close;
+		}
+		Zeny -= .@ResetBoth;
+		sc_end SC_ALL;
+		resetskill;
+		resetstatus;
+		mes "ขอบคุณที่ใช้บริการค่ะ";
+		close;
+	case 4:
+		close;
+OnInit:
+waitingroom "รีเซ็ตสเตตัสและสกิล",0;
+end;
+	}
+}

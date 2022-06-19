@@ -1146,9 +1146,6 @@ Body:
     Weight: 300
     Flags:
       BuyingStore: true
-    Delay:
-      Duration: 5000
-      Status: Reuse_Limit_F
     Script: |
       percentheal 100,100;
   - Id: 608

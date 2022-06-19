@@ -18,7 +18,7 @@ sp_cor,152,158,4	script	Butterfly Merchant#sp_cor	4_M_ORIENT01,{
 	end;
 }
 
-sp_cor,136,156,3	script	Grace Operator#ext162	4_M_REPAIR,{
+morocc,189,71,4	script	Grace Operator#ext162	4_M_REPAIR,{
 	mes "[Grace Operator]";
 	mes "Hello.";
 	mes "We have ^4d4dffGrace^000000 equipment that can be exchanged for <ITEM>[" + getitemname(25723) + "]<INFO>25723</INFO></ITEM>.";
@@ -404,7 +404,7 @@ OnInit:
 }
 
 // Illusion Enchanter - Walkthrough Conversion
-sp_cor,106,136,3	script	RS26#illusion_enchant	4_SYS_MSG,{
+morocc,117,70,4	script	RS26#illusion_enchant	4_SYS_MSG,{
 	if(!checkweight(1201,1) || (MaxWeight - Weight) < 1000){
 		mes "You can't proceed with the conversation because you have a large quantity of items.";
 		mes "Please organize your items and try again.";

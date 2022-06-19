@@ -151,7 +151,7 @@ setarray .mobid[0],
 //^รหัส มอนสเตอร์ BOSS
 for (set .@c, 0; .@c < getarraysize(.mobid); set .@c, .@c + 1){
 if (killedrid == .mobid[.@c]){
-	if(rand(1,100) <= 70){
+	if(rand(1,100) <= 60){
 	getitem 1220005,1;  //==== รหัสไอเท็ม <itemid>,<จำนวน> 
 	}
 	getitem 1220007,1;

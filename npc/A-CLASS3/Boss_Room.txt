@@ -35,7 +35,7 @@ Lgo3:
 if(countitem(7227)<1) goto Q1;
 delitem 7227,1;
 warp "bossnia_03",0,0;
-announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่  ห้อง 3 < Boss ทั่วไปตามแมพอย่างละ 3 ตัว > แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("boss_a01")+" ] คน",0,0x66FF00;
+announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่  ห้อง 3 < Boss ทั่วไปตามแมพอย่างละ 3 ตัว > แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("bossnia_03")+" ] คน",0,0x66FF00;
 close;
 
 Lgo4:

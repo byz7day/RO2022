@@ -23,13 +23,13 @@ morocc,187,93,4	script	ตู้สุ่มกาชาใบตีบวก	843,{
 	random:
 	if (#dc_points < 10){
 		dispbottom "[Gacha] คุณไม่มี donate coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+		close;
 	}
 	if ( gettimetick(2)-@delay_random < .@delay ){
 		dispbottom "[Gacha] โปรดรออีก "+(.@delay-(gettimetick(2)-@delay_random))+" วินาทีถึงจะใช้งานได้อีกครั้งนะคะ";
 	}
 	else {
 		set #dc_points,#dc_points - .@countitem;
-		progressbar "0x007000", .@cast;
 		set @delay_random, gettimetick(2);
 		if((rand(1,10000) <= 80)){
 			setarray .@ticket_11[0],6456,6457,6456,6457,6456,6457,6456,6457,6456,6457,6456,6457;
@@ -107,14 +107,14 @@ morocc,186,81,4	script	ตู้สุ่มกาชาของOCP	843,{
 	"cancel",cancelrand;
 	random:
 	if (#cash_points < 10){
-		dispbottom "[Gacha] คุณไม่มี donate coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+		dispbottom "[Gacha] คุณไม่มี Cash coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+		close;
 	}
 	if ( gettimetick(2)-@delay_random < .@delay ){
 		dispbottom "[Gacha] โปรดรออีก "+(.@delay-(gettimetick(2)-@delay_random))+" วินาทีถึงจะใช้งานได้อีกครั้งนะคะ";
 	}
 	else {
 		set #cash_points,#cash_points - .@countitem;
-		progressbar "0x007000", .@cast;
 		set @delay_random, gettimetick(2);
 		if((rand(1,10000) <= 50)){
 			setarray .@OCP_11[0],16051,28717,2589,9024,28910,20952,32258,15405,28533,28394,16051,28717,2589,9024,28910,20952,32258,15405,28533,28394,16051,28717,2589,9024,28910,20952,32258,15405,28533,28394;
@@ -150,14 +150,14 @@ morocc,192,91,4	script	ตู้สุ่มกาชาคอสpremium	843,{
 	"cancel",cancelrand;
 	random:
 	if (#cash_points < 10){
-		dispbottom "[Gacha] คุณไม่มี donate coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+		dispbottom "[Gacha] คุณไม่มี Cash coin ถึง 10 พ้อยเข้าใจป่ะไอสัส";
+		close;
 	}
 	if ( gettimetick(2)-@delay_random < .@delay ){
 		dispbottom "[Gacha] โปรดรออีก "+(.@delay-(gettimetick(2)-@delay_random))+" วินาทีถึงจะใช้งานได้อีกครั้งนะคะ";
 	}
 	else {
 		set #cash_points,#cash_points - .@countitem;
-		progressbar "0x007000", .@cast;
 		set @delay_random, gettimetick(2);
 		if((rand(1,10000) <= 50)){
 			setarray .@premium_11[0],16051,28717,2589,9024,28910,20952,32258,15405,28533,28394;

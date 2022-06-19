@@ -9,7 +9,7 @@
 
 // Merchant
 //============================================================
-glast_01,210,273,5	script	Hugin's Butler#pa0829	1_F_04,{
+/*morocc,121,73,4	script	Hugin's Butler#pa0829	1_F_04,{
 	disable_items;
 	if (MaxWeight - Weight < 1000) {
 		mes "Your bag is too heavy. Reduce some weight and come back.";
@@ -95,11 +95,11 @@ glast_01,210,273,5	script	Hugin's Butler#pa0829	1_F_04,{
 		getitem .@equip_type[.@s],1;
 	}
 	close;
-}
+}*/
 
 // Enchant and Socket NPC
 //============================================================
-glast_01,212,273,4	script	Hugin's Magician#pa0829	1_F_01,{
+morocc,119,73,4	script	Hugin's Magician#pa0829	1_F_01,{
 	disable_items;
 	if (MaxWeight - Weight < 1000) {
 		mes "Your bag is too heavy. Reduce some weight and come back.";
@@ -252,7 +252,7 @@ glast_01,212,273,4	script	Hugin's Magician#pa0829	1_F_01,{
 	}
 }
 
-glast_01,210,270,0	script	Hugin's Craftsman#pa0829	4_F_JOB_BLACKSMITH,{
+/*morocc,117,73,0	script	Hugin's Craftsman#pa0829	4_F_JOB_BLACKSMITH,{
 	disable_items;
 	if (MaxWeight - Weight < 1000) {
 		mes "Your bag is too heavy. Reduce some weight and come back.";
@@ -338,10 +338,10 @@ S_Slot:
 		getitem getarg(0),1;
 	}
 	close;
-}
+}*/
 
 // Temporal shoes slotted - npc enchant
-glast_01,184,283,4	script	Dark magic master#pa082	1_F_01,{
+morocc,115,73,4	script	Dark magic master#pa082	1_F_01,{
 	disable_items;
 	if ((MaxWeight - Weight) < 1000) {
 		mes "Your bag is too heavy. Reduce some weight and come back.";

@@ -1,0 +1,163 @@
+/* การตั้งค่า เพิ่มไอเท็ม ราคาไอเท็ม
+
+	setarray .Shop[0],501,10, ไอเท็ม 501 =  RedPotins , 10 = จำนวนราคา (ใช้เป็นหน่วย Points)
+					  502,10,
+					  503,10,
+					  504,10,
+					  505,10; 
+
+*/
+
+/* การตั้งค่า เปลี่ยนแปลง ราคา ต่อการ์ด 1 ใบ 
+
+	setarray .Points[0],0,5;	 หน่วยแรก 10 (จำนวนราคาที่ขายให้กับ Npc)= คือการ์ดแบบปกติ มอนส์เตอร์ทั่วไป / หน่วยสอง 150 (จำนวนราคาที่ขายให้กับ Npc)= คือการ์ดแบบบอสมอนส์เตอร์
+	
+*/
+
+/* การตั้งค่าการเพิ่ม รหัสไอเท็ม สำหรับการ์ดบอส เป็นเงื่อนใข
+
+	set .MvPheadgear$,	ใส่เพียงแค่รหัสการ์ดบอส
+		"2246,5053,5019,5002,2249,5123,2256,2258,5007,2235,2234,2268";
+
+*/
+
+morocc,189,76,4	script	แลกเปลี่ยนหมวกบอส	612,{
+
+	mes "[แลกเปลี่ยนหมวกบอส]";
+	mes "สวัสดี, "+strcharinfo(0)+"!";
+	mes "มีอะไรให้ฉันช่วยคุณได้บ้าง ?";
+	next;
+	switch(select("~ รายละเอียดข้อมูล:~ ขายหมวก :~ แลกเปลี่ยนสินค้า (^0055FF"+getd(.Points$)+"^000000):~ ไม่มีอะไร")) {
+	case 1:
+		mes "[รายละเอียดข้อมูล]";
+		mes "ถ้าหากคุณมีไอเท็มประเภทหมวกบอส";
+		mes "ที่ไม่ได้ใช้ หรือ ไม่มีค่าสำหรับคุณ?";
+		mes "คุณสามารถที่จะขายให้ฉันได้";
+		mes "และ ฉันก๊จะมีสิ่งของตอบแทนสำหรับสิ่งของเหล่านั้น!";
+		next;
+		mes "[headgear Trader]";
+		mes "ฉันจะให้ ^0055FF"+.Points[1]+" Points^000000 สำหรับหมวกบอส";
+		mes "และ คุณสามารถนำ Point มาแลกเปลี่ยนสิ่งของ";
+		mes "กับ ฉันในภายหลังได้.";
+		next;
+		mes "รายการที่แลกได้มีดังนี้ กด@alootid +รหัสไอเท็มเพื่อเลือกเก็บไอเท็มชิ้นนั้น";
+		mes "1.<ITEM>Golden Gear<INFO>2246</INFO></ITEM> รหัสไอเท็ม 2246";
+		mes "2.<ITEM>Sphinx Hat<INFO>5053</INFO></ITEM> รหัสไอเท็ม 5053";
+		mes "3.<ITEM>Corsair<INFO>5019</INFO></ITEM> รหัสไอเท็ม 5019";
+		mes "4.<ITEM>Jewel Crown<INFO>5002</INFO></ITEM> รหัสไอเท็ม 5002";
+		mes "5.<ITEM>Coronet<INFO>2249</INFO></ITEM> รหัสไอเท็ม 2249";
+		mes "6.<ITEM>Ulle's Cap<INFO>5123</INFO></ITEM> รหัสไอเท็ม 5123";
+		mes "7.<ITEM>Majestic Goat<INFO>2256</INFO></ITEM> รหัสไอเท็ม 2246";
+		mes "8.<ITEM>Spiky Band<INFO>2258</INFO></ITEM> รหัสไอเท็ม 2258";
+		mes "9.<ITEM>Grand Circlet<INFO>5007</INFO></ITEM> รหัสไอเท็ม 5007";
+		mes "10.<ITEM>Crown<INFO>2235</INFO></ITEM> รหัสไอเท็ม 2235";
+		mes "11.<ITEM>Tiara<INFO>2234</INFO></ITEM> รหัสไอเท็ม 2234";
+		mes "12.<ITEM>Pipe<INFO>2268</INFO></ITEM> รหัสไอเท็ม 2268";
+
+		mes "คุณต้องการที่จะใช้บริการฉันเลยใหม ?";
+		close;
+	case 2:
+		mes "[รับซื้อหมวกบอส]";
+		mes "กรุณาเลือหมวกบอสของคุณ";
+		mes "ที่จะต้องการแลกเปลี่ยน.";
+		deletearray @sold_nameid[0],getarraysize(@sold_nameid);
+		callshop "BossPoint_Shops",2;
+		npcshopattach "BossPoint_Shops";
+		end;
+	case 3:
+		mes "[แลกเปลี่ยนสินค้า]";
+		mes "คุณมี ^0055FF"+getd(.Points$)+"^000000 Point"+((getd(.Points$) == 1)?".":"s.");
+		mes "คุณสามารถแลกเปลี่ยนพ้อยเป็น CC ได้ในอัตราส่วน 1 ต่อ 1";
+		callshop "BossPoint_Shops",1;
+		npcshopattach "BossPoint_Shops";
+		end;
+	case 4:
+		mes "[แลกเปลี่ยนหมวกบอส]";
+		mes "ไว้พบกันใหม่!";
+		close;		
+	}
+
+OnSellItem:
+	
+	for(set .@i,0; .@i<getarraysize(@sold_nameid); set .@i,.@i+1)
+		if (@sold_nameid[.@i] > 2233 && @sold_nameid[.@i] < 5054)
+		{
+			set .@headgear_id[getarraysize(.@headgear_id)], @sold_nameid[.@i];
+			set .@headgear_amt[getarraysize(.@headgear_amt)], @sold_quantity[.@i];
+			set .@mvp, compare(.MvPheadgear$,""+@sold_nameid[.@i]);
+			mes ((.@mvp)?"  ^FF0000":"  ^777777")+getitemname(@sold_nameid[.@i])+" จำนวน "+@sold_quantity[.@i]+" ใบ^000000";
+			set .@headgear_total, .@headgear_total+(@sold_quantity[.@i]*((.@mvp)?.Points[1]:.Points[0]));
+		}
+	deletearray @sold_nameid[0], getarraysize(@sold_nameid);
+	deletearray @sold_quantity[0], getarraysize(@sold_quantity);
+	if (!.@headgear_id)
+	{
+		mes "[รับซื้อหมวกบอส]";
+		mes "รายการไอเท็มที่แลกเปลี่ยนมันไม่ใช่หมวกบอส";
+		mes "กรุณาทำรายการใหม่อีกครั้ง";
+		close;
+	}
+	mes " ";
+	mes "ราคาทั้งหมด คือ : ^0055FF"+.@headgear_total+" Point.^000000";
+	mes "คุณแน่ใจที่จะต้องการขาย ?";
+	next;
+	if(select("~ ^0055FFใช่ ข้าต้องการขายทันที^000000:~ ^777777ข้าขอ... คิดใหม่อีกครั้งดีกว่า^000000") == 2)
+	{
+		mes "[รับซื้อหมวกบอส]";
+		mes "อื้มมม, โอเค ไว้ต้องการเมื่อไรค่อยกลับมาอีกครั้ง...";
+		close;
+	}
+	for(set .@i,0; .@i<getarraysize(.@headgear_id); set .@i,.@i+1)
+		delitem .@headgear_id[.@i],.@headgear_amt[.@i];
+	setd .Points$, getd(.Points$)+.@headgear_total;
+	mes "[รับซื้อหมวกบอส]";
+	mes "แลกเปลี่ยนสำเร็จ !";
+	mes "ขอบคุณสำหรับการซื้อขาย แลกเปลี่ยน";
+	close;
+
+OnBuyItem:
+	for(set .@i,0; .@i<getarraysize(@bought_nameid); set .@i,.@i+1)
+		for(set .@j,0; .@j<getarraysize(.Shop); set .@j,.@j+2)
+			if (@bought_nameid[.@i] == .Shop[.@j])
+			{
+				set .@cost, .@cost+(.Shop[.@j+1]*@bought_quantity[.@i]);
+				break;
+			}
+	if (.@cost > getd(.Points$))
+	{
+		mes "[แลกเปลี่ยนสินค้า]";
+		mes "คุณมีจำนวน Points ไม่เพียงพอต่อการแลกเปลี่ยน.";
+	}
+	else {
+		mes "[แลกเปลี่ยนสินค้า]";
+		mes "	";
+		for(set .@i,0; .@i<getarraysize(@bought_nameid); set .@i,.@i+1)
+		{
+			getitem @bought_nameid[.@i], @bought_quantity[.@i];
+			mes "  ^777777"+getitemname(@bought_nameid[.@i])+" จำนวน "+@bought_quantity[.@i]+" อัน^000000";
+		}
+		mes " ";
+		mes "ราคาทั้งหมด คือ : ^0055FF"+.@cost+" pt.^000000";
+		setd .Points$, getd(.Points$)-.@cost;
+	}
+	deletearray @bought_nameid[0], getarraysize(@bought_nameid);
+	deletearray @bought_quantity[0], getarraysize(@bought_quantity);
+	close;
+
+OnInit:
+
+	set .Points$,"#headgear_Points";	// ค่าตัวแปร เก็บคะแนนพอยท์ (ห้ามแก้ใขมีผลต่อ Base ที่เก็บค่าบน SQL)
+	setarray .Shop[0],1220005,1; //ของแลกเปลี่ยนพ้อยเป็นของ
+					  
+	setarray .Points[0],0,5;		// ตั้งค่า ราคาการขายหมวกบอสให้กับ Npc <หมวกบอสปกติ>,<หมวกบอส บอส>
+	set .MvPheadgear$,					// ตั้งค่า รหัสไอเท็ม หมวกบอส สำหรับหมวกบอสบอส. (ราคาปัจจุบันสำหรับหมวกบอสบอส ต่อ 1 ใบ คือ 300 ที่จะได้รับเมื่อขาย)
+	  "2246,5053,5019,5002,2249,5123,2256,2258,5007,2235,2234,2268";
+
+	npcshopdelitem "BossPoint_Shops",909;
+	for(set .@i,0; .@i<getarraysize(.Shop); set .@i,.@i+2)
+		npcshopadditem "BossPoint_Shops",.Shop[.@i],.Shop[.@i+1];
+	waitingroom "แลกหมวกบอสเป็นพ้อย",0; 
+	end;
+}
+
+-	shop	BossPoint_Shops	-1,909:-1

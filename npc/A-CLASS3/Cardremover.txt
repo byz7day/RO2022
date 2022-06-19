@@ -9,9 +9,9 @@ set @cardbatzeny2,10000; //ค่าบริการเพิ่มต่อการ์ดแต่ละใบ
 set @cardbatzeny3,1; // จำนวน Star Crumb
 set @cardbatzeny4,1; // จำนวน Yellow Gemstone
 
-set @failbatrate1,1; //อัตรา การ์ด และ Item เสียหาย ทั้งคู่
-set @failbatrate2,4; //เสียหายอย่างใดอย่างหนึ่ง
-set @failbatrate3,10; //ไม่สามารถถอดได้ แต่ Item ไม่เสียหาย
+set @failbatrate1,0; //อัตรา การ์ด และ Item เสียหาย ทั้งคู่
+set @failbatrate2,0; //เสียหายอย่างใดอย่างหนึ่ง
+set @failbatrate3,0; //ไม่สามารถถอดได้ แต่ Item ไม่เสียหาย
 set @failbatrate4,@failbatrate1+@failbatrate2+@failbatrate3; //ไม่สามารถถอดได้ แต่ Item ไม่เสียหายสรุปคือ โอกาสผิดพลาดเท่ากับ 15%
 
 UPGRADEROOT:

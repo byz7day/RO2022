@@ -10,7 +10,7 @@ mes "สวัสดีคุณ :^FF0000 "+strcharinfo(0)+" ^000000 ";
 mes "ต้องการเข้าสู่สนามประลอง";
 mes "เพื่อทดสอบฝีมือของคุณไหม";
 menu 
-"ห้องลองดาเมจ[ "+getmapusers("m_pvp02")+"/30 ]",Mm_pvp02a,
+"ห้องลองดาเมจ[ "+getmapusers("job_wiz")+"/30 ]",Mm_pvp02a,
 "Izlude [ "+getmapusers("pvp_y_8-2")+"/100 ]",Mm_pvp02,
 "Prontera [ "+getmapusers("pvp_y_8-1")+"/100 ]",Mm_pvp03,
 "Death Match [ "+getmapusers("pvp_n_1-5")+"/100 ]",Mm_pvp01,
@@ -22,9 +22,9 @@ menu
 Mm_pvp02a:
 //sc_end SC_POEMBRAGI;
 //sc_end SC_SERVICE4U;
-if (getmapusers("m_pvp02")>= 30) goto MaxPlayerRoom;
-warp "m_pvp02",0,0;
-announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่ ห้องลองดาเมจ แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("m_pvp02")+"/30 ] คน",0;
+if (getmapusers("job_wiz")>= 30) goto MaxPlayerRoom;
+warp "job_wiz",116,98;
+announce "[ระบบ] ขณะนี้ คุณ [ "+strcharinfo(0)+" ] ได้เข้าสู่ ห้องลองดาเมจ แล้วจ้า ขณะนี้มีผู้เล่นทั้งหมด [ "+getmapusers("job_wiz")+"/30 ] คน",0;
 close;
 
 Mm_pvp01:

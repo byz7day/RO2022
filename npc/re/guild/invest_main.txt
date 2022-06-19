@@ -1461,7 +1461,7 @@ OnTouch:
 
 // Investment Rewards :: tooja_japanki
 //============================================================
-malangdo,215,119,4	script	Thanks Ticket Machine	564,{
+/*malangdo,215,119,4	script	Thanks Ticket Machine	564,{
 	if (MaxWeight - Weight < 4500 || checkweight(1201,1) == 0) {
 		mes "- Currently you're carrying -";
 		mes "- too many items with you. -";
@@ -1669,4 +1669,4 @@ L_Bag:
 	next;
 	mes "The item ^0000FF"+((getargcount() > 2)?getarg(2,""):getitemname(getarg(0)))+"^000000 has been obtained.";
 	close;
-}
+}*/

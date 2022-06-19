@@ -1,0 +1,19 @@
+morocc,140,101,4	script	GUILDedasd	84,{
+mes "[Guild Master]";
+mes "ระบบสร้างกิว อัพเลเวลกิว";
+mes "asdsadasdasda 5M";
+mes "sdasdasdasdas";
+next;
+menu
+"Create guild",createg,
+"Uplevel Guild",uplvlg,
+"Cancel",cancelg;
+createg:
+close;
+uplvlg:
+close;
+cancelg:
+close;
+OnInit:
+waitingroom "สร้างกิว อัพกิว",0; 
+}
