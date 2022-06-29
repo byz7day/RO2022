@@ -4217,7 +4217,6 @@ Body:
       DropEffect: CLIENT
     Script: |
       skill "TF_DOUBLE",1;
-      bonus bDoubleRate,5;
   - Id: 4118
     AegisName: Petit_Card
     Name: Earth Petite Card
@@ -42884,7 +42883,6 @@ Body:
     SubType: Enchant
     Script: |
       skill "TF_DOUBLE",3;
-      bonus bDoubleRate,15;
   - Id: 29366
     AegisName: Strong_Blow1
     Name: Hard Blow 1
@@ -49591,7 +49589,6 @@ Body:
       bonus bCritAtkRate,15;
       if (getskilllv("AS_KATAR") >= 10) {
          skill "TF_DOUBLE",3;
-         bonus bDoubleRate,15;
       }
   - Id: 310189
     AegisName: GuillotineCross_Bottom2
