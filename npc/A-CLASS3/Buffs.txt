@@ -53,8 +53,8 @@
 		sc_start SC_INCREASEAGI,1800000,10;
 		sc_start 41,1800000,10; //กอเรีย
 		sc_start 40,1800000,10; // MAGNIFICAT เร่ง
-		//sc_start4 SC_POEMBRAGI,1000*60*10,10,70,90,10;
-		//sc_start4 SC_SERVICE4U,1000*60*5,5,40,40,1;
+		sc_start4 SC_POEMBRAGI,1000*60*10,10,70,90,10;
+		sc_start4 SC_SERVICE4U,1000*60*5,5,40,40,1;
 		
 		//เพิ่มHPและSP 100%
 		percentheal 100,100; 
