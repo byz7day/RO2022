@@ -36,4 +36,4 @@
 // AB_ADORAMUS,BL_PC,6,50,0,10,15 // In PVP and GVG, players deal +50% damage to other players, +0% to mobs, +10% to bosses, and +15% to other with Adoramus.
 RA_ARROWSTORM,BL_PC,1,0,0,2000,0
 WM_SEVERE_RAINSTORM,BL_PC,1,0,100,500,0
-SR_TIGERCANNON,BL_PC,1,-500,-500,-100,0
+SR_TIGERCANNON,BL_PC,1,500,500,100,0
