@@ -562,6 +562,7 @@ Body:
     Weight: 200
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 757
     AegisName: Elunium_Stone
     Name: Rough Elunium
@@ -570,6 +571,7 @@ Body:
     Weight: 200
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 766
     AegisName: Silky_Fur_Bundle
     Name: A bundle of shiny hair.
@@ -1230,6 +1232,7 @@ Body:
     Weight: 200
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 985
     AegisName: Elunium
     Name: Elunium
@@ -1238,6 +1241,7 @@ Body:
     Weight: 200
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 986
     AegisName: Anvil
     Name: Anvil
@@ -9718,7 +9722,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@rate = ((getrefine()>14)?15:10);
-      bonus2 bAddClass,Class_All,.@rate;
+      bonus bAtkRate,.@rate;
       bonus3 bAutoSpell,"SM_MAGNUM",10,15;
   - Id: 4495
     AegisName: Sealed_Amon_Ra_Card
@@ -11459,6 +11463,8 @@ Body:
       bonus bDef,20;
       bonus2 bSubSize,Size_Medium,25;
       bonus2 bSubSize,Size_Large,25;
+      bonus2 bMagicSubSize,Size_Medium,25;
+      bonus2 bMagicSubSize,Size_Large,25;
   - Id: 4610
     AegisName: Sarah_Card
     Name: Sarah Card
@@ -17557,6 +17563,7 @@ Body:
     Weight: 150
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 6224
     AegisName: Bradium
     Name: Bradium
@@ -17565,6 +17572,7 @@ Body:
     Weight: 150
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 6225
     AegisName: HD_Carnium
     Name: HD Carnium
@@ -27856,10 +27864,10 @@ Body:
     Flags:
       BuyingStore: true
   - Id: 7513
-    AegisName: Pocket_Watch__
+    AegisName: Pocket_Watch
     Name: Pocket Watch
     Type: Etc
-    Buy: 3420
+    Buy: 2564
     Weight: 10
     Flags:
       BuyingStore: true
@@ -31127,11 +31135,10 @@ Body:
     Buy: 20
     Weight: 10
   - Id: 7925
-    AegisName: Silver_Paper
-    Name: Silver Paper
+    AegisName: M_Dimension_Essence
+    Name: Essence of a Powerful Dimension
     Type: Etc
     Buy: 20
-    Weight: 10
   - Id: 7926
     AegisName: Incense
     Name: Incense
@@ -35439,6 +35446,7 @@ Body:
     Buy: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25272
     AegisName: IllusoryStone
     Name: Illusion Gemstone
@@ -35848,7 +35856,7 @@ Body:
       NoMail: true
       NoAuction: true
   - Id: 25375
-    AegisName: Powerful_Soul_Essence
+    AegisName: Mightysoul_Essence
     Name: Powerful Soul Essence
     Type: Etc
   - Id: 25376
@@ -37108,7 +37116,7 @@ Body:
     SubType: Enchant
     Weight: 10
     Script: |
-      autobonus "{ bonus bInt,50; bonus bMatkRate,15; bonus2 bAddClass,Class_All,-15; }",20,10000,BF_MAGIC;
+      autobonus "{ bonus bInt,50; bonus bMatkRate,15; bonus bAtkRate,-15; }",20,10000,BF_MAGIC;
       /* unknown rate */
   - Id: 25702
     AegisName: EP17_1_EVT35
@@ -37126,7 +37134,7 @@ Body:
     SubType: Enchant
     Weight: 10
     Script: |
-      autobonus "{ bonus bStr,50; bonus2 bAddClass,Class_All,15; bonus bMatkRate,-15; }",20,10000,BF_WEAPON;
+      autobonus "{ bonus bStr,50; bonus bAtkRate,15; bonus bMatkRate,-15; }",20,10000,BF_WEAPON;
       /* unknown rate */
   - Id: 25704
     AegisName: EP17_1_EVT37
@@ -37217,21 +37225,29 @@ Body:
     Name: Rough Shadowdecon
     Type: Etc
     Weight: 10
+    Flags:
+      DropEffect: CLIENT
   - Id: 25729
     AegisName: Shadowdecon
     Name: Shadowdecon
     Type: Etc
     Weight: 20
+    Flags:
+      DropEffect: CLIENT
   - Id: 25730
     AegisName: Zelunium_Ore
     Name: Rough Zelunium
     Type: Etc
     Weight: 10
+    Flags:
+      DropEffect: CLIENT
   - Id: 25731
     AegisName: Zelunium
     Name: Zelunium
     Type: Etc
     Weight: 20
+    Flags:
+      DropEffect: CLIENT
   - Id: 25733
     AegisName: EP17_1_Open_Event
     Name: Episode Quest Clear Coupon
@@ -37288,6 +37304,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25760
     AegisName: Dragenergy_Blue
     Name: Blue Dragon Orb
@@ -37295,6 +37312,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25761
     AegisName: Dragenergy_Red
     Name: Red Dragon Orb
@@ -37302,6 +37320,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25762
     AegisName: Dragenergy_Gold
     Name: Gold Dragon Orb
@@ -37309,6 +37328,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25763
     AegisName: Dragenergy_Purple
     Name: Purple Dragon Orb
@@ -37316,6 +37336,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25764
     AegisName: Dragenergy_Silver
     Name: Silver Dragon Orb
@@ -37323,6 +37344,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25765
     AegisName: Drabone_L
     Name: Large Dragon Bone
@@ -37330,6 +37352,7 @@ Body:
     Weight: 200
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25766
     AegisName: Drabone_S
     Name: Small Dragon Bone
@@ -37337,6 +37360,7 @@ Body:
     Weight: 100
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25767
     AegisName: Angel_Dream
     Name: Angel's Dream
@@ -37344,6 +37368,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25768
     AegisName: Shard_Blue
     Name: Valkyrie Ingrid's Armor Fragment
@@ -37569,30 +37594,35 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25810
     AegisName: Ein_RINDIUM
     Name: Rindium
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25811
     AegisName: Ein_ODIUM
     Name: Odium
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25812
     AegisName: Ein_PURDIUM
     Name: Purdium
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25813
     AegisName: Ein_WHIDIUM
     Name: Whidium
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25814
     AegisName: Ein_DYNITE
     Name: Dynite
@@ -37600,6 +37630,7 @@ Body:
     Weight: 10
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 25815
     AegisName: Ein_SOLIDDUST
     Name: Hardened Dust
@@ -38218,7 +38249,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,2;
+      bonus bAtkRate,2;
       bonus5 bAutoSpell,"SM_ENDURE",1,5,BF_SHORT,0;
   - Id: 27101
     AegisName: SweetNightM_Card
@@ -38899,7 +38930,8 @@ Body:
     Script: |
       .@atk = 5;
       .@r = getrefine();
-      if (getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_VIEW) == W_SPEAR && .@r >= 10) {
+      .@i = getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_VIEW);
+      if ((.@i == W_1HSPEAR || .@i == W_2HSPEAR) && .@r >= 10) {
          .@atk += 20;
          if (.@r >= 14) {
             .@atk += 20;
@@ -38932,7 +38964,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bStr,4;
-      bonus2 bAddClass,Class_All,4;
+      bonus bAtkRate,4;
   - Id: 27172
     AegisName: Cowraiders3_Card
     Name: Scimitar Buffalo Bandit Card
@@ -39208,6 +39240,8 @@ Body:
     Weight: 10
     Locations:
       Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
   - Id: 27201
     AegisName: Agnes_Card
     Name: Agnes Card
@@ -39215,6 +39249,8 @@ Body:
     Weight: 10
     Locations:
       Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
   - Id: 27202
     AegisName: Jurgen_Card
     Name: Juergen Card
@@ -39222,6 +39258,8 @@ Body:
     Weight: 10
     Locations:
       Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
   - Id: 27203
     AegisName: Spica_Card
     Name: Spica Card
@@ -39229,6 +39267,8 @@ Body:
     Weight: 10
     Locations:
       Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
   - Id: 27209
     AegisName: SLD_Q_Scaraba_Card
     Name: Sealed Queen Scaraba Card
@@ -39624,7 +39664,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
       bonus bLongAtkRate,5;
   - Id: 27257
     AegisName: Kuro_Akuma_Card
@@ -39653,7 +39693,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
       bonus bAspdRate,5;
   - Id: 27259
     AegisName: Rechenier_Card
@@ -39794,7 +39834,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@val = 10;
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       if (getrefine() >= 10) {
          .@val += 5;
       }
@@ -39971,7 +40011,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
   - Id: 27304
     AegisName: E_EA2S_Card
     Name: E EA2S Card
@@ -40251,7 +40291,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
       bonus bMaxHPRate,-50;
       bonus2 bAddRace,RC_DemiHuman,30;
       bonus2 bAddRace,RC_Player_Human,30;
@@ -40335,7 +40375,7 @@ Body:
     Script: |
       .@r = getrefine();
       bonus3 bAutoSpellWhenHit,"NPC_WIDECURSE",3,(1+.@r);
-      autobonus2 "{ bonus2 bAddClass,Class_All,25; bonus bMatkRate,25; }",(1+.@r),10000,BF_WEAPON|BF_MAGIC;
+      autobonus2 "{ bonus bAtkRate,25; bonus bMatkRate,25; }",(1+.@r),10000,BF_WEAPON|BF_MAGIC;
       autobonus3 "{ }",1000,5000,"NV_FIRSTAID","{ active_transform 3029,5000; }";
       /* unknown rates */
   - Id: 27328
@@ -40416,7 +40456,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,25;
+      bonus bAtkRate,25;
       bonus2 bSubRace,RC_Demon,-5;
   - Id: 27335
     AegisName: Chaotic_Baphomet_Junior_Card
@@ -40674,7 +40714,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
   - Id: 27355
     AegisName: Contaminated_Raydric_Archer_Card
     Name: Contaminated Raydric Archer Card
@@ -41437,7 +41477,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,4;
+      bonus bAtkRate,4;
       bonus bHit,10;
   - Id: 29062
     AegisName: Mettle2
@@ -41446,7 +41486,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,8;
+      bonus bAtkRate,8;
       bonus bHit,20;
   - Id: 29063
     AegisName: Mettle3
@@ -41455,7 +41495,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,12;
+      bonus bAtkRate,12;
       bonus bHit,30;
   - Id: 29064
     AegisName: Mettle4
@@ -41464,7 +41504,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,16;
+      bonus bAtkRate,16;
       bonus bHit,40;
   - Id: 29065
     AegisName: Mettle5
@@ -41473,7 +41513,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,20;
+      bonus bAtkRate,20;
       bonus bHit,50;
   - Id: 29066
     AegisName: Mettle6
@@ -41482,7 +41522,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,24;
+      bonus bAtkRate,24;
       bonus bHit,60;
   - Id: 29067
     AegisName: Mettle7
@@ -41491,7 +41531,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,28;
+      bonus bAtkRate,28;
       bonus bHit,70;
   - Id: 29068
     AegisName: Mettle8
@@ -41500,7 +41540,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,32;
+      bonus bAtkRate,32;
       bonus bHit,80;
   - Id: 29069
     AegisName: Mettle9
@@ -41509,7 +41549,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,36;
+      bonus bAtkRate,36;
       bonus bHit,90;
   - Id: 29070
     AegisName: Mettle10
@@ -41518,7 +41558,7 @@ Body:
     SubType: Enchant
     Buy: 10
     Script: |
-      bonus2 bAddClass,Class_All,44;
+      bonus bAtkRate,44;
       bonus bHit,100;
   - Id: 29071
     AegisName: MagicEessence1
@@ -42941,35 +42981,35 @@ Body:
     Script: |
       bonus bMatk,5;
   - Id: 29423
-    AegisName: SuraStone_Top_
+    AegisName: Sura_Top
     Name: Champion Stone (Upper)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bBaseAtk,2*getskilllv("MO_IRONHAND");
   - Id: 29424
-    AegisName: SuraStone_Middle_
+    AegisName: Sura_Middle
     Name: Champion Stone (Middle)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bHit,2*getskilllv("MO_DODGE");
   - Id: 29425
-    AegisName: SuraStone_Bottom_
+    AegisName: Sura_Bottom
     Name: Champion Stone (Bottom)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"MO_CHAINCOMBO",20;
   - Id: 29426
-    AegisName: SuraStone_Robe_
+    AegisName: Sura_Robe
     Name: SuraStone (Garment)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"SR_RAMPAGEBLASTER",15;
   - Id: 29427
-    AegisName: SuraStone_Robe2_
+    AegisName: Sura_Robe2
     Name: Sura Stone II (Garment)
     Type: Card
     SubType: Enchant
@@ -43250,35 +43290,35 @@ Body:
     Script: |
       bonus2 bSkillAtk,"SC_TRIANGLESHOT",15;
   - Id: 29481
-    AegisName: MechanicStone_Top_
+    AegisName: Mechanic_Top
     Name: Whitesmith Stone (Upper)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bBaseAtk,2*getskilllv("BS_WEAPONRESEARCH");
   - Id: 29482
-    AegisName: MechanicStone_Middle_
+    AegisName: Mechanic_Middle
     Name: Whitesmith Stone (Middle)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bHit,3*getskilllv("BS_SKINTEMPER");
   - Id: 29483
-    AegisName: MechanicStone_Bottom_
+    AegisName: Mechanic_Bottom
     Name: Whitesmith Stone (Bottom)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"WS_CARTTERMINATION",20;
   - Id: 29484
-    AegisName: MechanicStone_Robe_
+    AegisName: Mechanic_Robe
     Name: Mechanic Stone (Garment)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"NC_AXETORNADO",15;
   - Id: 29485
-    AegisName: WanderMinstrelStone_Top_
+    AegisName: WanderMinstrel_Top
     Name: Clown Gypsy Stone (Upper)
     Type: Card
     SubType: Enchant
@@ -43288,7 +43328,7 @@ Body:
       else
          bonus bBaseAtk,getskilllv("BA_MUSICALLESSON")*2;
   - Id: 29486
-    AegisName: WanderMinstrelStone_Middle_
+    AegisName: WanderMinstrel_Middle
     Name: Clown Gypsy Stone (Middle)
     Type: Card
     SubType: Enchant
@@ -43298,14 +43338,14 @@ Body:
       else
          bonus2 bSkillAtk,"BA_MUSICALSTRIKE",20;
   - Id: 29487
-    AegisName: WanderMinstrelStone_Bottom_
+    AegisName: WanderMinstrel_Bottom
     Name: Clown Gypsy Stone (Bottom)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"CG_ARROWVULCAN",20;
   - Id: 29488
-    AegisName: WanderMinstrelStone_Robe_
+    AegisName: WanderMinstrel_Robe
     Name: Wanderer Minstrel Stone (Garment)
     Type: Card
     SubType: Enchant
@@ -43348,35 +43388,35 @@ Body:
     Script: |
       bonus2 bSkillAtk,"AB_ADORAMUS",15;
   - Id: 29517
-    AegisName: PaladinStone_Top_
+    AegisName: Paladin_Top
     Name: Paladin Stone (Upper)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bMaxHPrate,(getskilllv("CR_TRUST")/2);
   - Id: 29518
-    AegisName: PaladinStone_Middle_
+    AegisName: Paladin_Middle
     Name: Paladin Stone (Middle)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bLongAtkRate,(getskilllv("KN_SPEARMASTERY")/2);
   - Id: 29519
-    AegisName: PaladinStone_Bottom_
+    AegisName: Paladin_Bottom
     Name: Paladin Stone (Bottom)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"CR_HOLYCROSS",20;
   - Id: 29520
-    AegisName: RoyalguardStone_Robe_
+    AegisName: Royalguard_Robe
     Name: Royal Guard Stone (Garment)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"LG_BANISHINGPOINT",15;
   - Id: 29521
-    AegisName: AssacrossStone_Top_
+    AegisName: Assassincross_Top
     Name: Assassin Cross Stone (Upper)
     Type: Card
     SubType: Enchant
@@ -43397,7 +43437,7 @@ Body:
     Script: |
       bonus2 bSkillAtk,"AS_SONICBLOW",20;
   - Id: 29524
-    AegisName: GuillcrossStone_Robe_
+    AegisName: Guillotinecross_Robe
     Name: Assassin Cross Stone (Garment)
     Type: Card
     SubType: Enchant
@@ -43494,7 +43534,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       if (.@r>=7) {
          bonus bBaseAtk,25;
          if (.@r>=9) {
@@ -43658,7 +43698,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bInt,50; bonus bMatkRate,15; bonus2 bAddClass,Class_All,-15; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; }";
+      autobonus "{ bonus bInt,50; bonus bMatkRate,15; bonus bAtkRate,-15; }",30,10000,BF_MAGIC,"{ specialeffect2 EF_POTION_BERSERK; }";
   - Id: 29549
     AegisName: Improve_Orb_L_DEX
     Name: Modification Orb(Firing Shot)
@@ -43672,7 +43712,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bStr,50; bonus2 bAddClass,Class_All,15; bonus bMatkRate,-15; }",30,10000,BF_NORMAL,"{ specialeffect2 EF_POTION_BERSERK; }";
+      autobonus "{ bonus bStr,50; bonus bAtkRate,15; bonus bMatkRate,-15; }",30,10000,BF_NORMAL,"{ specialeffect2 EF_POTION_BERSERK; }";
   - Id: 29551
     AegisName: Improve_Orb_L_AGI
     Name: Modification Orb(Fatal Flash)
@@ -43844,21 +43884,21 @@ Body:
     SubType: Enchant
     Buy: 20
   - Id: 29611
-    AegisName: SuraStone_Bottom2_
+    AegisName: Sura_Bottom2
     Name: Sura Stone II (Bottom)
     Type: Card
     SubType: Enchant
     Script: |
       bonus bBaseAtk,2*getskilllv("AL_DP");
   - Id: 29612
-    AegisName: SuraStone_Middle2_
+    AegisName: Sura_Middle2
     Name: Sura Stone II (Middle)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bSkillAtk,"MO_COMBOFINISH",15;
   - Id: 29613
-    AegisName: SuraStone_Top2_
+    AegisName: Sura_Top2
     Name: Sura Stone II (Upper)
     Type: Card
     SubType: Enchant
@@ -44088,7 +44128,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bBaseAtk,2*(.@r/2);
       bonus bHit,3*(.@r/2);
-      bonus2 bAddClass,Class_All,(.@r/5);
+      bonus bAtkRate,(.@r/5);
   - Id: 29673
     AegisName: Time_Jewely_Str_2
     Name: Temporal Jewel (STR) Lv 2
@@ -44098,7 +44138,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bBaseAtk,4*(.@r/2);
       bonus bHit,5*(.@r/2);
-      bonus2 bAddClass,Class_All,2*(.@r/5);
+      bonus bAtkRate,2*(.@r/5);
   - Id: 29674
     AegisName: Time_Jewely_Str_3
     Name: Temporal Jewel (STR) Lv 3
@@ -44108,7 +44148,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bBaseAtk,7*(.@r/2);
       bonus bHit,7*(.@r/2);
-      bonus2 bAddClass,Class_All,3*(.@r/5);
+      bonus bAtkRate,3*(.@r/5);
   - Id: 29675
     AegisName: Time_Jewely_Agi_1
     Name: Temporal Jewel (AGI) Lv 1
@@ -44208,7 +44248,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus2 bWeaponDamageRate,W_BOW,(.@r/2);
       bonus bHit,2*(.@r/2);
-      bonus2 bAddClass,Class_All,(.@r/5);
+      bonus bAtkRate,(.@r/5);
   - Id: 29685
     AegisName: Time_Jewely_Dex_2
     Name: Temporal Jewel (DEX) Lv 2
@@ -44218,7 +44258,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus2 bWeaponDamageRate,W_BOW,2*(.@r/2);
       bonus bHit,5*(.@r/2);
-      bonus2 bAddClass,Class_All,2*(.@r/5);
+      bonus bAtkRate,2*(.@r/5);
   - Id: 29686
     AegisName: Time_Jewely_Dex_3
     Name: Temporal Jewel (DEX) Lv 3
@@ -44228,7 +44268,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus2 bWeaponDamageRate,W_BOW,3*(.@r/2);
       bonus bHit,7*(.@r/2);
-      bonus2 bAddClass,Class_All,3*(.@r/5);
+      bonus bAtkRate,3*(.@r/5);
   - Id: 29687
     AegisName: Time_Jewely_Luk_1
     Name: Temporal Jewel (LUK) Lv 1
@@ -44238,7 +44278,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bCritAtkRate,3*(.@r/2);
       bonus bCritical,(.@r/2);
-      bonus2 bAddClass,Class_All,(.@r/5);
+      bonus bAtkRate,(.@r/5);
   - Id: 29688
     AegisName: Time_Jewely_Luk_2
     Name: Temporal Jewel (LUK) Lv 2
@@ -44248,7 +44288,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bCritAtkRate,6*(.@r/2);
       bonus bCritical,2*(.@r/2);
-      bonus2 bAddClass,Class_All,2*(.@r/5);
+      bonus bAtkRate,2*(.@r/5);
   - Id: 29689
     AegisName: Time_Jewely_Luk_3
     Name: Temporal Jewel (LUK) Lv 3
@@ -44258,7 +44298,7 @@ Body:
       .@r = getequiprefinerycnt(EQI_HEAD_TOP);
       bonus bCritAtkRate,9*(.@r/2);
       bonus bCritical,3*(.@r/2);
-      bonus2 bAddClass,Class_All,3*(.@r/5);
+      bonus bAtkRate,3*(.@r/5);
   - Id: 29706
     AegisName: Tenacity1
     Name: Tenacity Lv1
@@ -44600,7 +44640,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine()/2;
-      bonus2 bAddClass,Class_All,1+.@r;
+      bonus bAtkRate,1+.@r;
       bonus bMatkRate,1+.@r;
       bonus bMaxHPrate,-2*(1+.@r);
   - Id: 31018
@@ -44654,7 +44694,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bAspdRate,10;
-      bonus2 bAddClass,Class_All,-3;
+      bonus bAtkRate,-3;
   - Id: 31022
     AegisName: XM_Teddy_Bear_Card
     Name: Abandoned Teddy Bear Card
@@ -44693,7 +44733,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
       bonus5 bAutoSpell,"RK_IGNITIONBREAK",5,20,BF_WEAPON,1;
   - Id: 31025
     AegisName: As_Wind_Ghost_Card
@@ -44930,7 +44970,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableArmor;
-      bonus2 bAddClass,Class_All,30;
+      bonus bAtkRate,30;
       bonus bMaxHPrate,-15;
   - Id: 300014
     AegisName: Ingrid_Card
@@ -44944,7 +44984,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bUnbreakableArmor;
-      bonus2 bAddClass,Class_All,-15;
+      bonus bAtkRate,-15;
       bonus bMaxHPrate,40;
       bonus2 bHPLossRate,1000,4000;
     UnEquipScript: |
@@ -44962,10 +45002,10 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
       bonus bMaxHPrate,-5;
       bonus bMaxSPrate,-5;
-      bonus2 bAddClass,Class_All,(getrefine()/4);
+      bonus bAtkRate,(getrefine()/4);
   - Id: 300016
     AegisName: Treasure_Mimic_Card
     Name: Treasure Mimic Card
@@ -45238,7 +45278,7 @@ Body:
     Script: |
       .@r = getrefine();
       if (getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_VIEW) == W_BOOK) {
-         bonus2 bAddClass,Class_All,5;
+         bonus bAtkRate,5;
          bonus bHit,20;
       }
       bonus bShortAtkRate,.@r;
@@ -46037,7 +46077,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       bonus bMaxHPrate,-5;
-      bonus2 bAddClass,Class_All,(getrefine()/3);
+      bonus bAtkRate,(getrefine()/3);
   - Id: 300151
     AegisName: ILL_Kraken_Card
     Name: Deep Sea Kraken Card
@@ -46249,7 +46289,7 @@ Body:
     Flags:
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       bonus bLongAtkRate,7;
   - Id: 300185
     AegisName: MD_Geffen_Akuma_Card
@@ -46758,7 +46798,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       if (BaseJob == JOB_NOVICE) {
-         bonus2 bAddClass,Class_All,10;
+         bonus bAtkRate,10;
          bonus bMaxHP,1500;
       }
   - Id: 300243
@@ -47085,7 +47125,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       if (getiteminfo(getequipid(EQI_HAND_R),11) == W_1HSWORD || getiteminfo(getequipid(EQI_HAND_R),11) == W_2HSWORD || getiteminfo(getequipid(EQI_HAND_R),11) == W_DAGGER) {
          bonus bShortAtkRate,10+2*(.@r/3);
          if (BaseLevel>=200) {
@@ -47103,7 +47143,7 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       if (getiteminfo(getequipid(EQI_HAND_R),11) == W_1HSPEAR || getiteminfo(getequipid(EQI_HAND_R),11) == W_2HSPEAR) {
          bonus bLongAtkRate,10+2*(.@r/3);
          if (BaseLevel>=200) {
@@ -47240,9 +47280,9 @@ Body:
       DropEffect: CLIENT
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,-10+3*(.@r/3);
+      bonus bAtkRate,-10+3*(.@r/3);
       if (.@r>=11) {
-         bonus2 bAddClass,Class_All,5;
+         bonus bAtkRate,5;
       }
   - Id: 300275
     AegisName: aegis_300275
@@ -47847,12 +47887,12 @@ Body:
       .@r = getrefine();
       if (getrefine() < 12) {
         bonus bMaxHPrate,-30;
-        bonus2 bAddClass,Class_All,-10;
+        bonus bAtkRate,-10;
         bonus bMatkRate,-10;
       }
       else {
         bonus bMaxHPrate,30;
-        bonus2 bAddClass,Class_All,10;
+        bonus bAtkRate,10;
         bonus bMatkRate,10;
       }
       if (getequiparmorlv() == 2) {
@@ -47871,7 +47911,7 @@ Body:
       BuyingStore: true
       DropEffect: CLIENT
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       bonus bMatkRate,5;
       .@r = getrefine();
       bonus bPAtk,2*(.@r/3);
@@ -48066,7 +48106,7 @@ Body:
       bonus bStr,10;
       bonus bMdef,3;
       bonus bDef,25;
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
   - Id: 310077
     AegisName: Cassock_Agi
     Name: AGI Blessing
@@ -48169,7 +48209,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,2;
+      bonus bAtkRate,2;
       bonus bStr,3;
   - Id: 310087
     AegisName: Automatic_Orb6
@@ -48292,7 +48332,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       bonus bBaseAtk,75;
       if (.@r>=9) {
          bonus bShortAtkRate,2;
@@ -48533,13 +48573,13 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bMatkRate,3;
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
       if (.@r>=9) {
          bonus bMatkRate,3;
-         bonus2 bAddClass,Class_All,3;
+         bonus bAtkRate,3;
          if (.@r>=11) {
             bonus bMatkRate,4;
-            bonus2 bAddClass,Class_All,4;
+            bonus bAtkRate,4;
          }
       }
   - Id: 310118
@@ -48617,7 +48657,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bShortAtkRate,10; bonus2 bAddClass,Class_All,15; bonus bStr,50; }",30,10000,BF_WEAPON;
+      autobonus "{ bonus bShortAtkRate,10; bonus bAtkRate,15; bonus bStr,50; }",30,10000,BF_WEAPON;
   - Id: 310125
     AegisName: Automatic_Orb44
     Name: Automatic Orb(Fatal Flash)
@@ -49617,35 +49657,35 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,1;
+      bonus bAtkRate,1;
   - Id: 310198
     AegisName: aegis_310198
     Name: Anger Lv2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
   - Id: 310199
     AegisName: aegis_310199
     Name: Anger Lv3
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
   - Id: 310200
     AegisName: aegis_310200
     Name: Anger Lv4
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,7;
+      bonus bAtkRate,7;
   - Id: 310201
     AegisName: aegis_310201
     Name: Anger Lv5
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
   - Id: 310202
     AegisName: aegis_310202
     Name: Horror Lv1
@@ -49762,35 +49802,35 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,1;
+      bonus bAtkRate,1;
   - Id: 310218
     AegisName: aegis_310218
     Name: Empathy Lv2
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
   - Id: 310219
     AegisName: aegis_310219
     Name: Empathy Lv3
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
   - Id: 310220
     AegisName: aegis_310220
     Name: Empathy Lv4
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,7;
+      bonus bAtkRate,7;
   - Id: 310221
     AegisName: aegis_310221
     Name: Empathy Lv5
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
   - Id: 310222
     AegisName: aegis_310222
     Name: Happiness Lv1
@@ -50639,7 +50679,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,2;
+      bonus bAtkRate,2;
       bonus bBaseAtk,25;
       if (.@r>=7) {
          bonus bShortAtkRate,3;
@@ -50692,7 +50732,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,4;
+      bonus bAtkRate,4;
       bonus bBaseAtk,50;
       if (.@r>=7) {
          bonus bShortAtkRate,3;
@@ -50745,7 +50785,7 @@ Body:
     SubType: Enchant
     Script: |
       .@r = getrefine();
-      bonus2 bAddClass,Class_All,6;
+      bonus bAtkRate,6;
       bonus bBaseAtk,100;
       if (.@r>=7) {
          bonus bShortAtkRate,5;
@@ -50833,16 +50873,16 @@ Body:
     Script: |
       .@r = getrefine();
       bonus bMatkRate,2;
-      bonus2 bAddClass,Class_All,2;
+      bonus bAtkRate,2;
       if (.@r>=7) {
          bonus bMatkRate,2;
-         bonus2 bAddClass,Class_All,2;
+         bonus bAtkRate,2;
          if (.@r>=9) {
             bonus bMatkRate,2;
-            bonus2 bAddClass,Class_All,2;
+            bonus bAtkRate,2;
             if (.@r>=11) {
                bonus bMatkRate,4;
-               bonus2 bAddClass,Class_All,4;
+               bonus bAtkRate,4;
             }
          }
       }
@@ -52693,7 +52733,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus2 bAddClass,Class_All,25; bonus bVit,50; }",30,10000,BF_WEAPON;
+      autobonus "{ bonus bAtkRate,25; bonus bVit,50; }",30,10000,BF_WEAPON;
   - Id: 310610
     AegisName: Wolf_Orb_Sp_Int
     Name: Wolf Orb (Spell Buster)
@@ -53040,28 +53080,28 @@ Body:
     Script: |
       bonus2 bSPDrainRate,10,1;
   - Id: 310664
-    AegisName: aegis_310664
+    AegisName: Magic_Top
     Name: Magic Power Stone(Upper)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bMagicAtkEle,Ele_All,3;
   - Id: 310665
-    AegisName: aegis_310665
+    AegisName: Magic_Middle
     Name: Magic Power Stone(Mid)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bMagicAtkEle,Ele_All,3;
   - Id: 310666
-    AegisName: aegis_310666
+    AegisName: Magic_Bottom
     Name: Magic Power Stone(Lower)
     Type: Card
     SubType: Enchant
     Script: |
       bonus2 bMagicAtkEle,Ele_All,3;
   - Id: 310667
-    AegisName: aegis_310667
+    AegisName: Magic_Robe_D
     Name: Magic Power Stone(Dual)
     Type: Card
     SubType: Enchant
@@ -53577,7 +53617,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
       bonus bHit,10;
   - Id: 310693
     AegisName: Star_Of_Mettle2
@@ -53585,7 +53625,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       bonus bHit,15;
   - Id: 310694
     AegisName: Star_Of_Mettle3
@@ -53593,7 +53633,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,7;
+      bonus bAtkRate,7;
       bonus bHit,20;
       bonus bPAtk,1;
   - Id: 310695
@@ -53602,7 +53642,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
       bonus bHit,25;
       bonus bPAtk,2;
   - Id: 310696
@@ -53611,7 +53651,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,15;
+      bonus bAtkRate,15;
       bonus bHit,30;
       bonus bPAtk,4;
   - Id: 310697
@@ -53621,7 +53661,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bLongAtkRate,2;
-      bonus2 bAddClass,Class_All,2;
+      bonus bAtkRate,2;
   - Id: 310698
     AegisName: Star_Of_MasterArcher2
     Name: Star of Master Archer Lv2
@@ -53629,7 +53669,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bLongAtkRate,3;
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
   - Id: 310699
     AegisName: Star_Of_MasterArcher3
     Name: Star of Master Archer Lv3
@@ -53637,7 +53677,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bLongAtkRate,5;
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
       bonus bPAtk,1;
   - Id: 310700
     AegisName: Star_Of_MasterArcher4
@@ -53646,7 +53686,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bLongAtkRate,7;
-      bonus2 bAddClass,Class_All,6;
+      bonus bAtkRate,6;
       bonus bPAtk,2;
   - Id: 310701
     AegisName: Star_Of_MasterArcher5
@@ -53655,7 +53695,7 @@ Body:
     SubType: Enchant
     Script: |
       bonus bLongAtkRate,10;
-      bonus2 bAddClass,Class_All,7;
+      bonus bAtkRate,7;
       bonus bPAtk,4;
   - Id: 310702
     AegisName: Star_Of_Sharp1
@@ -54503,14 +54543,14 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus bAgi,100; bonus2 bAddClass,Class_All,10; }",5,10000,BF_WEAPON;
+      autobonus "{ bonus bAgi,100; bonus bAtkRate,10; }",5,10000,BF_WEAPON;
   - Id: 310914
     AegisName: HeroInsignia_STR
     Name: Strength
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,10;
+      bonus bAtkRate,10;
   - Id: 310915
     AegisName: HeroInsignia_LUK
     Name: Luck
@@ -55021,14 +55061,14 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,3;
+      bonus bAtkRate,3;
   - Id: 310987
     AegisName: ATK_2Lv
     Name: ATK 2Lv
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,5;
+      bonus bAtkRate,5;
   - Id: 310988
     AegisName: MATK_1Lv
     Name: MATK 1Lv
@@ -55232,7 +55272,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,15+5*getenchantgrade();
+      bonus bAtkRate,15+5*getenchantgrade();
   - Id: 311017
     AegisName: Gear_MATK
     Name: Clockwork (Matk)
@@ -56371,7 +56411,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,6;
+      bonus bAtkRate,6;
       bonus bBaseAtk,100;
       .@r = getrefine();
       if (.@r >= 7) {
@@ -56389,7 +56429,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,6;
+      bonus bAtkRate,6;
       bonus bBaseAtk,100;
       .@r = getrefine();
       if (.@r >= 7) {
@@ -56442,17 +56482,17 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      bonus2 bAddClass,Class_All,2;
+      bonus bAtkRate,2;
       bonus bMatkRate,2;
       .@r = getrefine();
       if (.@r >= 7) {
-        bonus2 bAddClass,Class_All,2;
+        bonus bAtkRate,2;
         bonus bMatkRate,2;
         if (.@r >= 9) {
-          bonus2 bAddClass,Class_All,2;
+          bonus bAtkRate,2;
           bonus bMatkRate,2;
           if (.@r >= 11) {
-            bonus2 bAddClass,Class_All,4;
+            bonus bAtkRate,4;
             bonus bMatkRate,4;
           }
         }
@@ -56729,7 +56769,7 @@ Body:
     Type: Card
     SubType: Enchant
     Script: |
-      autobonus "{ bonus2 bAddClass,Class_All,25; bonus bVit,50; }",30,10000,BF_WEAPON;
+      autobonus "{ bonus bAtkRate,25; bonus bVit,50; }",30,10000,BF_WEAPON;
   - Id: 311121
     AegisName: Ice_F_Orb_Sp_Int
     Name: Ice Magic Orb (Spell Buster)
@@ -60038,7 +60078,7 @@ Body:
       bonus bLongAtkRate,5*(.@r/3);
       bonus bShortAtkRate,5*(.@r/3);
       if (.@r>=9) {
-        bonus2 bAddClass,Class_All,10;
+        bonus bAtkRate,10;
         if (.@r>=11 ) {
           bonus bPAtk,5;
           .@i = getiteminfo(getequipid(EQI_HAND_R), ITEMINFO_VIEW);
@@ -60542,6 +60582,85 @@ Body:
           }
         }
       }
+  - Id: 311425
+    AegisName: aegis_311425
+    Name: Spell Stone (Dual)
+    Type: Card
+    SubType: Enchant
+    Weight: 10
+    Script: |
+      bonus bSpl,5;
+  - Id: 311426
+    AegisName: aegis_311426
+    Name: Spell Magic Attack Stone (Garment)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bSMatk,3;
+  - Id: 311427
+    AegisName: aegis_311427
+    Name: Sura Stone (Upper)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bFixedCast,-100*(getskilllv("SR_RAISINGDRAGON")/2);
+  - Id: 311428
+    AegisName: aegis_311428
+    Name: Sura Stone (Middle)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bShortAtkRate,2*getskilllv("SR_GENTLETOUCH_REVITALIZE");
+  - Id: 311429
+    AegisName: aegis_311429
+    Name: Sura Stone (Lower)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bLongAtkRate,2*getskilllv("SR_GENTLETOUCH_REVITALIZE");
+  - Id: 311430
+    AegisName: aegis_311430
+    Name: Mechanic Stone (Upper)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bVariableCastrate,-getskilllv("NC_RESEARCHFE");
+  - Id: 311431
+    AegisName: aegis_311431
+    Name: Mechanic Stone (Middle)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bShortAtkRate,getskilllv("NC_MADOLICENCE");
+      bonus bLongAtkRate,getskilllv("NC_MADOLICENCE");
+  - Id: 311432
+    AegisName: aegis_311432
+    Name: Mechanic Stone (Lower)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bDelayrate,-(getskilllv("NC_TRAININGAXE")/2);
+  - Id: 311433
+    AegisName: aegis_311433
+    Name: Guillotine Cross Stone (Upper)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bDelayrate,-getskilllv("GC_RESEARCHNEWPOISON")/2;
+  - Id: 311434
+    AegisName: aegis_311434
+    Name: Guillotine Cross Stone (Middle)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bShortAtkRate,2*getskilllv("GC_DARKILLUSION");
+  - Id: 311435
+    AegisName: aegis_311435
+    Name: Guillotine Cross Stone (Lower)
+    Type: Card
+    SubType: Enchant
+    Script: |
+      bonus bLongAtkRate,2*getskilllv("GC_CROSSRIPPERSLASHER");
   - Id: 1000000
     AegisName: IDTest_event
     Name: IDTest event
@@ -61463,18 +61582,21 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000244
     AegisName: Sin_Shard_B
     Name: Fragment of Fear
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000245
     AegisName: Sin_Shard_C
     Name: Fragment of Resentment
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000253
     AegisName: Booster_W_Ticket
     Name: Booster Weapon Voucher
@@ -61506,54 +61628,63 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000256
     AegisName: Sin_Shard_E
     Name: Fragment of Sorrow
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000257
     AegisName: Sin_Fragment
     Name: Piece of Sin
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000258
     AegisName: Fate_Shard_A
     Name: Fragment of Empathy
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000259
     AegisName: Fate_Shard_B
     Name: Fragment of Happiness
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000260
     AegisName: Fate_Shard_C
     Name: Fragment of Rest
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000261
     AegisName: Fate_Shard_D
     Name: Fragment of Comfort
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000262
     AegisName: Fate_Shard_E
     Name: Fragment of Blessing
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000263
     AegisName: Fate_Fragment
     Name: Fragment of Good Will
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000268
     AegisName: J4_Gas_Mask
     Name: Gas Mask
@@ -61858,6 +61989,7 @@ Body:
     Weight: 1
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000323
     AegisName: Etel_Stone
     Name: Etel Stone
@@ -62215,94 +62347,140 @@ Body:
     AegisName: Weapon_Ore_1
     Name: Weapon Enhancement Ore(Lower)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000420
     AegisName: Weapon_Ore_2
     Name: Weapon Enhancement Ore(Intermediate)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000421
     AegisName: Weapon_Ore_3
     Name: Weapon Enhancement Ore(High)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000422
     AegisName: Weapon_Ore_4
     Name: Weapon Enhancement Ore(Superior)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000423
     AegisName: Armor_Ore_1
     Name: Armor Enhancement Ore(Lower)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000424
     AegisName: Armor_Ore_2
     Name: Armor Enhancement Ore(Intermediate)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000425
     AegisName: Armor_Ore_4
     Name: Armor Enhancement Ore(Superior)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000426
     AegisName: Acc_Ore_1
     Name: Accessory Enhancement Ore(Lower)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000427
     AegisName: Acc_Ore_2
     Name: Accessory Enhancement Ore(Intermediate)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000428
     AegisName: Acc_Ore_3
     Name: Accessory Enhancement Ore(High)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000429
     AegisName: Acc_Ore_4
     Name: Accessory Enhancement Ore(Superior)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000430
     AegisName: Weapon_Stone_1
     Name: Weapon Upgrade Stone(Lower)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000431
     AegisName: Weapon_Stone_2
     Name: Weapon Upgrade Stone(Intermediate)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000432
     AegisName: Weapon_Stone_3
     Name: Weapon Upgrade Stone(High)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000433
     AegisName: Weapon_Stone_4
     Name: Weapon Upgrade Stone(Superior)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000434
     AegisName: Armor_Stone_1
     Name: Armor Upgrade Stone(Lower)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000435
     AegisName: Armor_Stone_2
     Name: Armor Upgrade Stone(Intermediate)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000436
     AegisName: Armor_Stone_3
     Name: Armor Upgrade Stone(High)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000437
     AegisName: Armor_Stone_4
     Name: Armor Upgrade Stone(Superior)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000438
     AegisName: Acc_Stone_1
     Name: Accessory Upgrade Stone(Lower)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000439
     AegisName: Acc_Stone_2
     Name: Accessory Upgrade Stone(Intermediate)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000440
     AegisName: Acc_Stone_3
     Name: Accessory Upgrade Stone(High)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000441
     AegisName: Acc_Stone_4
     Name: Accessory Upgrade Stone(Superior)
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000442
     AegisName: Pow_Meteorite_Fragment
     Name: Power Meteorite Fragment
@@ -62693,6 +62871,7 @@ Body:
     Type: Etc
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000609
     AegisName: Mad_Bunny_Ticket
     Name: Mad Bunny-LT Enchantment Ticket
@@ -62751,41 +62930,57 @@ Body:
     Name: Meadow Rune Fragment    # !todo check english name
     Type: Etc
     Weight: 1
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000637
     AegisName: Flame_Barmund_Rune
     Name: Fire Rune Fragment    # !todo check english name
     Type: Etc
     Weight: 1
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000638
     AegisName: Ice_Barmund_Rune
     Name: Ice Rune Fragments    # !todo check english name
     Type: Etc
     Weight: 1
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000639
     AegisName: Death_Barmund_Rune
     Name: Death Rune Fragment    # !todo check english name
     Type: Etc
     Weight: 1
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000640
     AegisName: Plain_Barmund_Rune2
     Name: Meadow Rune    # !todo check english name
     Type: Etc
     Weight: 10
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000641
     AegisName: Flame_Barmund_Rune2
     Name: Fire Rune    # !todo check english name
     Type: Etc
     Weight: 10
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000642
     AegisName: Ice_Barmund_Rune2
     Name: Ice Rune    # !todo check english name
     Type: Etc
     Weight: 10
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000643
     AegisName: Death_Barmund_Rune2
     Name: Death Rune    # !todo check english name
     Type: Etc
     Weight: 10
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000645
     AegisName: Hero_Enchant_Ticket
     Name: Hero's Enchantment Ticket
@@ -62853,10 +63048,14 @@ Body:
     AegisName: ClockTower_Lead
     Name: Lead    # !todo check english name
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000681
     AegisName: ClockTower_Gear
     Name: Cog wheel    # !todo check english name
     Type: Etc
+    Flags:
+      DropEffect: CLIENT
   - Id: 1000682
     AegisName: aegis_1000682
     Name: Tuner    # !todo check english name
@@ -63364,24 +63563,28 @@ Body:
     Weight: 1
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000812
     AegisName: Snow_F_Stone1
     Name: Snowflower Gem
     Weight: 1
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000813
     AegisName: Snow_F_Stone2
     Name: Shining Snowflower Gem
     Weight: 1
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000814
     AegisName: Snow_F_Stone3
     Name: Brilliant Snowflower Gem
     Weight: 1
     Flags:
       BuyingStore: true
+      DropEffect: CLIENT
   - Id: 1000822
     AegisName: EP19_Shell_Of_Rgan
     Name: Rgan Shell
@@ -63565,6 +63768,16 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 1000921
+    AegisName: SplStone_Robe_D
+    Name: Spell Stone (Dual)
+    Type: Etc
+    Weight: 100
+  - Id: 1000922
+    AegisName: SmatkStone_Robe
+    Name: Spell Magic Attack Stone (Garment)
+    Type: Etc
+    Weight: 100
   - Id: 1000956
     AegisName: aegis_1000956
     Name: Special Kunnam Exchange
@@ -63576,6 +63789,55 @@ Body:
       NoGuildStorage: true
       NoMail: true
       NoAuction: true
+  - Id: 1000968
+    AegisName: SuraStone_Top3
+    Name: Sura Stone (Upper)
+    Type: Etc
+    Weight: 100
+  - Id: 1000969
+    AegisName: SuraStone_Middle3
+    Name: Sura Stone (Middle)
+    Type: Etc
+    Weight: 100
+  - Id: 1000970
+    AegisName: SuraStone_Bottom3
+    Name: Sura Stone (Lower)
+    Type: Etc
+    Weight: 100
+  - Id: 1000971
+    AegisName: MechanicStone_Top3
+    Name: Mechanic Stone (Upper)
+    Type: Etc
+    Weight: 100
+  - Id: 1000972
+    AegisName: MechanicStone_Middle3
+    Name: Mechanic Stone (Middle)
+    Type: Etc
+    Weight: 100
+  - Id: 1000973
+    AegisName: MechanicStone_Bottom3
+    Name: Mechanic Stone (Lower)
+    Type: Etc
+    Weight: 100
+  - Id: 1000974
+    AegisName: GuillcrossStone_Top3
+    Name: Guillotine Cross Stone (Upper)
+    Type: Etc
+    Weight: 100
+  - Id: 1000975
+    AegisName: GuillcrossStone_Middle3
+    Name: Guillotine Cross Stone (Middle)
+    Type: Etc
+    Weight: 100
+  - Id: 1000976
+    AegisName: GuillcrossStone_Bottom3
+    Name: Guillotine Cross Stone (Lower)
+    Type: Etc
+    Weight: 100
+  - Id: 1001023
+    AegisName: aegis_1001023
+    Name: "[Event] Shard of Infinity Star"
+    Type: Etc
   - Id: 1220001
     AegisName: Kunai
     Name: Kunai
